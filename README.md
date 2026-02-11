@@ -38,6 +38,10 @@
 - 狀態管理：`state.json`
 - 草稿箱：GitHub Issues
 
+## Automation
+
+每日筆記由 OpenClaw cron job 自動觸發，執行素材收集、撰寫、配圖、發布的完整流程。詳見 [docs/AUTOMATION.md](docs/AUTOMATION.md)。
+
 ## License
 
 MIT
