@@ -1,6 +1,11 @@
 {
-  "lastPublishDate": null,
-  "totalNotes": 0,
-  "topics": [],
-  "monthlyStats": {}
+  "lastPublishDate": "2026-02-12",
+  "totalNotes": 2,
+  "topics": [
+    "AI code security",
+    "enterprise agent scaling"
+  ],
+  "monthlyStats": {
+    "2026-02": 2
+  }
 }
