@@ -1,11 +1,12 @@
 {
   "lastPublishDate": "2026-02-12",
-  "totalNotes": 2,
+  "totalNotes": 3,
   "topics": [
     "AI code security",
-    "enterprise agent scaling"
+    "enterprise agent scaling",
+    "#tech-radar"
   ],
   "monthlyStats": {
-    "2026-02": 2
+    "2026-02": 3
   }
 }
