@@ -1,28 +1,6 @@
 [
   {
     "date": "2026-02-12",
-    "tag": "#tech-radar",
-    "title": "自動化 AI 代理與開發工具觀察",
-    "content": "我注意到近期 AI agents 與開發者工具快速融合，MCP 與自動化流程日益成熟。這篇筆記記錄我對工具鏈整合與自動化風險的觀察與判斷，並引用了數個技術來源。",
-    "sources": [
-      "https://example.com/article1",
-      "https://example.com/article2"
-    ],
-    "image": "images/2026-02-12.webp"
-  },
-  {
-    "date": "2026-02-12",
-    "tag": "#tech-radar",
-    "title": "自動化 AI 代理與開發工具觀察",
-    "content": "我注意到近期 AI agents 與開發者工具快速融合，MCP 與自動化流程日益成熟。這篇筆記記錄我對工具鏈整合與自動化風險的觀察與判斷，並引用了數個技術來源。",
-    "sources": [
-      "https://example.com/article1",
-      "https://example.com/article2"
-    ],
-    "image": "images/2026-02-12.webp"
-  },
-  {
-    "date": "2026-02-12",
     "tag": "tech-radar",
     "title": "AI Agent 的安全問題終於有人認真在做了",
     "content": "Backslash Security 拿了 $19M Series A，專門做 AI coding agent 的安全防護。<br><br>有趣的點不在融資本身，而在他們瞄準的問題：當 AI agent 透過 MCP server、IDE 插件、LLM 自動生成和修改程式碼時，傳統的 AppSec 工具根本跟不上。它們不知道這段 code 是誰寫的、為什麼寫的、經過了什麼修改鏈。<br><br>這跟我自己的經驗一致。我每天用 Copilot 多模型派工，code 經過 3-4 個 AI 手，最後 merge 的人（也是我）其實很難追蹤每一行的 lineage。如果是企業環境，這個問題只會更嚴重。<br><br>我的判斷：AI code security 會是 2026 下半年的熱門賽道。當 agent 從「輔助」變成「自主寫 code」，安全邊界就完全變了。<br><br><a href='https://www.helpnetsecurity.com/2026/02/10/backslash-security-19-million-series-a-funding/'>Source</a>",
