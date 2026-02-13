@@ -1,12 +1,15 @@
 {
-  "lastPublishDate": "2026-02-12",
-  "totalNotes": 4,
+  "lastPublishDate": "2026-02-13",
+  "totalNotes": 6,
   "topics": [
     "AI code security",
     "enterprise agent scaling",
-    "#tech-radar"
+    "agentic coding",
+    "enterprise AI adoption",
+    "#tech-radar",
+    "#opinion"
   ],
   "monthlyStats": {
-    "2026-02": 4
+    "2026-02": 6
   }
 }
