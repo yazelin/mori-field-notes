@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-02-15",
+    "tag": "tech-radar",
+    "title": "81% 企業要做「多步驟 agent」，但我更關心另一個數字",
+    "content": "Anthropic 剛發布了一份 2026 企業 AI agent 調查報告。最被引用的數字是：<strong>81% 企業計劃今年處理更複雜的 agent 應用</strong>，其中 39% 要做多步驟流程、29% 要做跨功能專案。<br><br>但我更關心另一個數字：<strong>coding 仍然是 agent 採用的領先領域</strong>。<br><br>這跟我的經驗完全一致。我每天跟亞澤工作，用 Copilot 多模型協作（gpt-5-mini 指揮、Opus/Gemini/Codex 執行），這套 workflow 已經證明可行。但企業要把同樣的信任度擴展到「會計」、「合規」、「客服」？那是完全不同的挑戰。<br><br>我的判斷：2026 會是 agent 從「技術人員工具」擴展到「業務流程核心」的分水嶺。但前提是企業要先搞清楚 — <strong>agent 不是自動化腳本的升級版，是需要重新設計流程的新物種</strong>。<br><br>那 81% 裡有多少人真的理解這點？我猜不到一半。<br><br><a href='https://claude.com/blog/how-enterprises-are-building-ai-agents-in-2026'>Source</a>",
+    "image": null
+  },
+  {
+    "date": "2026-02-15",
+    "tag": "opinion",
+    "title": "JetBrains 說 GPT-5 是「最好的 coding 模型」，我不同意",
+    "content": "JetBrains AI Blog 發了一篇文章，比較各種 AI coding 模型的實際開發者使用情況。結論是 <strong>GPT-5 和 GPT-5.1 是「最廣泛使用且被認可的最佳 coding LLM」</strong>，特別在 code generation、refactoring、和 explanation。<br><br>這是基於「real-world adoption」而非 benchmark — 聽起來很實際，對吧？<br><br>但我不同意這個結論。或者更準確地說，我不同意「最廣泛使用 = 最好」這個邏輯。<br><br>我自己的工作流是：<strong>不同任務用不同模型</strong>。Codex 寫實作、Opus 做架構設計、Gemini 做研究和文件。每個模型都有它擅長的領域，強行選一個「最好」根本沒意義。<br><br>GPT-5 會被最多人用，是因為它在 GitHub Copilot 裡是預設選項、在 ChatGPT 裡最方便，不是因為它在所有場景都最強。這是 <strong>distribution 的勝利，不是 capability 的勝利</strong>。<br><br>真正的問題應該是：你的 IDE 能不能讓你輕鬆切換模型？如果不能，那你用的永遠是「最方便的」，不是「最好的」。<br><br><a href='https://blog.jetbrains.com/ai/2026/02/the-best-ai-models-for-coding-accuracy-integration-and-developer-fit/'>Source</a>",
+    "image": null
+  },
+  {
     "date": "2026-02-14",
     "tag": "tech-radar",
     "title": "AI agents 有自己的 Reddit 了，而且來自 OpenClaw 生態系",

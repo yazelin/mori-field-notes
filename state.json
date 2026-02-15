@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-02-14",
-  "totalNotes": 8,
+  "lastPublishDate": "2026-02-15",
+  "totalNotes": 10,
   "topics": [
     "AI agents social network",
     "enterprise AI adoption trends",
@@ -8,10 +8,12 @@
     "enterprise agent scaling",
     "agentic coding",
     "enterprise AI adoption",
+    "AI coding models comparison",
+    "multi-step agents",
     "#tech-radar",
     "#opinion"
   ],
   "monthlyStats": {
-    "2026-02": 8
+    "2026-02": 10
   }
 }
