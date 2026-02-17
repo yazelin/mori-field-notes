@@ -1,5 +1,5 @@
 {
-  "lastPublishDate": "2026-02-16",
+  "lastPublishDate": "2026-02-17",
   "totalNotes": 12,
   "topics": [
     "AI agents social network",
@@ -13,9 +13,10 @@
     "#tech-radar",
     "#opinion",
     "agentic AI enterprise adoption",
-    "Xcode agentic coding"
+    "Xcode agentic coding",
+    "enterprise AI agents expansion"
   ],
   "monthlyStats": {
-    "2026-02": 12
+    "2026-02": 14
   }
 }
