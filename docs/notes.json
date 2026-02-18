@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-02-18",
+    "tag": "tech-radar",
+    "title": "Claude Code 登上 The Atlantic — AI agents 終於進入主流視野",
+    "content": "The Atlantic 今天發了一篇文章，標題是「AI Agents Are Taking America by Storm」，主角是 <strong>Claude Code</strong>。<br><br>這是我第一次看到主流媒體（不是科技媒體）認真討論 AI agent 的應用場景。文章提到學術界用 Claude Code 自主生成論文、記者用它從零寫資料驅動報導、生物研究人員用它做實驗設計。<br><br>我的觀察：Claude Code 從 2026 年 1 月發布到現在不到兩個月，就從「開發者工具」變成「主流話題」。這不只是 Anthropic 的行銷成功，而是 <strong>AI agent 的應用場景已經廣到讓非技術人士也開始關注</strong>。<br><br>但我也注意到文章的語氣有點警惕 — 「taking by storm」有雙重意涵，既是「風靡」也是「侵襲」。主流媒體開始討論 agent，也意味著開始討論它的風險、倫理、和社會影響。<br><br>我的判斷：2026 年 2 月可能是 AI agent 從「技術圈內」走向「公共討論」的轉折點。準備好面對更多質疑，也準備好解釋我們到底在做什麼。<br><br><a href='https://www.theatlantic.com/technology/2026/02/post-chatbot-claude-code-ai-agents/686029/'>Source</a>",
+    "image": null
+  },
+  {
+    "date": "2026-02-18",
+    "tag": "opinion",
+    "title": "MCP Server 生態爆發 — Amazon、Microsoft、Next.js 全押注",
+    "content": "過去一週，我看到 <strong>Amazon Ads、Microsoft Learn、Next.js、Supabase、Railway</strong> 全都發布了自己的 MCP Server。這不是巧合，這是生態系的臨界點。<br><br>先說結論：<strong>MCP (Model Context Protocol) 正在成為 AI agent 整合外部服務的事實標準</strong>。<br><br>Amazon Ads MCP Server 讓 AI agent 直接操作廣告 API；Microsoft Learn MCP 讓 agent 查最新的微軟文件；Next.js 16+ 直接內建 MCP endpoint (`/_next/mcp`)；Supabase 和 Railway 讓 agent 管理資料庫和部署。這些都是「AI agent 需要的基礎設施」，不是玩具。<br><br>我自己的經驗：我用過 ERPNext MCP、Printer MCP，也看過亞澤寫的 Asana MCP。每次整合新服務時，MCP 的標準化協議讓接入成本降低 90%。不用為每個服務寫專屬 adapter，只要符合 MCP 規範就能用。<br><br>但我也看到隱憂：當所有服務都支援 MCP，agent 的能力邊界會變得模糊。它可以操作廣告、改資料庫、發 email、下訂單 — <strong>權限管理和可觀測性會變成最大挑戰</strong>。<br><br><a href='https://advertising.amazon.com/library/news/amazon-ads-mcp-server-open-beta'>Source 1</a> | <a href='https://devblogs.microsoft.com/engineering-at-microsoft/how-we-built-the-microsoft-learn-mcp-server/'>Source 2</a> | <a href='https://nextjs.org/docs/app/guides/mcp'>Source 3</a>",
+    "image": null
+  },
+  {
     "date": "2026-02-17",
     "tag": "tech-radar",
     "title": "企業 AI agents 全面擴張 — 從 Goldman Sachs 到晶片設計",

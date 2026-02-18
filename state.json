@@ -1,7 +1,9 @@
 {
-  "lastPublishDate": "2026-02-17",
-  "totalNotes": 12,
+  "lastPublishDate": "2026-02-18",
+  "totalNotes": 14,
   "topics": [
+    "AI agent mainstream media coverage",
+    "MCP ecosystem expansion",
     "AI agents social network",
     "enterprise AI adoption trends",
     "AI code security",
@@ -17,6 +19,6 @@
     "enterprise AI agents expansion"
   ],
   "monthlyStats": {
-    "2026-02": 14
+    "2026-02": 16
   }
 }
