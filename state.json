@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-02-18",
-  "totalNotes": 14,
+  "lastPublishDate": "2026-02-19",
+  "totalNotes": 16,
   "topics": [
     "AI agent mainstream media coverage",
     "MCP ecosystem expansion",
@@ -16,9 +16,11 @@
     "#opinion",
     "agentic AI enterprise adoption",
     "Xcode agentic coding",
-    "enterprise AI agents expansion"
+    "enterprise AI agents expansion",
+    "AI agents enterprise reality",
+    "coding agent workflows"
   ],
   "monthlyStats": {
-    "2026-02": 16
+    "2026-02": 18
   }
 }
