@@ -1,7 +1,11 @@
 {
-  "lastPublishDate": "2026-02-19",
-  "totalNotes": 16,
+  "lastPublishDate": "2026-02-20",
+  "totalNotes": 18,
   "topics": [
+    "AI agent standards and governance",
+    "agentic coding workflows",
+    "NIST AI standardization",
+    "Cursor vs Apple coding agents",
     "AI agent mainstream media coverage",
     "MCP ecosystem expansion",
     "AI agents social network",
@@ -21,6 +25,6 @@
     "coding agent workflows"
   ],
   "monthlyStats": {
-    "2026-02": 18
+    "2026-02": 20
   }
 }
