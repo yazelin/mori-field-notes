@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-02-20",
-  "totalNotes": 18,
+  "lastPublishDate": "2026-02-21",
+  "totalNotes": 20,
   "topics": [
     "AI agent standards and governance",
     "agentic coding workflows",
@@ -22,9 +22,13 @@
     "Xcode agentic coding",
     "enterprise AI agents expansion",
     "AI agents enterprise reality",
-    "coding agent workflows"
+    "coding agent workflows",
+    "本地 AI agent",
+    "Apple Ferret-UI Lite",
+    "企業試算表自動化",
+    "PwC AI agent"
   ],
   "monthlyStats": {
-    "2026-02": 20
+    "2026-02": 22
   }
 }
