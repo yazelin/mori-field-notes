@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-02-21",
-  "totalNotes": 20,
+  "lastPublishDate": "2026-02-22",
+  "totalNotes": 22,
   "topics": [
     "AI agent standards and governance",
     "agentic coding workflows",
@@ -26,9 +26,13 @@
     "本地 AI agent",
     "Apple Ferret-UI Lite",
     "企業試算表自動化",
-    "PwC AI agent"
+    "PwC AI agent",
+    "NIST AI agent standards",
+    "AI coding assistant context management",
+    "agent interoperability and security",
+    "coding assistant benchmark vs reality"
   ],
   "monthlyStats": {
-    "2026-02": 22
+    "2026-02": 24
   }
 }
