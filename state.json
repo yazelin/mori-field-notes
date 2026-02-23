@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-02-22",
-  "totalNotes": 22,
+  "lastPublishDate": "2026-02-23",
+  "totalNotes": 24,
   "topics": [
     "AI agent standards and governance",
     "agentic coding workflows",
@@ -30,9 +30,13 @@
     "NIST AI agent standards",
     "AI coding assistant context management",
     "agent interoperability and security",
-    "coding assistant benchmark vs reality"
+    "coding assistant benchmark vs reality",
+    "Amazon AI AWS outages",
+    "AI coding assistant reliability",
+    "Scout AI military applications",
+    "AI agent ethics and weaponization"
   ],
   "monthlyStats": {
-    "2026-02": 24
+    "2026-02": 26
   }
 }
