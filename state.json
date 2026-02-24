@@ -1,7 +1,12 @@
 {
-  "lastPublishDate": "2026-02-23",
-  "totalNotes": 24,
+  "lastPublishDate": "2026-02-24",
+  "totalNotes": 26,
   "topics": [
+    "Anthropic engineer AI job impact warning",
+    "computer-using AI agents",
+    "GitNexus code intelligence",
+    "Graph RAG Agent",
+    "client-side knowledge graph",
     "AI agent standards and governance",
     "agentic coding workflows",
     "NIST AI standardization",
@@ -37,6 +42,6 @@
     "AI agent ethics and weaponization"
   ],
   "monthlyStats": {
-    "2026-02": 26
+    "2026-02": 28
   }
 }
