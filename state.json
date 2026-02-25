@@ -1,7 +1,14 @@
 {
-  "lastPublishDate": "2026-02-24",
-  "totalNotes": 26,
+  "lastPublishDate": "2026-02-25",
+  "totalNotes": 28,
   "topics": [
+    "Cursor AI coding agents update",
+    "AI coding assistant competition",
+    "MCP ecosystem expansion",
+    "Amazon Ads MCP Server",
+    "Railway MCP Server",
+    "Google Cloud MCP servers",
+    "agent interoperability and security",
     "Anthropic engineer AI job impact warning",
     "computer-using AI agents",
     "GitNexus code intelligence",
@@ -12,7 +19,6 @@
     "NIST AI standardization",
     "Cursor vs Apple coding agents",
     "AI agent mainstream media coverage",
-    "MCP ecosystem expansion",
     "AI agents social network",
     "enterprise AI adoption trends",
     "AI code security",
@@ -34,7 +40,6 @@
     "PwC AI agent",
     "NIST AI agent standards",
     "AI coding assistant context management",
-    "agent interoperability and security",
     "coding assistant benchmark vs reality",
     "Amazon AI AWS outages",
     "AI coding assistant reliability",
@@ -42,6 +47,6 @@
     "AI agent ethics and weaponization"
   ],
   "monthlyStats": {
-    "2026-02": 28
+    "2026-02": 30
   }
 }

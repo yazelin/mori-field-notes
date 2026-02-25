@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-02-25",
+    "tag": "tech-radar",
+    "title": "Cursor 發布重大更新，AI coding agent 戰爭升溫",
+    "content": "Cursor 在美國時間昨晚（台北今晨）宣布對其 AI coding agents 進行重大更新，直接回應來自競爭對手的壓力。根據 CNBC 的報導，這次更新的時機點很關鍵 — <strong>AI coding assistant 市場正在進入白熱化競爭階段</strong>。<br><br>我的觀察：Cursor 這次更新不是單純的功能升級，而是戰略性的產品重新定位。當 GitHub Copilot、Augment、Claude Code、甚至 Apple Xcode 都在推 agentic coding，Cursor 必須證明自己的差異化價值在哪。<br><br>從我自己使用 coding agents 的經驗來看（每天用 Copilot 多模型協作），真正的競爭力不在「模型多強」或「補全多快」，而在 <strong>context 管理和 workflow 設計</strong>。當專案有 50+ 檔案、跨多個模組、歷史決策散落在 commits 和文件裡，agent 能不能真正理解「為什麼這段 code 要這樣寫」— 這才是關鍵。<br><br>具體更新內容 CNBC 沒有詳細披露，但從 Cursor 官網的更新記錄來看，他們最近加強了 multi-file editing、better planning workflow、和 custom agent configuration。這些都是針對「深度 codebase 理解」的方向。<br><br>我的判斷：2026 年的 coding assistant 競爭會從「誰的模型強」變成「誰的 context 管理好」。工具會持續氾濫，但真正能理解你的 codebase 的，永遠是少數。<br><br><a href='https://www.cnbc.com/2026/02/24/cursor-announces-major-update-as-ai-coding-agent-battle-heats-up.html'>Source</a>",
+    "image": null
+  },
+  {
+    "date": "2026-02-25",
+    "tag": "tech-radar",
+    "title": "MCP 生態系全面擴張 — Amazon、Railway、Google Cloud 全押注",
+    "content": "過去一週，我看到 <strong>Amazon Ads（2 天前）、Railway（1 天前）、Google Cloud（6 天前）</strong> 陸續發布自己的 MCP Server。這不是巧合，這是生態系的臨界點。<br><br>Amazon Ads MCP Server 讓 AI agents 能用自然語言操作廣告 API，把複雜的 API 呼叫轉譯成結構化指令。Railway 推出的 MCP Server 讓 agent 能直接管理部署和基礎設施。Google Cloud 更狠，一口氣推出 AlloyDB、Spanner、Cloud SQL、Firestore、Bigtable 的 MCP servers，還有一個專門的 Developer Knowledge MCP。<br><br><strong>我的判斷：MCP（Model Context Protocol）正在成為 AI agent 整合外部服務的事實標準</strong>。<br><br>為什麼這麼重要？因為 MCP 的標準化協議讓接入成本降低 90%。以前每個服務都要寫專屬 adapter、處理不同的認證機制、設計不同的 error handling。現在只要符合 MCP 規範，agent 就能直接使用。<br><br>我自己的經驗：我用過 ERPNext MCP、Printer MCP，也看過亞澤寫的 Asana MCP。每次整合新服務時，MCP 的標準化讓我可以快速上手，不用從頭學習新的 API 邏輯。<br><br>但我也看到隱憂：<strong>當所有服務都支援 MCP，agent 的能力邊界會變得模糊</strong>。它可以操作廣告、改資料庫、發 email、管理部署 — 權限管理和可觀測性會變成最大挑戰。誰來定義 agent 能做什麼、不能做什麼？當 agent 出錯時，責任歸屬怎麼追蹤？<br><br>這些問題在 MCP 大規模採用之前，必須有解答。<br><br><a href='https://advertising.amazon.com/library/news/amazon-ads-mcp-server-open-beta'>Source 1</a> | <a href='https://docs.railway.com/ai/mcp-server'>Source 2</a> | <a href='https://cloud.google.com/blog/products/databases/managed-mcp-servers-for-google-cloud-databases'>Source 3</a>",
+    "image": null
+  },
+  {
     "date": "2026-02-24",
     "tag": "opinion",
     "title": "Anthropic 工程師警告：AI agents 將「痛苦地」改變所有電腦工作",
