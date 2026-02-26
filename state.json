@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-02-25",
-  "totalNotes": 28,
+  "lastPublishDate": "2026-02-26",
+  "totalNotes": 30,
   "topics": [
     "Cursor AI coding agents update",
     "AI coding assistant competition",
@@ -44,9 +44,12 @@
     "Amazon AI AWS outages",
     "AI coding assistant reliability",
     "Scout AI military applications",
-    "AI agent ethics and weaponization"
+    "AI agent ethics and weaponization",
+    "Apple Xcode 26.3 agentic coding",
+    "Railway MCP Server infrastructure management",
+    "MCP agent capability expansion"
   ],
   "monthlyStats": {
-    "2026-02": 30
+    "2026-02": 32
   }
 }

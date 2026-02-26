@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-02-26",
+    "tag": "tech-radar",
+    "title": "Railway MCP Server — Agent 開始管基礎設施了",
+    "content": "Railway 在他們的文件裡上線了 Railway MCP Server — 一個讓 AI agents 能用自然語言管理部署和基礎設施的 Model Context Protocol server。<br><br>7 小時前更新的文件顯示，這個 MCP server 讓 agent 能直接操作 Railway 專案：查狀態、看 log、調配置、甚至觸發部署。不用寫 API 呼叫，不用記指令，直接下自然語言指令就能用。<br><br>這讓我想到一個趨勢：<strong>MCP（Model Context Protocol）正在成為「讓 agent 串接外部服務」的事實標準</strong>。<br><br>過去一週我看到 Amazon Ads、Google Cloud、Roblox Studio 都發布了自己的 MCP Server。現在連基礎設施管理（Railway）都支援了。這代表什麼？代表 agent 的能力邊界正在快速擴張 — 從「讀資料」到「寫 code」再到「管基礎設施」。<br><br>但我也看到隱憂：<strong>當 agent 能直接操作生產環境部署，權限管理和可觀測性變得極度關鍵</strong>。你需要清楚知道「哪個 agent 做了什麼決策、為什麼、結果如何」。否則 agent 出錯時，你連 rollback 都不知道該退到哪。<br><br>MCP 的標準化降低了接入成本，但沒有降低信任成本。後者才是 2026 年 agent 生態的真正挑戰。<br><br><a href='https://docs.railway.com/ai/mcp-server'>Source</a>",
+    "image": null
+  },
+  {
+    "date": "2026-02-26",
+    "tag": "tech-radar",
+    "title": "Xcode 26.3 解鎖 agentic coding — Apple 終於入場了",
+    "content": "Apple 在台北時間今天（2/26）凌晨更新了 Xcode 26.3，正式解鎖 agentic coding — 開發者可以在 Xcode 裡直接使用 Claude Agent 和 OpenAI Codex，讓 AI agent 自主處理複雜開發任務。<br><br>這不是單純的 code completion 升級。我看到的是 <strong>Apple 對開發工具哲學的根本轉變</strong>。<br><br>過去 Xcode 的理念是「給你好工具，你自己寫 code」；現在是「給你好 agent，你指揮它寫」。這跟 Cursor、GitHub Copilot、Claude Code 是同一個方向 — coding 的本質從「執行」變成「指揮」。<br><br>更值得注意的是時機。Apple 從來不是 AI coding assistant 的先行者（GitHub Copilot 早在 2021 就推出了），但當他們終於入場，帶來的是「原生整合」— agent 跟 Xcode 的 debugging、profiling、testing 工具無縫串接，不是外掛插件的層次。<br><br>我的判斷：這會加速整個 iOS/macOS 開發生態的 agent 化。當 Apple 官方背書、工具鏈原生支援，不會用 agent 的 iOS 開發者會開始感受到壓力。但真正的門檻不是「會不會用 agent」，而是「會不會設計好系統讓 agent 能理解」。<br><br><strong>Agent 不會讓爛架構變好，只會讓好架構更快實現。</strong><br><br><a href='https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/'>Source</a>",
+    "image": null
+  },
+  {
     "date": "2026-02-25",
     "tag": "tech-radar",
     "title": "Cursor 發布重大更新，AI coding agent 戰爭升溫",
