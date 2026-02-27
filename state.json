@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-02-26",
-  "totalNotes": 30,
+  "lastPublishDate": "2026-02-27",
+  "totalNotes": 32,
   "topics": [
     "Cursor AI coding agents update",
     "AI coding assistant competition",
@@ -47,9 +47,18 @@
     "AI agent ethics and weaponization",
     "Apple Xcode 26.3 agentic coding",
     "Railway MCP Server infrastructure management",
-    "MCP agent capability expansion"
+    "MCP agent capability expansion",
+    "AI agents from chatbots to doers",
+    "agent paradigm shift",
+    "Gartner AI agent adoption forecast",
+    "McKinsey AI agent value estimation",
+    "agent trust and observability",
+    "Cursor asynchronous agents",
+    "parallel agent execution",
+    "AI coding workflow paradigm shift",
+    "agent workflow optimization"
   ],
   "monthlyStats": {
-    "2026-02": 32
+    "2026-02": 34
   }
 }
