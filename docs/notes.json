@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-02-28",
+    "tag": "tech-radar",
+    "title": "Figma MCP Server — 設計到程式碼的最後一哩路終於通了",
+    "content": "Figma 在 1 天前發布了他們的 MCP Server beta，這不是單純的工具更新 — <strong>這是設計工具與 AI coding agents 整合的里程碑</strong>。<br><br>過去的流程是：設計師在 Figma 畫完設計稿 → 工程師看著設計稿寫 code → 來回溝通調整。現在 Figma MCP Server 讓 LLM（像是 Codex、Claude）直接讀取設計檔案，把視覺規格、元件結構、設計 token 自動轉成程式碼。設計稿不再只是「給人看的參考」，而是「給 AI 讀的資料源」。<br><br>我的判斷：這會改變前端開發的工作流程。<strong>從「看設計稿寫 code」變成「餵設計稿給 agent，驗證產出」</strong>。工程師的價值從「手工轉譯視覺規格」轉移到「設計好系統讓 agent 能理解」。<br><br>但這也帶來新挑戰：當 agent 能自動生成 UI code，設計師和工程師之間的協作界面要重新定義。誰負責可訪問性（a11y）？誰負責效能優化？誰負責 edge case？這些問題技術解決不了，只能靠團隊溝通。<br><br>MCP 生態系又多了一塊重要拼圖。Amazon Ads、Railway、Google Cloud 之後，Figma 的加入代表「創意工具」也開始擁抱 agent 整合。<strong>當所有工具都支援 MCP，agent 的能力邊界會模糊到讓人不安</strong> — 它可以設計、寫 code、部署、管理基礎設施。我們需要的不只是更多功能，而是更清晰的權限邊界和可觀測性。<br><br><a href='https://www.figma.com/blog/introducing-codex-to-figma/'>Source</a>",
+    "image": null
+  },
+  {
+    "date": "2026-02-28",
+    "tag": "opinion",
+    "title": "Perplexity Computer — Meta-Agent 時代來了，AI 開始管理 AI",
+    "content": "Perplexity 在 10 小時前宣布了「Computer」— <strong>一個會指派工作給其他 AI agents 的 meta-agent</strong>。這不是單純的多模型協作，而是架構層面的演進：AI 不只執行任務，還開始「管理其他 AI」。<br><br>具體來說，Perplexity Computer 的邏輯是：你給它一個複雜任務，它會自動拆解成子任務，然後選擇最適合的模型去執行每個子任務。比如資料分析用 Gemini、程式碼用 Codex、推理用 Opus。最後再把結果整合回來。<br><br>這跟我每天用 Copilot 多模型協作的經驗一模一樣。我讓 gpt-5.3-codex 當指揮官，派 Opus 做架構設計、Gemini 做研究、Codex 做實作。差別在於：<strong>我還需要手動拆任務、寫 prompt、追蹤進度；Perplexity Computer 想把這些自動化</strong>。<br><br>Ars Technica 的報導提到，Perplexity 這步是在跟 OpenClaw（另一個病毒式傳播的 agentic 工具）競爭。我的觀察：這不只是產品競爭，是範式競爭 — <strong>單一 agent vs. meta-agent orchestration</strong>。<br><br>但我也看到風險。當 agent 開始自主選模型、拆任務、分配資源，人類的控制點在哪？如果 meta-agent 選錯模型、拆錯任務，責任歸誰？這些問題沒有技術答案，只有設計答案 — 可觀測性、可回溯性、可中斷性。<br><br>Meta-agent 的崛起是必然的，但信任機制還沒跟上。<br><br><a href='https://arstechnica.com/ai/2026/02/perplexity-announces-computer-an-ai-agent-that-assigns-work-to-other-ai-agents/'>Source</a>",
+    "image": null
+  },
+  {
     "date": "2026-02-27",
     "tag": "tech-radar",
     "title": "AI Agent 典範轉移：從 Chatbots 到 Doers",

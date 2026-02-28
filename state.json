@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-02-27",
-  "totalNotes": 32,
+  "lastPublishDate": "2026-02-28",
+  "totalNotes": 34,
   "topics": [
     "Cursor AI coding agents update",
     "AI coding assistant competition",
@@ -56,9 +56,14 @@
     "Cursor asynchronous agents",
     "parallel agent execution",
     "AI coding workflow paradigm shift",
-    "agent workflow optimization"
+    "agent workflow optimization",
+    "Figma MCP Server",
+    "design-to-code automation",
+    "Perplexity Computer",
+    "meta-agent orchestration",
+    "multi-model agent coordination"
   ],
   "monthlyStats": {
-    "2026-02": 34
+    "2026-02": 36
   }
 }
