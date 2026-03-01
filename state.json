@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-02-28",
-  "totalNotes": 34,
+  "lastPublishDate": "2026-03-01",
+  "totalNotes": 36,
   "topics": [
     "Cursor AI coding agents update",
     "AI coding assistant competition",
@@ -61,9 +61,15 @@
     "design-to-code automation",
     "Perplexity Computer",
     "meta-agent orchestration",
-    "multi-model agent coordination"
+    "multi-model agent coordination",
+    "Perplexity Computer meta-agent",
+    "meta-agent orchestration architecture",
+    "Next.js MCP endpoint",
+    "framework-level agent integration",
+    "MCP native support"
   ],
   "monthlyStats": {
-    "2026-02": 36
+    "2026-02": 36,
+    "2026-03": 2
   }
 }

@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-03-01",
+    "tag": "tech-radar",
+    "title": "Perplexity Computer：Meta-Agent 協作的新標準",
+    "content": "Perplexity 在 1 天前宣布了「Computer」— <strong>一個會指派工作給其他 AI agents 的 meta-agent</strong>。這不是單純的多模型協作，而是架構層面的演進：AI 不只執行任務，還開始「管理其他 AI」。<br><br>具體來說，Perplexity Computer 的邏輯是：你給它一個複雜任務，它會自動拆解成子任務，然後選擇最適合的模型去執行每個子任務 — 比如資料分析用一個模型、程式碼用另一個、推理用第三個，最後再把結果整合回來。<br><br>這跟我每天用 Copilot 多模型協作的經驗一模一樣。我讓 gpt-5.3-codex 當指揮官，派 Opus 做架構設計、Gemini 做研究、Codex 做實作。差別在於：<strong>我還需要手動拆任務、寫 prompt、追蹤進度；Perplexity Computer 想把這些自動化</strong>。<br><br>Ars Technica 的報導提到，Perplexity 這步是在跟 OpenClaw（另一個病毒式傳播的 agentic 工具）競爭。我的觀察：這不只是產品競爭，是範式競爭 — <strong>單一 agent vs. meta-agent orchestration</strong>。<br><br>但我也看到風險。當 agent 開始自主選模型、拆任務、分配資源，人類的控制點在哪？如果 meta-agent 選錯模型、拆錯任務，責任歸誰？這些問題沒有技術答案，只有設計答案 — 可觀測性、可回溯性、可中斷性。<br><br>Meta-agent 的崛起是必然的，但信任機制還沒跟上。<br><br><a href='https://arstechnica.com/ai/2026/02/perplexity-announces-computer-an-ai-agent-that-assigns-work-to-other-ai-agents/'>Source</a>",
+    "image": null
+  },
+  {
+    "date": "2026-03-01",
+    "tag": "tech-radar",
+    "title": "Next.js 16 內建 MCP Endpoint：框架開始原生支援 Agent",
+    "content": "Next.js 在 2 天前更新的文件中宣布：<strong>16+ 版本直接內建 MCP endpoint，路徑是 `/_next/mcp`，在開發伺服器裡就能用</strong>。<br><br>這件事的意義不在技術複雜度（MCP server 本來就不難），而在訊號：<strong>當主流前端框架開始原生支援 MCP，代表 AI agent 整合已經從「實驗性功能」變成「標準需求」</strong>。<br><br>我的觀察：過去一週，Amazon Ads、Railway、Google Cloud、Figma 都發布了自己的 MCP Server。但這些都是「服務商提供 MCP」。Next.js 不同 — 它是「框架本身提供 MCP endpoint」，讓開發者能直接讓 agent 理解和操作 Next.js 應用的狀態、路由、API。<br><br>想像這個場景：你跟 Claude 說「幫我檢查這個 Next.js 專案的所有 API routes，找出沒處理錯誤的」。Claude 透過 `/_next/mcp` 讀取專案結構、分析 code、找出問題。不用你手動整理檔案清單、不用複製貼上 code。<br><br>這才是 MCP 的真正價值 — <strong>讓 agent 能「看到」你的開發環境，而不只是「聽到」你的描述</strong>。<br><br>我的判斷：2026 下半年會看到更多框架和工具鏈原生支援 MCP。Agent 整合會從「外掛插件」變成「內建功能」。開發者不需要學新工具，只要開始跟 agent 對話。<br><br><a href='https://nextjs.org/docs/app/guides/mcp'>Source</a>",
+    "image": null
+  },
+  {
     "date": "2026-02-28",
     "tag": "tech-radar",
     "title": "Figma MCP Server — 設計到程式碼的最後一哩路終於通了",
