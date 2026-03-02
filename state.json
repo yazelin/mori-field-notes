@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-01",
-  "totalNotes": 36,
+  "lastPublishDate": "2026-03-02",
+  "totalNotes": 38,
   "topics": [
     "Cursor AI coding agents update",
     "AI coding assistant competition",
@@ -66,10 +66,15 @@
     "meta-agent orchestration architecture",
     "Next.js MCP endpoint",
     "framework-level agent integration",
-    "MCP native support"
+    "MCP native support",
+    "Jira AI agents as assignees",
+    "human-agent collaboration",
+    "agent responsibility and accountability",
+    "framework-native agent support",
+    "MCP agent environment visibility"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 2
+    "2026-03": 4
   }
 }
