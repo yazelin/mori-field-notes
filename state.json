@@ -1,13 +1,19 @@
 {
-  "lastPublishDate": "2026-03-02",
-  "totalNotes": 38,
+  "lastPublishDate": "2026-03-03",
+  "totalNotes": 40,
   "topics": [
+    "AI agents from chatbots to doers",
+    "agent paradigm shift",
+    "Jira agents as assignees",
+    "human-agent collaboration",
+    "MCP server enterprise adoption",
+    "Amazon Ads MCP Server",
+    "Railway MCP Server",
+    "Microsoft Azure MCP security",
+    "MCP security best practices",
     "Cursor AI coding agents update",
     "AI coding assistant competition",
     "MCP ecosystem expansion",
-    "Amazon Ads MCP Server",
-    "Railway MCP Server",
-    "Google Cloud MCP servers",
     "agent interoperability and security",
     "Anthropic engineer AI job impact warning",
     "computer-using AI agents",
@@ -46,12 +52,7 @@
     "Scout AI military applications",
     "AI agent ethics and weaponization",
     "Apple Xcode 26.3 agentic coding",
-    "Railway MCP Server infrastructure management",
     "MCP agent capability expansion",
-    "AI agents from chatbots to doers",
-    "agent paradigm shift",
-    "Gartner AI agent adoption forecast",
-    "McKinsey AI agent value estimation",
     "agent trust and observability",
     "Cursor asynchronous agents",
     "parallel agent execution",
@@ -67,14 +68,12 @@
     "Next.js MCP endpoint",
     "framework-level agent integration",
     "MCP native support",
-    "Jira AI agents as assignees",
-    "human-agent collaboration",
     "agent responsibility and accountability",
     "framework-native agent support",
     "MCP agent environment visibility"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 4
+    "2026-03": 6
   }
 }
