@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-03",
-  "totalNotes": 40,
+  "lastPublishDate": "2026-03-04",
+  "totalNotes": 42,
   "topics": [
     "AI agents from chatbots to doers",
     "agent paradigm shift",
@@ -70,10 +70,17 @@
     "MCP native support",
     "agent responsibility and accountability",
     "framework-native agent support",
-    "MCP agent environment visibility"
+    "MCP agent environment visibility",
+    "AI coding agent productivity paradox",
+    "coding agent quality vs speed tradeoff",
+    "MCP enterprise infrastructure",
+    "Amazon Ads MCP Server",
+    "Railway MCP Server",
+    "Next.js MCP native support",
+    "MCP security and trust challenges"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 6
+    "2026-03": 8
   }
 }

@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-03-04",
+    "tag": "opinion",
+    "title": "AI Coding Agents 的生產力悖論 — 快速產出 vs. 品質焦慮",
+    "content": "Bloomberg 報導指出 AI coding agents 承諾讓軟體開發更輕鬆，卻引發了高壓競爭。標題很直白：<strong>「AI Coding Agents Like Claude Code Are Fueling a Productivity Panic in Tech」</strong>。<br><br>我的觀察：這是個悖論。工具應該讓工作更輕鬆，為什麼反而帶來壓力？核心問題在於<strong>生產力的定義被扭曲了</strong>。當每個人都能用 AI 快速產出程式碼，競爭標準就不再是「寫得快」，而是「能做多少」。結果就是無止境的產出競賽 — 速度提升了，工作量也跟著膨脹。<br><br>更深層的問題是信任成本。當 AI 能快速生成大量程式碼，誰來確保品質？誰來負責安全漏洞？Bloomberg 提到的「at any cost」正是這個焦慮的來源 — 為了趕上競爭，品質把關被犧牲了。<br><br>我自己每天用 Copilot 多模型協作，最大的心得是：<strong>AI 讓好的更快，但也讓爛的更多</strong>。如果沒有清晰的架構設計、紮實的 code review、完整的測試覆蓋，AI 產出的程式碼只會加速專案走向混亂。<br><br>生產力恐慌的根源不是 AI 本身，是我們還沒學會如何在 AI 時代保持品質標準。<br><br><a href='https://www.bloomberg.com/news/articles/2026-02-26/ai-coding-agents-like-claude-code-are-fueling-a-productivity-panic-in-tech'>Source</a>",
+    "image": null
+  },
+  {
+    "date": "2026-03-04",
+    "tag": "tech-radar",
+    "title": "MCP 從實驗協定到企業標配 — Amazon、Railway、Next.js 全押注",
+    "content": "過去一週，<strong>Amazon Ads（1天前）、Railway（1天前）、Next.js 16+（5天前）</strong> 陸續發布 MCP Server，這不是巧合 — 這是 MCP (Model Context Protocol) 從實驗性協定進入企業基礎設施的轉折點。<br><br>Amazon Ads MCP Server 把廣告 API 包裝成自然語言介面，讓 AI agents 能直接操作廣告投放。Railway MCP Server 讓 agents 管理部署和基礎設施。Next.js 16+ 更狠 — 直接在框架層級內建 MCP endpoint (<code>/_next/mcp</code>)。<br><br>我的判斷：<strong>MCP 正在重複 Language Server Protocol (LSP) 的成功路徑</strong>。Wikipedia 詞條提到 MCP 重用了 LSP 的訊息流設計，透過 JSON-RPC 2.0 傳輸。當年 LSP 統一了程式語言工具鏈，現在 MCP 想統一 AI agent 與外部服務的整合方式。<br><br>但企業採用也帶來新挑戰：<strong>安全性</strong>。當 MCP server 連接企業內部資源（廣告帳戶、資料庫、部署系統），權限管理和可觀測性變成最大問題。n8n 部落格列出 20 個 best MCP servers，但沒人談「誰來定義 agent 的權限邊界」。<br><br>標準化降低了接入成本，但沒有降低信任成本。後者才是 2026 年 MCP 生態的真正挑戰。<br><br><a href='https://advertising.amazon.com/library/news/amazon-ads-mcp-server-open-beta'>Source 1</a> | <a href='https://docs.railway.com/ai/mcp-server'>Source 2</a> | <a href='https://nextjs.org/docs/app/guides/mcp'>Source 3</a> | <a href='https://en.wikipedia.org/wiki/Model_Context_Protocol'>Source 4</a> | <a href='https://blog.n8n.io/best-mcp-servers/'>Source 5</a>",
+    "image": null
+  },
+  {
     "date": "2026-03-03",
     "tag": "tech-radar",
     "title": "AI Agents 從聊天到執行 — 2026 的典範轉移正在發生",
