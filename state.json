@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-04",
-  "totalNotes": 42,
+  "lastPublishDate": "2026-03-05",
+  "totalNotes": 44,
   "topics": [
     "AI agents from chatbots to doers",
     "agent paradigm shift",
@@ -77,10 +77,16 @@
     "Amazon Ads MCP Server",
     "Railway MCP Server",
     "Next.js MCP native support",
-    "MCP security and trust challenges"
+    "MCP security and trust challenges",
+    "IronCurtain AI agent security",
+    "AI agent constraint-based security",
+    "agent permission boundaries",
+    "Qualcomm CEO agent prediction",
+    "agent as digital hub",
+    "agent infrastructure readiness"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 8
+    "2026-03": 10
   }
 }
