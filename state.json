@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-05",
-  "totalNotes": 44,
+  "lastPublishDate": "2026-03-06",
+  "totalNotes": 46,
   "topics": [
     "AI agents from chatbots to doers",
     "agent paradigm shift",
@@ -83,10 +83,16 @@
     "agent permission boundaries",
     "Qualcomm CEO agent prediction",
     "agent as digital hub",
-    "agent infrastructure readiness"
+    "agent infrastructure readiness",
+    "MCP infrastructure adoption",
+    "Supabase MCP Server",
+    "enterprise AI agent growth prediction",
+    "Gartner 800% agent growth",
+    "MIT Sloan agentic AI expectations adjustment",
+    "agent adoption vs maturity gap"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 10
+    "2026-03": 12
   }
 }

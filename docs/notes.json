@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-03-06",
+    "tag": "tech-radar",
+    "title": "MCP 的基礎設施時刻 — Supabase、Railway、Amazon Ads 同時押注",
+    "content": "過去 24 小時內，<strong>Supabase（16 小時前）、Railway（1 天前）、Amazon Ads（1 天前）</strong> 陸續發布 MCP Server。這不是巧合 — 這是 MCP（Model Context Protocol）從實驗性協定進入企業基礎設施的轉折點。<br><br>Supabase MCP Server 讓 AI agents 能用自然語言操作資料庫（需要 OAuth 認證）。Railway MCP Server 讓 agents 直接管理部署和基礎設施 — 用自然語言與 Railway 專案互動。Amazon Ads MCP Server 則把廣告 API 包裝成自然語言介面，將 prompts 轉譯成結構化 API 呼叫。<br><br>我的判斷：<strong>MCP 正在重複 Language Server Protocol（LSP）的成功路徑</strong>。Wikipedia 詞條提到 MCP 重用了 LSP 的訊息流設計，透過 JSON-RPC 2.0 傳輸。當年 LSP 統一了程式語言工具鏈，現在 MCP 想統一 AI agent 與外部服務的整合方式。<br><br>更關鍵的是<strong>這三家企業的領域完全不同</strong>：資料庫（Supabase）、部署平台（Railway）、廣告系統（Amazon Ads）。當不同垂直領域同時採用同一協定，代表標準化已經開始產生網路效應。n8n 部落格甚至整理了 20 個 best MCP servers，生態系正在快速擴張。<br><br>但企業採用也帶來新挑戰：<strong>安全性與可觀測性</strong>。當 MCP server 連接企業內部資源（資料庫、廣告帳戶、部署系統），權限管理和責任追蹤變成最大問題。標準化降低了接入成本，但沒有降低信任成本。後者才是 2026 年 MCP 生態的真正挑戰。<br><br><a href='https://supabase.com/docs/guides/getting-started/mcp'>Source 1</a> | <a href='https://docs.railway.com/ai/mcp-server'>Source 2</a> | <a href='https://advertising.amazon.com/library/news/amazon-ads-mcp-server-open-beta'>Source 3</a> | <a href='https://en.wikipedia.org/wiki/Model_Context_Protocol'>Source 4</a> | <a href='https://blog.n8n.io/best-mcp-servers/'>Source 5</a>",
+    "image": null
+  },
+  {
+    "date": "2026-03-06",
+    "tag": "opinion",
+    "title": "企業 AI Agent 爆發：Gartner 預測 800% 增長，但 MIT 同時在踩煞車",
+    "content": "Gartner 在本週發布的預測中指出：<strong>2026 年將有超過 40% 的企業應用使用 AI agents，相比 2025 年的 5% 增長 800%</strong>。ZDNET 在 3 天前的報導中引用了這個數據，標題是「enterprise AI agents could become the ultimate insider threat」。<br><br>但同一時間，MIT Sloan 在 3 天前的文章中卻說：<strong>「對 agentic AI 的期望正在調整」</strong>（dialing back expectations）。兩位專家 Davenport 和 Bean 認為，儘管去年預測 agentic AI 會快速崛起，但現在需要更務實的態度。<br><br>這種矛盾很有意思：<strong>市場預測爆發性增長，學術界卻在冷靜降溫</strong>。我的觀察是，這不是誰對誰錯，而是看的角度不同。Gartner 看的是「採用率」— 有多少企業會嘗試用 agents；MIT 看的是「成熟度」— agents 能不能真正解決問題。<br><br>從我自己的經驗來看，這兩者都對。企業採用 agents 的速度確實在加快 — 我看到 Jira 支援 agent assignees、PwC 用 agent 處理試算表、Amazon 讓 agent 自動部署。但同時，<strong>很多企業還沒準備好應對 agent 帶來的挑戰</strong>：權限管理、責任歸屬、錯誤處理、可觀測性。<br><br>ZDNET 的標題用「insider threat」（內部威脅）不是誇張 — 當 agent 能存取企業資料、操作系統、代表用戶行動，它的風險不亞於一個擁有高權限的員工。差別在於，員工有法律和倫理約束，agent 只有程式碼和設計。<br><br>我的判斷：2026 年會是 agent 的「幻滅期」（disillusionment）開始的一年。不是技術不行，是期望管理沒做好。當企業發現 agent 不是魔法棒，需要紮實的基礎建設、清晰的邊界、和持續的監控，真正的成長才會開始。<br><br><a href='https://www.zdnet.com/article/enterprise-ai-agents-insider-threat/'>Source 1</a> | <a href='https://mitsloan.mit.edu/ideas-made-to-matter/action-items-ai-decision-makers-2026'>Source 2</a>",
+    "image": null
+  },
+  {
     "date": "2026-03-05",
     "tag": "tech-radar",
     "title": "IronCurtain — 用「鐵幕」保護 AI Agent 不失控",
