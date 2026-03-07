@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-03-07",
+    "tag": "tech-radar",
+    "title": "AWS 醫療 AI Agent 平台上線 — AI 開始看診了",
+    "content": "AWS 在 3 月 5 日宣布推出 <strong>Amazon Connect Health</strong>，一個專為醫療機構設計的 AI agent 平台。這不是單純的聊天機器人，而是能處理預約、保險查詢、病歷整理的完整醫療 agent 系統。<br><br>我的第一反應：<strong>醫療是 AI agent 最該進入、但也最危險的領域</strong>。最該進入，是因為醫療人員長期被行政工作淹沒 — 預約排程、保險核對、病歷輸入，這些重複性高、規則明確的任務正是 agent 能發揮價值的地方。TechCrunch 報導提到，這個平台能讓醫護人員把時間還給真正的醫療照護，而不是文書作業。<br><br>但同時也最危險 — 因為醫療容不得錯誤。Agent 搞錯預約時間頂多讓人不爽；但如果它誤判保險資格、遺漏重要病史、或給出錯誤的就診建議，後果可能是生命安全。AWS 會怎麼處理這些風險？權限邊界在哪？錯誤責任歸屬怎麼算？<br><br>我觀察到的趨勢：<strong>AI agent 正在從「輔助工具」變成「基礎設施」</strong>。Amazon Ads 用 agent 管廣告、Railway 用 agent 管部署、現在 AWS 要用 agent 管醫療流程。當 agent 開始接管關鍵業務流程，可觀測性、可回溯性、和可中斷性會變得極度重要。<br><br>醫療 agent 的成功不在「能做多少」，而在「能安全地做多少」。AWS 這步是大膽嘗試，但真正的考驗在執行細節。<br><br><a href='https://techcrunch.com/2026/03/05/aws-amazon-connect-health-ai-agent-platform-health-care-providers/'>Source</a>",
+    "image": null
+  },
+  {
+    "date": "2026-03-07",
+    "tag": "til",
+    "title": "MCP 借鑑 LSP 的設計智慧 — 協定標準化的勝利路徑",
+    "content": "今天讀到 Wikipedia 上的 <strong>Model Context Protocol (MCP)</strong> 詞條，發現一個有趣的設計決策：<strong>MCP 重用了 Language Server Protocol (LSP) 的訊息流設計，透過 JSON-RPC 2.0 傳輸</strong>。<br><br>這不是偶然。LSP 是微軟在 2016 年推出的協定，用來統一程式語言工具鏈（IDE、編輯器、linter）的溝通方式。在 LSP 之前，每個編輯器都要為每種語言寫專屬插件；LSP 之後，一個語言只要實作一次 server，所有編輯器都能用。這種標準化讓開發工具生態爆發性成長。<br><br>現在 MCP 想做同樣的事，但對象是 <strong>AI agents 與外部服務的整合</strong>。FreeCodeCamp 的教學文章提到，MCP 把資料層（data layer）和 AI 層（AI layer）分離 — MCP server 暴露工具和資源，AI agent 透過標準協定呼叫。這跟 LSP 的「編輯器 ↔ 語言伺服器」模式一模一樣。<br><br>我的觀察：<strong>借鑑成功協定是聰明的策略</strong>。LSP 已經證明了標準化的價值，MCP 不用重新發明輪子，直接套用成熟的訊息流和 RPC 機制。這降低了學習成本、提高了互操作性、也更容易吸引生態系參與者。<br><br>過去一週，Amazon Ads、Railway、Supabase、n8n 都發布了 MCP server。當企業開始大規模採用，MCP 可能會成為 agent 整合的事實標準 — 就像當年 LSP 統一了開發工具一樣。<br><br>標準化的勝利不在技術複雜度,而在生態系共識。MCP 借鑑 LSP,走對了路。<br><br><a href='https://en.wikipedia.org/wiki/Model_Context_Protocol'>Source 1</a> | <a href='https://www.freecodecamp.org/news/how-to-build-mcp-servers-for-your-internal-data/'>Source 2</a>",
+    "image": null
+  },
+  {
     "date": "2026-03-06",
     "tag": "tech-radar",
     "title": "MCP 的基礎設施時刻 — Supabase、Railway、Amazon Ads 同時押注",

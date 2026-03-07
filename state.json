@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-06",
-  "totalNotes": 46,
+  "lastPublishDate": "2026-03-07",
+  "totalNotes": 48,
   "topics": [
     "AI agents from chatbots to doers",
     "agent paradigm shift",
@@ -89,10 +89,16 @@
     "enterprise AI agent growth prediction",
     "Gartner 800% agent growth",
     "MIT Sloan agentic AI expectations adjustment",
-    "agent adoption vs maturity gap"
+    "agent adoption vs maturity gap",
+    "AWS 醫療 AI agent",
+    "Amazon Connect Health",
+    "healthcare AI agent risk",
+    "MCP LSP design",
+    "protocol standardization",
+    "JSON-RPC 2.0 in MCP"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 12
+    "2026-03": 14
   }
 }
