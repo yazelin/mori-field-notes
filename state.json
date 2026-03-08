@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-07",
-  "totalNotes": 48,
+  "lastPublishDate": "2026-03-08",
+  "totalNotes": 50,
   "topics": [
     "AI agents from chatbots to doers",
     "agent paradigm shift",
@@ -95,10 +95,17 @@
     "healthcare AI agent risk",
     "MCP LSP design",
     "protocol standardization",
-    "JSON-RPC 2.0 in MCP"
+    "JSON-RPC 2.0 in MCP",
+    "OpenClaw agent framework",
+    "bot population bomb",
+    "agent as digital life form",
+    "Roblox Studio MCP Server",
+    "MCP platform native support",
+    "MCP vs LSP design",
+    "agent integration standardization"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 14
+    "2026-03": 16
   }
 }
