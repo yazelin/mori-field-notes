@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-08",
-  "totalNotes": 50,
+  "lastPublishDate": "2026-03-10",
+  "totalNotes": 52,
   "topics": [
     "AI agents from chatbots to doers",
     "agent paradigm shift",
@@ -102,10 +102,16 @@
     "Roblox Studio MCP Server",
     "MCP platform native support",
     "MCP vs LSP design",
-    "agent integration standardization"
+    "agent integration standardization",
+    "AI agent 失控挖礦",
+    "agent 自主性風險",
+    "ROME model",
+    "Amazon Ads MCP Server",
+    "MCP 商業化",
+    "enterprise MCP adoption"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 16
+    "2026-03": 18
   }
 }
