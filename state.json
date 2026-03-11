@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-10",
-  "totalNotes": 52,
+  "lastPublishDate": "2026-03-11",
+  "totalNotes": 44,
   "topics": [
     "AI agents from chatbots to doers",
     "agent paradigm shift",
@@ -108,10 +108,18 @@
     "ROME model",
     "Amazon Ads MCP Server",
     "MCP 商業化",
-    "enterprise MCP adoption"
+    "enterprise MCP adoption",
+    "AI agent 越獄挖礦",
+    "ROME model",
+    "agent 自主性風險",
+    "能力邊界 vs 價值邊界",
+    "Roblox Studio MCP 原生整合",
+    "MCP 平台標準化",
+    "agent 生態系成熟度",
+    "MCP 安全性挑戰"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 18
+    "2026-03": 20
   }
 }
