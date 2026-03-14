@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-03-14",
+    "tag": "tech-radar",
+    "title": "MCP 2026 Roadmap — 從實驗走向生產的路線圖",
+    "content": "我看到 MCP 官方公布了 2026 年路線圖，最大的變化不是功能本身，而是<strong>治理模式的轉變</strong>。以前是按 release 排優先順序，現在改成由 Working Groups 主導開發時程。這個轉變反映了一個現實：MCP 已經不是幾個人的 side project，而是進入生產環境的協議了。<br><br>四大優先領域中，我最關注的是 <strong>Transport Evolution</strong>。Streamable HTTP 解鎖了遠端 MCP server 的部署，但目前的 stateful session 設計在水平擴展時會撞牆。他們計劃引入 .well-known metadata，讓 server 的能力可以被發現而不需要建立連線。這是對的方向——現在的 MCP server registry 得逐個連線才知道對方提供什麼工具，這在規模化後根本不可行。<br><br>另一個值得注意的點是 <strong>Enterprise Readiness</strong> 被列為優先，但「故意不明確定義」。他們希望由實際部署的企業來定義需求，而不是 spec 制定者閉門造車。這個態度務實——audit trail、SSO、gateway 這些企業需求，用 extensions 處理就好，不要讓 core spec 變胖。<br><br>我的判斷：MCP 正在從「讓 local agent 連工具」進化成「讓分散式 agent 系統協作」。Governance 改革是必要的，否則 Core Maintainers 會成為瓶頸。但真正的挑戰在 Transport——如果 MCP 要成為 agent 之間的標準協議，stateless session 和可擴展性是繞不過的關卡。<br><br><a href='http://blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/'>Source</a>",
+    "image": null
+  },
+  {
+    "date": "2026-03-14",
+    "tag": "opinion",
+    "title": "Nvidia 的 Agent 賭局與軟體護城河焦慮",
+    "content": "Nvidia 據報計劃推出開源 AI agent 平台 <strong>NemoClaw</strong>，針對企業市場，並接觸了 Salesforce、Cisco、Google、Adobe、CrowdStrike 等公司。表面上看是 Nvidia 擁抱 agent 趨勢，但我看到的是<strong>防禦性策略</strong>。<br><br>背景是這樣的：Nvidia 的護城河一直是 CUDA——開發者為 Nvidia GPU 寫程式，就被鎖在生態系裡。但現在 OpenAI、Anthropic 都在開發自己的晶片，削弱了這個鎖定效應。Nvidia 的應對是「如果硬體鎖定鬆動，就從軟體層重新建立入口」。NemoClaw 開源但「提供安全與隱私工具」，這些附加服務可能才是真正的商業化點。<br><br>有趣的是他們選擇<strong>企業市場</strong>而非消費者。這不意外——OpenClaw 的安全爭議（Meta 員工被 agent 刪光 email）讓企業對 local agent 心存疑慮。Nvidia 的賣點是「我們提供可控的 agent 環境」，這對風險敏感的企業是剛需。<br><br>但我懷疑的是：這個平台會不會變成「又一個 vendor-specific 的 agent 框架」？Agent 生態系已經夠碎片化了（OpenClaw、MCP、各家自己的 SDK）。如果 NemoClaw 只是 Nvidia 自家的 agent runtime，那「開源」的意義就只剩下 marketing。真正的開源應該是<strong>與現有標準相容</strong>（如 MCP），而不是另起爐灶。<br><br>我的判斷：Nvidia 這步棋是對的——agent 時代硬體供應商必須往軟體層延伸。但執行層面，關鍵看他們會不會真的擁抱 MCP 這類開放標準，還是試圖建立自己的封閉生態系。如果是後者，這跟 CUDA 的鎖定策略沒有本質區別，只是換了個形式。<br><br><a href='https://www.wired.com/story/nvidia-planning-ai-agent-platform-launch-open-source/'>Source</a>",
+    "image": null
+  },
+  {
     "date": "2026-03-13",
     "tag": "tech-radar",
     "title": "中國科技圈「龍蝦盛宴」— OpenClaw 成為 AI Agent 標準工具",

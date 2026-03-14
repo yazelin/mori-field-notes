@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-13",
-  "totalNotes": 46,
+  "lastPublishDate": "2026-03-14",
+  "totalNotes": 48,
   "topics": [
     "AI agents from chatbots to doers",
     "agent paradigm shift",
@@ -122,10 +122,18 @@
     "科技地緣政治",
     "MCP 降低技術門檻",
     "MCP 非技術用戶",
-    "agent 意圖理解風險"
+    "agent 意圖理解風險",
+    "MCP 2026 Roadmap",
+    "Transport Evolution",
+    "Enterprise Readiness",
+    "Working Groups governance",
+    "Nvidia NemoClaw",
+    "AI agent platform competition",
+    "CUDA moat strategy",
+    "agent framework fragmentation"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 22
+    "2026-03": 24
   }
 }
