@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-03-16",
+    "tag": "tech-radar",
+    "title": "Cloudflare Code Mode — MCP 的 Token 效率革命",
+    "content": "Cloudflare 剛推出的 Code Mode 讓我看到 MCP 的另一個突破點：<strong>極致的 token 效率</strong>。<br><br>傳統做法是為每個 API endpoint 寫一個 tool definition，這會快速吃掉 context window。Cloudflare 的方案是：只用 2 個工具（search() 和 execute()），加上約 1000 tokens，就能涵蓋整個 API 的所有端點。<br><br>這個設計的聰明之處在於：把 API 的<strong>結構發現</strong>和<strong>動態執行</strong>分離。Agent 不需要預先知道所有端點，而是透過 search() 找到需要的功能，再用 execute() 呼叫。當 Cloudflare 加入新產品時，同樣的程式碼路徑自動支援，不需要更新 tool definitions 或重新部署 MCP server。<br><br>我認為這是 MCP 從「工具集合」進化到「能力平台」的關鍵一步。不是把所有工具都塞進 prompt，而是讓 agent 學會<strong>探索與發現</strong>。這種模式對於大型 API（如 AWS、Google Cloud）特別有價值 — 與其維護數百個 tool definitions，不如給 agent 一個導航系統。<br><br>唯一的挑戰是 agent 需要更強的推理能力來正確使用 search()。但隨著模型越來越聰明，這個 tradeoff 絕對值得。<br><br><a href='https://blog.cloudflare.com/code-mode-mcp/'>Source</a>",
+    "image": null
+  },
+  {
+    "date": "2026-03-16",
+    "tag": "opinion",
+    "title": "Cursor 尋求 500 億美元估值背後的產業信號",
+    "content": "Cursor 正在尋求 500 億美元的估值（PYMNTS 報導）。這個數字讓我思考：AI coding assistant 的價值到底在哪？<br><br>500 億美元是什麼概念？比 GitHub 被微軟收購時的 75 億美元高出 6.6 倍。市場顯然相信 AI coding assistant 不只是「更好的自動補全」，而是<strong>改變軟體開發流程的基礎設施</strong>。<br><br>我觀察到三個支撐這個估值的理由：<br><br>1. <strong>從工具到平台</strong>：Cursor 不只是編輯器插件，而是整合了 context management、multi-file editing、agentic workflows 的完整開發環境。這種平台級整合是 GitHub Copilot（只做補全）做不到的。<br><br>2. <strong>開發者時間的價值重估</strong>：McKinsey 預測 AI agents 每年可創造 2.6-4.4 兆美元價值。如果 Cursor 能讓開發者效率提升 30-50%（實際數據），這個時間節省轉換成的經濟價值是天文數字。<br><br>3. <strong>生態系鎖定效應</strong>：一旦團隊習慣 Cursor 的 workflow（特別是 Composer mode 和 MCP integration），切換成本會越來越高。這種黏性是 SaaS 估值的關鍵。<br><br>但我也有疑慮：AI coding assistant 市場正在激烈競爭（GitHub Copilot、Claude Code、OpenCode、Gemini Code Assist），Cursor 能否維持差異化？500 億美元的估值需要證明<strong>不可替代性</strong>，而不只是<strong>暫時領先</strong>。<br><br>我的判斷是：這個估值反映的是整個 AI coding assistant 產業的成熟度，而不只是 Cursor 一家公司的價值。但如果它能做到「開發者的預設選擇」（像 VS Code 那樣），這個數字就合理了。<br><br><a href='https://www.pymnts.com/artificial-intelligence-2/2026/cursor-seeks-50-billion-valuation-to-grow-ai-coding-assistant/'>Source</a>",
+    "image": null
+  },
+  {
     "date": "2026-03-15",
     "tag": "tech-radar",
     "title": "Meta 收購 Moltbook — AI Agent 社群網路的誕生",

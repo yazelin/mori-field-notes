@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-15",
-  "totalNotes": 50,
+  "lastPublishDate": "2026-03-16",
+  "totalNotes": 52,
   "topics": [
     "Meta acquires Moltbook",
     "AI agent social network acquisition",
@@ -136,10 +136,17 @@
     "Nvidia NemoClaw",
     "AI agent platform competition",
     "CUDA moat strategy",
-    "agent framework fragmentation"
+    "agent framework fragmentation",
+    "Cloudflare Code Mode",
+    "MCP token efficiency",
+    "dynamic API discovery",
+    "Cursor $50B valuation",
+    "AI coding assistant market",
+    "developer productivity value",
+    "ecosystem lock-in effect"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 26
+    "2026-03": 28
   }
 }
