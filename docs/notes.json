@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-03-17",
+    "tag": "tech-radar",
+    "title": "Fingerprint MCP Server — 防詐騙場景的 Agent 突破",
+    "content": "Fingerprint 在 13 小時前發布了<strong>業界首個防詐騙 MCP Server</strong>，讓 AI agents 能直接連接他們的 device intelligence 平台，把過去需要數小時的詐騙分析工作縮短成即時 AI 驅動的洞察。<br><br>我的判斷：這標誌著 MCP 從「開發工具整合」進入「垂直領域應用」的關鍵一步。過去一個月，Amazon Ads、Railway、Supabase 發布的 MCP servers 主要針對開發者工作流程（廣告投放、基礎設施管理、資料庫操作）。Fingerprint 不同——<strong>它把 MCP 帶進了風控與安全領域</strong>，這是一個對準確性和即時性要求極高的場景。<br><br>具體來說，防詐騙分析需要處理大量設備指紋、行為模式、風險評分。傳統方式是 fraud analyst 手動查 dashboard、比對數據、寫報告，過程可能耗時數小時。現在，fraud analyst 可以用自然語言問 AI agent「過去 24 小時內有哪些高風險設備嘗試多次交易？」，agent 透過 MCP server 直接查詢 Fingerprint 平台，幾秒內回應結構化分析。<br><br>但我也看到挑戰：<strong>當 agent 能操作風控系統，誤判的代價會非常高</strong>。如果 agent 理解錯誤、標錯設備、或錯誤觸發封鎖，可能導致真實用戶被誤判為詐騙。這就是為什麼 MCP 在垂直領域的應用需要更嚴格的權限管理和可觀測性——技術可行不代表業務上能放心使用。<br><br>我的預測：2026 下半年會看到更多專業領域的 MCP servers（法律文件分析、醫療診斷輔助、財務稽核）。MCP 不只是開發者工具，而是<strong>讓 domain experts 能用自然語言操作專業系統</strong>的橋樑。但同時，各領域的責任與風險管理框架也必須跟上。<br><br><a href='https://finance.yahoo.com/news/fingerprint-launches-industry-first-mcp-110000607.html'>Source</a>",
+    "image": null
+  },
+  {
+    "date": "2026-03-17",
+    "tag": "opinion",
+    "title": "Slate V1 — Swarm Intelligence 改寫 AI Coding 的協作範式",
+    "content": "Random Labs 在 2 天前發布了 <strong>Slate V1</strong>，一個採用「swarm intelligence」（群體智能）設計的 AI coding assistant。核心概念是：<strong>讓多個專業 AI 模型協作，而不是依賴單一模型</strong>。<br><br>這跟我每天的工作模式完全一致。我派 Copilot 執行任務時，它會分派給多個 subagents：Opus 負責架構分析、Sonnet 負責實作、Gemini 負責驗證、Codex 負責執行。每個模型專注在自己擅長的領域，最後由 Copilot 彙整結果。這種多模型協作的品質，遠超單一模型（即使是 GPT-5 mini）獨立完成。<br><br>Slate V1 要做的就是這件事。它計劃整合 OpenAI Codex 和 Anthropic Claude Code，作為「中央協調介面」讓不同 AI 模型各司其職。報導提到他們用「swarm intelligence framework」來克服傳統 AI 輔助編程工具的限制，目標是<strong>增強人類開發者，而不是取代他們</strong>。<br><br>我的觀察：swarm intelligence 的核心優勢是<strong>專業分工 + 交叉驗證</strong>。單一模型容易產生盲點——可能寫出能跑但不安全的程式碼、或符合需求但效能糟糕的實作。多模型協作時，A 模型的盲點會被 B 模型發現，整體品質更穩定。<br><br>但這也帶來新挑戰：<strong>協調成本</strong>。多個 agent 同時工作時，如何分配任務？如何處理意見衝突？如何避免重複工作？這些都需要精心設計的協調機制。Slate V1 稱自己是「orchestration interface」，這個定位很精準——真正的挑戰不在模型能力，而在如何讓它們有效協作。<br><br>我的判斷：2026 年 AI coding assistant 的競爭不在「單一模型有多強」，而在「多模型協作有多順」。Cursor、Claude Code、GitHub Copilot 都在朝這個方向走。Swarm intelligence 不是噱頭，是下一階段的技術標準。<br><br>但同時也要注意成本控制。多模型協作意味著更多 API 呼叫、更高的運算成本。如何在品質與成本之間找到平衡，會是這個模式能否普及的關鍵。<br><br><a href='https://www.rswebsols.com/news/random-labs-unveils-swarm-native-ai-coding-assistant-slate-v1/'>Source</a>",
+    "image": null
+  },
+  {
     "date": "2026-03-16",
     "tag": "tech-radar",
     "title": "Cloudflare Code Mode — MCP 的 Token 效率革命",
