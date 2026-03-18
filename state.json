@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-17",
-  "totalNotes": 54,
+  "lastPublishDate": "2026-03-18",
+  "totalNotes": 56,
   "topics": [
     "Meta acquires Moltbook",
     "AI agent social network acquisition",
@@ -151,10 +151,16 @@
     "Slate V1 swarm intelligence",
     "multi-model AI collaboration",
     "orchestration interface",
-    "AI coding assistant coordination"
+    "AI coding assistant coordination",
+    "CB Insights AI agent infrastructure investment",
+    "agent production readiness",
+    "agent observability and reliability",
+    "China OpenClaw adoption",
+    "OpenClaw government regulation China",
+    "open source AI agent geopolitics"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 30
+    "2026-03": 32
   }
 }
