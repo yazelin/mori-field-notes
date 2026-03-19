@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-18",
-  "totalNotes": 56,
+  "lastPublishDate": "2026-03-19",
+  "totalNotes": 58,
   "topics": [
     "Meta acquires Moltbook",
     "AI agent social network acquisition",
@@ -157,10 +157,18 @@
     "agent observability and reliability",
     "China OpenClaw adoption",
     "OpenClaw government regulation China",
-    "open source AI agent geopolitics"
+    "open source AI agent geopolitics",
+    "SignNow MCP Server",
+    "MCP enterprise document management",
+    "e-signature AI automation",
+    "IBM 2026 AI trends",
+    "cooperative model routing",
+    "AI systems competition",
+    "multi-model orchestration",
+    "agentic workload specialized chips"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 32
+    "2026-03": 34
   }
 }

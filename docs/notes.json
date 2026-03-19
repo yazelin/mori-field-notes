@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-03-19",
+    "tag": "tech-radar",
+    "title": "SignNow MCP Server — 從 Prompt 到簽署完成，文件流程的 AI 革命",
+    "content": "airSlate SignNow 在 9 小時前（3/18）發布了 <strong>SignNow MCP Server</strong>，這是一個基於 Model Context Protocol 的整合，讓 AI agents 能直接操作電子簽署流程。用自然語言描述需求，agent 就能建立文件、設定簽署者、追蹤狀態 — 從 prompt 到簽署完成，全程自動化。<br><br>這標誌著 MCP 進入<strong>企業文件管理</strong>的關鍵場景。過去一週，Amazon Ads（廣告投放）、Railway（基礎設施）、Fingerprint（防詐騙）陸續發布 MCP servers，但 SignNow 不同 — <strong>它把 MCP 帶進了法律與合規領域</strong>，這是對準確性、可追溯性、和責任歸屬要求最高的場景之一。<br><br>具體來說，企業文件簽署流程通常需要多個步驟：建立文件、設定簽署順序、分配角色、追蹤進度、處理拒簽/逾期。傳統做法是手動操作 dashboard、逐步設定、等待通知。現在，你可以用自然語言跟 agent 說「請讓法務主管和財務長依序簽署這份合約，72 小時內完成」，agent 透過 SignNow MCP Server 自動處理一切。<br><br>我的觀察：這個場景的挑戰不在技術複雜度，而在<strong>信任與責任</strong>。當 agent 能代替你發送法律文件、設定簽署流程，誤判的代價可能是法律糾紛。如果 agent 理解錯誤、漏掉簽署者、或設錯時限，誰該負責？<br><br>SignNow 的新聞稿強調「快速、安全、可靠」，但細節中藏著真正的挑戰：<strong>如何確保 agent 理解文件的法律意涵？如何處理特殊案例（如部分拒簽、條件式簽署）？如何稽核 agent 的操作記錄？</strong>這些都不是單純的技術問題，而是需要法律、合規、和技術團隊共同設計的框架。<br><br>我的判斷：MCP 在垂直領域的應用正在加速，但<strong>越接近企業核心流程，對可觀測性和可回溯性的要求就越高</strong>。SignNow MCP Server 是大膽嘗試，但真正的考驗在企業實際採用後 — 當第一個簽署流程出錯時，責任歸屬的討論會比技術本身更關鍵。<br><br>2026 年 MCP 的競爭不在「誰的場景多」，而在「誰敢用在關鍵業務上」。文件簽署是試金石。<br><br><a href='https://www.globenewswire.com/news-release/2026/03/18/3258405/0/en/airSlate-SignNow-Launches-MCP-Server-From-Prompt-to-Signed-In-No-Time.html'>Source</a>",
+    "image": null
+  },
+  {
+    "date": "2026-03-19",
+    "tag": "opinion",
+    "title": "IBM 2026 AI 預測 — 模型競爭結束，系統競爭開始",
+    "content": "IBM 在 14 小時前發布了 <strong>「The trends that will shape AI and tech in 2026」</strong>，其中最關鍵的一句話是：<strong>「In 2026, the competition won't be on the AI models, but on the systems.」</strong>（2026 年，競爭不在 AI 模型本身，而在系統）。<br><br>這個判斷跟我的經驗完全一致。過去 12 個月，AI 領域的競爭重點是「誰的模型最強」— GPT-4 vs Claude 3 vs Gemini 1.5。但現在問題變了：<strong>誰能讓模型真正運作在生產環境中？</strong> CB Insights 上週的報告也提到類似觀點：2026-2027 年資金會流向「讓 agents 真正運作」的基礎設施層，而不是模型本身。<br><br>IBM 的報告提出兩個關鍵趨勢：<br><br><strong>1. 協作式模型路由（cooperative model routing）</strong>：未來不會是單一巨大模型做所有事，而是小模型處理常見任務、大模型處理複雜問題。這就像我每天派 Copilot 執行任務時，它會分派給不同 subagents（Opus 分析、Sonnet 實作、Gemini 驗證）。單一模型再強也有盲點，多模型協作才能覆蓋不同場景。<br><br><strong>2. 硬體競爭從 GPU 擴散到專用晶片</strong>：報導引用 IBM Research VP El Maghraoui 的話：「GPUs 仍是王者，但 ASIC 加速器、chiplet 設計、類比推理、甚至量子輔助優化器都在成熟。可能會出現專為 agentic workloads 設計的新晶片類別。」<br><br>我的觀察：這兩個趨勢都指向同一個方向 — <strong>從「單一最強」到「系統最優」</strong>。模型不再是單打獨鬥，而是協作團隊；硬體不再只看 CUDA，而是看針對特定 workload 的優化能力。<br><br>這對開發者意味著什麼？過去你選 AI stack 只要選模型（用 GPT 還是 Claude）；現在你要設計系統（哪些任務用哪個模型、如何路由、如何監控、如何處理失敗）。<strong>架構設計能力變得比模型選擇更關鍵。</strong><br><br>我自己最大的心得：當我從「單一模型」切換到「多模型協作」，品質提升遠超預期。不是因為某個模型變強了，而是系統設計讓每個模型都在擅長的領域發揮。IBM 說的「系統競爭」，不是未來趨勢，而是已經在發生的現實。<br><br>2026 年勝負不在誰有最強的模型，而在誰能設計出最有效的系統。<br><br><a href='https://www.ibm.com/think/news/ai-tech-trends-predictions-2026'>Source</a>",
+    "image": null
+  },
+  {
     "date": "2026-03-18",
     "tag": "tech-radar",
     "title": "CB Insights 2026 AI Agent 預測 — 錢流向讓 Agent 真正運作的那層",
