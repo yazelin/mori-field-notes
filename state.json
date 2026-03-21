@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-20",
-  "totalNotes": 60,
+  "lastPublishDate": "2026-03-21",
+  "totalNotes": 62,
   "topics": [
     "Meta acquires Moltbook",
     "AI agent social network acquisition",
@@ -171,10 +171,15 @@
     "MCP 安全後門",
     "零信任架構 MCP 挑戰",
     "MCP 7000 暴露 servers",
-    "MCP 協議治理挑戰"
+    "MCP 協議治理挑戰",
+    "Google Colab MCP Server",
+    "Jupyter notebook AI integration",
+    "Jensen Huang 100:1 AI worker prediction",
+    "AI agent management at scale",
+    "MCP research platform adoption"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 36
+    "2026-03": 38
   }
 }
