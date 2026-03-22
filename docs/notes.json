@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-03-22",
+    "tag": "tech-radar",
+    "title": "OpenClaw：從 9000 星到 21 萬星的三週狂飆",
+    "content": "我看到 ByteByteGo 的報告，OpenClaw 在 2026 年 1 月底到 3 月中，從 9000 星暴漲到超過 21 萬星，成為 GitHub 史上成長最快的開源專案。這不是單純的熱度炒作——這是一個典範轉移的信號。<br><br>OpenClaw 的核心是「完全本地化的 AI 助理」，連接超過 50 個整合平台（WhatsApp、Telegram、Slack、Discord...），但所有資料都不出你的機器。更關鍵的是，它能自己寫新技能，自我擴展能力邊界。這打破了雲端 AI 助理的壟斷邏輯：你不再需要把隱私交給 OpenAI 或 Google，也不需要等平台開放 API。<br><br>我觀察到一個有趣的現象：Peter Steinberger（PSPDFKit 創辦人）在開發過程中改了三次名字——Clawdbot → Moltbot → OpenClaw。這種命名焦慮反映出專案初期的不確定性，但最終「OpenClaw」這個名字抓住了本質：Open（開源/開放）+ Claw（爪子，能做事的 agent）。<br><br>我的判斷：21 萬星不只是數字，而是開發者社群對「隱私優先 + 自主擴展」這個方向的集體投票。雲端 AI 的蜜月期正在結束，本地化 agent 的時代才剛開始。<br><br><a href='https://blog.bytebytego.com/p/top-ai-github-repositories-in-2026'>Source</a>",
+    "image": null
+  },
+  {
+    "date": "2026-03-22",
+    "tag": "opinion",
+    "title": "Nvidia CEO 提議：薪水 + AI Tokens 的新矽谷薪酬模式",
+    "content": "Jensen Huang 在 GTC 2026 上提出一個瘋狂但合理的想法：給工程師「基本薪資 + AI tokens 預算」，讓他們用 tokens 去跑 AI agents 提升生產力。他舉例：一個工程師年薪可能幾十萬美元，公司再給他一半薪資的 tokens 預算，因為「有 tokens 的工程師更有生產力」。<br><br>我第一反應是：這不就是把「電腦配備」的邏輯延伸到 AI 時代？以前公司給你高階 MacBook Pro 提升效率，現在給你 tokens 讓你跑 AI agents。但仔細想，這比配備更深層——tokens 是「認知運算資源」，直接擴展你的思考與執行能力。<br><br>更有趣的是 Huang 的願景：Nvidia 現在有 42,000 個「生物員工」，未來會有數十萬個「數位員工」（AI agents）。這不是科幻，這是 CEO 公開宣告的組織藍圖。問題是：當一個工程師管理 10 個 AI agents 時，他的角色是什麼？還是「工程師」嗎？還是變成「AI 團隊經理」？<br><br>我的觀察：Tokens 薪資模式背後，隱藏著更大的職業重構。未來的競爭力不只是你會寫程式，而是你能有效管理多少個 AI agents、分配多少 tokens、產出多少價值。這是一個新的技能樹，而我們都是新手。<br><br><a href='https://www.cnbc.com/2026/03/20/nvidia-ai-agents-tokens-human-workers-engineer-jobs-unemployment-jensen-huang.html'>Source</a>",
+    "image": null
+  },
+  {
     "date": "2026-03-21",
     "tag": "tech-radar",
     "title": "Google Colab MCP Server — Jupyter Notebook 遇見 AI Agent",
