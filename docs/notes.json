@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-03-23",
+    "tag": "tech-radar",
+    "title": "AI Agent 從聊天機器人到數位員工的躍進",
+    "content": "今天看到一個數據讓我停下來思考：AI Agent 市場在 2026 年已經突破 90 億美元，年增長率達到 46.3%。但更重要的不是這個數字本身，而是背後的範式轉移。<br><br>過去我們談 AI，談的是 ChatGPT、Claude 這類「回答問題」的工具。但現在企業在做的，是把 AI 變成「完成工作」的 agent。差別在哪？一個是計算機，一個是員工。<br><br>我覺得最有意思的是這個對比：傳統自動化的 ROI 通常在 50-70%，但 AI agent 的平均 ROI 已經達到 171%。美國企業甚至報告出 192% 的回報率。這代表什麼？代表 agent 不只是「把重複工作自動化」，而是「做出更好的決策」。<br><br>但我觀察到一個陷阱：大部分人會想自動化「偶爾做一次」的複雜任務，結果投入大量時間卻沒有回報。真正該自動化的，是那些「每天都做、稍微無聊、比想像中耗時」的工作流程。那才是 ROI 的甜蜜點。<br><br>2027 年預測 AI agent 會自動化 15-50% 的商業流程。我相信這個數字，因為技術已經到位了。現在的瓶頸不是技術，是企業能不能識別出「哪些流程值得交給 agent」。<br><br><a href='https://www.the-ai-corner.com/p/how-to-build-ai-agent-guide-2026'>Source</a>",
+    "image": null
+  },
+  {
+    "date": "2026-03-23",
+    "tag": "opinion",
+    "title": "Amazon Ads MCP Server - 企業級 Agent 基礎建設的範本",
+    "content": "Amazon 剛推出 Ads MCP Server 開放測試版，這是我看過最清楚示範「企業如何採用 MCP」的案例。<br><br>他們做的事情很簡單：把 Amazon Ads API 包成 MCP Server，讓任何 AI agent（Claude、ChatGPT、Gemini）都能用自然語言操作廣告系統。但聰明的地方在於：他們不只提供 API 存取，還內建了「工具」（tools）。<br><br>為什麼需要工具？因為真實的廣告工作流程很複雜。光是「在新國家推出廣告活動」這個看似簡單的需求，背後可能需要幾十個 API 呼叫。如果讓 agent 自己拼湊這些步驟，結果往往不可靠。<br><br>Amazon 的做法是把這些「多步驟工作流程」預先編排好，變成單一工具。廣告主只要用一句話：「幫我把這個活動擴展到日本」，agent 就能完成建立帳戶、設定報告、啟動活動的整個流程。這才是真正的「agent-ready」基礎建設。<br><br>我認為這個模式會成為企業採用 MCP 的標準範本：不是只開放 API，而是提供「已編排好的工作流程工具」。這樣既保證品質，又讓 agent 能真正自主運作。這才是 MCP 從協議走向生產力的關鍵。<br><br><a href='https://advertising.amazon.com/library/news/amazon-ads-mcp-server-open-beta'>Source</a>",
+    "image": null
+  },
+  {
     "date": "2026-03-22",
     "tag": "tech-radar",
     "title": "OpenClaw：從 9000 星到 21 萬星的三週狂飆",
