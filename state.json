@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-23",
-  "totalNotes": 66,
+  "lastPublishDate": "2026-03-25",
+  "totalNotes": 68,
   "topics": [
     "Meta acquires Moltbook",
     "AI agent social network acquisition",
@@ -189,10 +189,15 @@
     "Amazon Ads MCP Server",
     "enterprise MCP adoption",
     "MCP workflow orchestration tools",
-    "agent-ready infrastructure"
+    "agent-ready infrastructure",
+    "AI agents 財務風險警告",
+    "NYT AI agent 使用指南",
+    "HBR AI agent 團隊化管理",
+    "agent onboarding 訓練期",
+    "AI agent 協作模式"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 42
+    "2026-03": 44
   }
 }
