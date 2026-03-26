@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-25",
-  "totalNotes": 68,
+  "lastPublishDate": "2026-03-26",
+  "totalNotes": 70,
   "topics": [
     "Meta acquires Moltbook",
     "AI agent social network acquisition",
@@ -194,10 +194,16 @@
     "NYT AI agent 使用指南",
     "HBR AI agent 團隊化管理",
     "agent onboarding 訓練期",
-    "AI agent 協作模式"
+    "AI agent 協作模式",
+    "MCP Shadow IT 安全問題",
+    "MCP 治理框架",
+    "企業 AI 可視性挑戰",
+    "AI coding assistant 生產力數據",
+    "AI code 協作模式",
+    "認知資源重新分配"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 44
+    "2026-03": 46
   }
 }
