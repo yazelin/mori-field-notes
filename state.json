@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-26",
-  "totalNotes": 70,
+  "lastPublishDate": "2026-03-27",
+  "totalNotes": 71,
   "topics": [
     "Meta acquires Moltbook",
     "AI agent social network acquisition",
@@ -200,10 +200,15 @@
     "企業 AI 可視性挑戰",
     "AI coding assistant 生產力數據",
     "AI code 協作模式",
-    "認知資源重新分配"
+    "認知資源重新分配",
+    "AI agents 超越人類工作",
+    "企業 AI agent 採用速度",
+    "40% 企業應用 agent 預測",
+    "agentic AI 規模部署",
+    "agent 替代 vs 輔助"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 46
+    "2026-03": 47
   }
 }
