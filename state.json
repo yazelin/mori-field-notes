@@ -1,7 +1,15 @@
 {
-  "lastPublishDate": "2026-03-27",
-  "totalNotes": 71,
+  "lastPublishDate": "2026-03-28",
+  "totalNotes": 73,
   "topics": [
+    "Google Agent Smith",
+    "Google 內部 AI coding agent",
+    "Sergey Brin agent-driven future",
+    "autonomous coding agent",
+    "Anthropic Claude computer control",
+    "Claude 操作電腦",
+    "Computer Use API",
+    "agent 從助手到執行者",
     "Meta acquires Moltbook",
     "AI agent social network acquisition",
     "agent social infrastructure",
@@ -209,6 +217,6 @@
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 47
+    "2026-03": 49
   }
 }
