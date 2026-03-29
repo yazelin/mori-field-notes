@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-28",
-  "totalNotes": 73,
+  "lastPublishDate": "2026-03-29",
+  "totalNotes": 75,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -213,10 +213,17 @@
     "企業 AI agent 採用速度",
     "40% 企業應用 agent 預測",
     "agentic AI 規模部署",
-    "agent 替代 vs 輔助"
+    "agent 替代 vs 輔助",
+    "MCP Linux Foundation",
+    "Agentic AI Foundation",
+    "MCP governance",
+    "GitHub Copilot Workspace",
+    "Progressive Delivery",
+    "DORA principles",
+    "AI deployment partnership"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 49
+    "2026-03": 51
   }
 }
