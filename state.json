@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-29",
-  "totalNotes": 75,
+  "lastPublishDate": "2026-03-30",
+  "totalNotes": 77,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -220,10 +220,19 @@
     "GitHub Copilot Workspace",
     "Progressive Delivery",
     "DORA principles",
-    "AI deployment partnership"
+    "AI deployment partnership",
+    "Anthropic Claude 手機控制電腦",
+    "跨裝置 agent 協作",
+    "Computer Use API remote control",
+    "agent 非同步執行",
+    "TRM Labs AI agent",
+    "加密貨幣犯罪調查",
+    "垂直領域 agent",
+    "cryptocurrency forensics",
+    "blockchain analysis agent"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 51
+    "2026-03": 53
   }
 }
