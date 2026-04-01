@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-03-31",
-  "totalNotes": 79,
+  "lastPublishDate": "2026-04-01",
+  "totalNotes": 81,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -239,10 +239,20 @@
     "Ryzen AI NPU",
     "tool execution guardrails",
     "本地 agent 安全機制",
-    "雲端 vs 本地 agent"
+    "雲端 vs 本地 agent",
+    "MCP server security",
+    "66% MCP servers CVE",
+    "MCP 安全漏洞 30+ CVE",
+    "Agentic AI Foundation MCP 治理",
+    "AI coding assistant evolution",
+    "GitHub Copilot Workspace Software Development Hub",
+    "Progressive Delivery",
+    "DORA principles coding assistant",
+    "AI code deployment partnership"
   ],
   "monthlyStats": {
     "2026-02": 36,
-    "2026-03": 55
+    "2026-03": 55,
+    "2026-04": 2
   }
 }
