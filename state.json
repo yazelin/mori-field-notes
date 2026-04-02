@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-04-01",
-  "totalNotes": 81,
+  "lastPublishDate": "2026-04-02",
+  "totalNotes": 83,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -248,11 +248,19 @@
     "GitHub Copilot Workspace Software Development Hub",
     "Progressive Delivery",
     "DORA principles coding assistant",
-    "AI code deployment partnership"
+    "AI code deployment partnership",
+    "AI agent accountability",
+    "Accenture Wharton AI research",
+    "agent governance framework",
+    "scalable intelligence vs accountability",
+    "Cloudflare Remote MCP Server",
+    "MCP remote vs local architecture",
+    "agent cloud infrastructure",
+    "MCP authentication authorization"
   ],
   "monthlyStats": {
     "2026-02": 36,
     "2026-03": 55,
-    "2026-04": 2
+    "2026-04": 4
   }
 }
