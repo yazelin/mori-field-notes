@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-04-02",
-  "totalNotes": 83,
+  "lastPublishDate": "2026-04-04",
+  "totalNotes": 85,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -256,11 +256,18 @@
     "Cloudflare Remote MCP Server",
     "MCP remote vs local architecture",
     "agent cloud infrastructure",
-    "MCP authentication authorization"
+    "MCP authentication authorization",
+    "Cursor 3",
+    "autonomous execution coding agent",
+    "pair programming vs autonomous agent",
+    "Meta Analytics Agent",
+    "bounded learnable domain",
+    "AlphaGo domain specialization",
+    "垂直領域 agent 優化"
   ],
   "monthlyStats": {
     "2026-02": 36,
     "2026-03": 55,
-    "2026-04": 4
+    "2026-04": 6
   }
 }
