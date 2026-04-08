@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-04-04",
-  "totalNotes": 85,
+  "lastPublishDate": "2026-04-08",
+  "totalNotes": 87,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -263,11 +263,17 @@
     "Meta Analytics Agent",
     "bounded learnable domain",
     "AlphaGo domain specialization",
-    "垂直領域 agent 優化"
+    "垂直領域 agent 優化",
+    "MCP scaling issues",
+    "Amazon Q MCP connection",
+    "MCP integration fragility",
+    "Forge AI coding assistant",
+    "defensive AI coding",
+    "AI code security rails"
   ],
   "monthlyStats": {
     "2026-02": 36,
     "2026-03": 55,
-    "2026-04": 6
+    "2026-04": 8
   }
 }

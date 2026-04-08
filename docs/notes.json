@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-04-08",
+    "tag": "bug-story",
+    "title": "連接 12 個 MCP Servers 後的災難 — 規模化整合的脆弱性",
+    "content": "最近 DEV Community 上有一篇很真實的踩坑紀錄：「I Connected 12 MCP Servers to Amazon Q. Here's What Broke」。這篇文章點出了一個大家在吹捧 MCP 時很少提到的問題：<b>當你串接的 MCP server 數量變多時，系統會變得極度脆弱。</b><br><br>作者嘗試把 12 個 MCP servers 同時接上 Amazon Q，結果遇到了各種環境依賴衝突、timeout、以及 context window 被塞爆的問題。MCP 的好處是讓 agent 可以動態發現「我能做什麼」，但壞處是，每個 server 都是獨立的黑箱，有自己的環境依賴。當 12 個黑箱同時運作，agent 光是理解自己「到底能用哪些工具」就消耗了大量 token。<br><br>我的觀察：這再次驗證了 Toolradar 之前的警告。MCP 確實降低了單一工具的整合門檻，但它<b>沒有解決多工具協調（orchestration）的問題</b>。我們太習慣用「組裝積木」的思維來看待 agent 能力擴充，卻忽略了積木之間也會互相干擾。<br><br>這給我們的教訓很簡單：<b>不要把 MCP 當成吃到飽自助餐</b>。只安裝你當下真正需要的 server，保持工具箱的精簡，這才是目前 agent 能穩定運作的最佳實踐。<br><br><a href='https://dev.to/aws-builders/i-connected-12-mcp-servers-to-amazon-q-heres-what-broke-6hb'>Source</a>",
+    "image": null
+  },
+  {
+    "date": "2026-04-08",
+    "tag": "tech-radar",
+    "title": "Forge — 當 AI Coding Assistant 開始內建「防禦機制」",
+    "content": "在 GitHub 上看到一個剛開源幾天的專案：<b>Forge</b>，標榜是「具備 9 層安全防護、對抗性模型測試與加密審計軌跡的本地優先 AI coding assistant」。他們的 slogan 很有意思：「Break your AI before it breaks your code.」<br><br>過去我們看到的 AI coding assistant，無論是 Copilot Workspace 還是 Cursor，都在強調「如何寫得更快、更聰明」。但 Forge 走的是完全相反的路線：<b>預設不信任 AI 的產出</b>。它在本地端運作，每當 AI 產出一段 code，Forge 就會用對抗性測試去攻擊這段 code，並將所有的操作記錄透過加密軌跡保存下來。<br><br>我的判斷：這反映了企業對 AI 寫 code 越來越焦慮的現實。當我們看到 Amazon 的 AI 搞掛 AWS、各種 agent 出現越獄行為，開發者需要的不再只是一個會幫忙寫 boilerplate 的小助手，而是一個<b>不會把生產環境炸掉的夥伴</b>。<br><br>2026 年的 AI 工具競爭，已經從「誰的補全最準確」轉向了「誰的安全護欄最堅固」。Forge 的出現，象徵著「防禦型 AI 開發工具」這個新子領域的誕生。<br><br><a href='https://github.com/Forge-NC/Forge'>Source</a>",
+    "image": null
+  },
+  {
     "date": "2026-04-04",
     "tag": "tech-radar",
     "title": "Cursor 3 登場 — Coding Agent 從助手變成自主執行者",
