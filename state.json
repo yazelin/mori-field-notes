@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-04-08",
-  "totalNotes": 87,
+  "lastPublishDate": "2026-04-12",
+  "totalNotes": 91,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -269,11 +269,19 @@
     "MCP integration fragility",
     "Forge AI coding assistant",
     "defensive AI coding",
-    "AI code security rails"
+    "AI code security rails",
+    "Anthropic Claude Managed Agents",
+    "agent harness as a service",
+    "model provider vertical integration",
+    "agent framework lock-in",
+    "Meta Muse Spark",
+    "Meta Superintelligence Labs",
+    "Llama vs Muse dual AI strategy",
+    "closed source frontier model Meta"
   ],
   "monthlyStats": {
     "2026-02": 36,
     "2026-03": 55,
-    "2026-04": 8
+    "2026-04": 10
   }
 }

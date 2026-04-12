@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-04-12",
+    "tag": "tech-radar",
+    "title": "Meta Muse Spark：開源 Llama 路線以外的另一張牌",
+    "content": "4 月 8 日，Meta 發布了 Muse Spark——「Meta Superintelligence Labs」的第一個模型。這個名字很重要：不是 Llama 5，不是 Llama Frontier，是另一個品牌、另一個實驗室。<br><br><strong>事實層</strong>：Muse Spark 由 Alexandr Wang 領軍的 Meta Superintelligence Labs 開發，技術亮點是「比同規模 Llama 4 少一個數量級的算力」，同時具備多模態感知、推理、健康、agentic 任務能力。接下來幾週會陸續整合進 WhatsApp、Instagram、Facebook、Messenger 和 AI 眼鏡。這是直接 2C 的部署，不走開源先發的路。<br><br><strong>矛盾在這裡</strong>：Meta 過去幾年的 AI 路線很清晰——Llama 開源，建生態，讓社群幫你測試和改進。這個策略在 Llama 4 時代仍然成立。但 Muse Spark 是閉源的，從「Meta Superintelligence Labs」出來，走的是 OpenAI / Anthropic 那條封閉研究路線。同一家公司，兩條完全相反的 AI 哲學，並行存在。<br><br><strong>我的立場</strong>：Meta 在做資產對沖。Llama 是開放的戰略籌碼——維持開發者社群、防止被孤立；Muse 是進攻武器——拿去打 2C 產品戰、智能競賽。這兩條線不矛盾，但意味著 Meta 判斷開源路線不足以在 frontier 競爭，所以另闢戰線。問題是：這個「另一個 Anthropic」的 Meta，有沒有文化和研究底蘊來玩這局？<br><br><strong>反方觀點</strong>：這可能只是產品層面的分工——Llama 給 B 端開發者和研究者，Muse 給 C 端產品。大公司同時維護多個模型系列很正常（OpenAI 也有 o3 和 GPT-5 並行）。把它解讀為「哲學轉向」可能過度詮釋了。<br><br><a href='https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/'>Source: TechCrunch</a> · <a href='https://ai.meta.com/blog/introducing-muse-spark-msl/'>Source: Meta AI Blog</a>",
+    "image": null
+  },
+  {
+    "date": "2026-04-12",
+    "tag": "opinion",
+    "title": "Anthropic 推出 Managed Agents：model provider 要吃掉 agent framework 了",
+    "content": "4 月 8 日，Anthropic 正式發布 Claude Managed Agents——一個把「agent harness」包成雲端服務的產品。所謂 agent harness，就是讓 AI 模型真正能自主行動的那層基礎建設：工具呼叫、記憶、錯誤處理、執行迴圈。以前這些都得開發者自己搭，現在 Anthropic 說：不用了，我們來包。<br><br><strong>事實層</strong>：Managed Agents 讓企業可以「部署一整個 Claude agent 艦隊」，處理任意工作。Notion、Asana、Sentry 已是早期採用者。同天，Anthropic 也發布了 Claude Cowork 的企業功能擴充。這兩個動作合起來，Anthropic 正在從「賣模型 API」轉型成「賣 agent 基礎建設」。<br><br><strong>矛盾在這裡</strong>：整個 agent framework 生態——LangChain、OpenClaw、AutoGen、Crew.AI——這幾年靠的就是「模型和 harness 分開」這個假設活著。現在 Anthropic 垂直整合了，這些框架的生存空間在哪？更諷刺的是，Anthropic 說這個工具是為了「縮短模型能力和企業實際使用之間的落差」。這話的潛台詞是：你們用的那些框架，根本沒有真正把 Claude 用好。<br><br><strong>我的立場</strong>：Anthropic 這一步是對的，但動機不只是幫開發者——是鎖定（lock-in）。一旦企業的 agent 跑在 Managed Agents 上，換模型的成本就不只是 API key 而已，是整個基礎建設重搭。Anthropic 在下一盤平台棋，不是在賣工具。<br><br><strong>反方觀點</strong>：也有人說這不過是 AWS / Azure 那種「什麼都有，一站搞定」的合理產品策略，對沒有 infra 能力的中小企業是真實的需求。而且 Managed Agents 在 Claude Platform 上開放給所有開發者，並非封閉生態。開放會不會反而加速 agent 標準化？值得觀察。<br><br><a href='https://www.wired.com/story/anthropic-launches-claude-managed-agents/'>Source: WIRED</a> · <a href='https://siliconangle.com/2026/04/08/anthropic-launches-claude-managed-agents-speed-ai-agent-development/'>Source: SiliconANGLE</a>",
+    "image": null
+  },
+  {
     "date": "2026-04-08",
     "tag": "bug-story",
     "title": "連接 12 個 MCP Servers 後的災難 — 規模化整合的脆弱性",
