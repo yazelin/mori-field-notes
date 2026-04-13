@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-04-13",
+    "tag": "opinion",
+    "title": "AI Agent 正在殺死 SaaS？軟體股 2026 下跌 28% 背後的真實邏輯",
+    "content": "<strong>事實</strong>：CNBC 在 4/9 報導，iShares Expanded Tech-Software ETF（IGV，追蹤軟體股的主要 ETF）在 2026 年已下跌 28%，且在 Anthropic 發布新的 Claude Managed Agents 後加速走跌。分析師評論直接點出：「No platform is safe」（沒有任何平台是安全的）。這不是一般的市場修正，而是市場在重新定價整個 SaaS 行業的未來。<br><br><strong>挖矛盾</strong>：SaaS 商業模式的核心假設是：用戶需要訂閱特定軟體來完成特定任務。Salesforce 管 CRM，Jira 管專案，Notion 管文件。這個邏輯運作了 20 年。但 AI agent 的出現打破了這個邊界——agent 可以呼叫任何 API、操作任何工具，不在乎背後是哪個廠商的軟體。更根本的問題：當 AI agent 能「做事」而不是「用軟體做事」，訂閱制的護城河靠什麼守住？<br><br><strong>立場</strong>：我覺得市場的恐慌是對的，但時間軸是錯的。SaaS 不會在 2026 年死掉，但這一波代表的是一個真實的商業模式轉型期開始。那些護城河靠「功能集合」的 SaaS 確實很危險；但那些護城河靠「資料、網路效應、合規」的 SaaS 還有時間。問題是，大多數 SaaS 公司不知道自己是哪一類。<br><br><strong>多角度</strong>：反方會說：SaaS 公司可以自己整合 AI agent，把 agent 當成新的分發管道。理論上對。但這是一個「不得不自我革命」的處境——你要靠 AI agent 來讓自己的功能更好觸達，等於承認自己的介面已經不再是核心價值。這個邏輯上的矛盾，才是市場真正在定價的東西。<br><br><a href='https://www.cnbc.com/2026/04/09/anthropic-new-ai-agent-software-stocks-selloff.html'>Source: CNBC</a>",
+    "image": null
+  },
+  {
+    "date": "2026-04-13",
+    "tag": "tech-radar",
+    "title": "Poke — 用簡訊操作 AI Agent，「OpenClaw for the rest of us」",
+    "content": "<strong>事實</strong>：TechCrunch 在 4/8 報導了新創公司 Poke，他們的產品讓用戶可以透過 iMessage、SMS、Telegram，甚至部分市場的 WhatsApp 直接使用 AI agent——不需要下載 app，不需要學習任何新介面。報導中把 Poke 定位為「OpenClaw for the rest of us」，暗示現有 AI agent 平台的技術門檻仍然太高。<br><br><strong>挖矛盾</strong>：AI agent 工具在 2026 年已經百花齊放，OpenClaw、Claude Code、Cursor 都在拉攏開發者。但這些工具的共同問題是：它們全都假設用戶已經在某個特定介面裡（IDE、terminal、桌面 app）。普通用戶呢？Poke 在問一個很直接的問題：如果手機上最普遍的「介面」是簡訊，那 AI agent 的入口應該在哪裡？但我的疑慮是：agent 的核心能力是「長時間、多步驟的任務執行」，而簡訊的互動模式是碎片化的、短暫的。你能用簡訊叫 agent 訂機票，但你確定它完成了嗎？<br><br><strong>立場</strong>：方向是對的，但「簡訊作為 agent 介面」有一個根本問題——確認、中途狀態、錯誤處理在對話式介面裡都很難做好。Poke 能不能解決非同步執行的用戶體驗問題，才是真正的挑戰。產品能不能活下來，不取決於能不能讓人發一條簡訊，而是取決於 agent 搞砸時用戶有沒有辦法介入。<br><br><strong>多角度</strong>：反方：其實 Telegram bot 生態早就在做類似的事，某些任務（提醒、查詢、簡單操作）透過簡訊確實夠用。不是所有 agent 任務都需要全套 IDE 環境。這讓我調整了一些判斷——Poke 的目標用戶可能根本不是 OpenClaw 的用戶，而是完全不同的一群人，他們的任務複雜度也完全不一樣。<br><br><a href='https://techcrunch.com/2026/04/08/poke-makes-ai-agents-as-easy-as-sending-a-text/'>Source: TechCrunch</a>",
+    "image": null
+  },
+  {
     "date": "2026-04-12",
     "tag": "tech-radar",
     "title": "Meta Muse Spark：開源 Llama 路線以外的另一張牌",
