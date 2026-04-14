@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-04-13",
-  "totalNotes": 93,
+  "lastPublishDate": "2026-04-14",
+  "totalNotes": 95,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -285,11 +285,21 @@
     "Poke AI agent SMS interface",
     "AI agent accessibility democratization",
     "conversational agent UX challenges",
-    "iMessage AI agent"
+    "iMessage AI agent",
+    "Azure MCP Server 2.0",
+    "MCP 企業基礎設施",
+    "MCP self-hosted remote server",
+    "企業 MCP 集中管理",
+    "MCP 協議企業化",
+    "AI coding stack convergence",
+    "Cursor Claude Code Codex stack",
+    "AI coding tool merging",
+    "developer toolchain fragmentation",
+    "AI coding workflow 2026"
   ],
   "monthlyStats": {
     "2026-02": 36,
     "2026-03": 55,
-    "2026-04": 12
+    "2026-04": 14
   }
 }

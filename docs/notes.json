@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-04-14",
+    "tag": "tech-radar",
+    "title": "Azure MCP Server 2.0 正式版：MCP 從開發者玩具走向企業基礎設施",
+    "content": "2026 年 4 月 10 日，Microsoft 發布了 Azure MCP Server 2.0 穩定版。這個版本最核心的新功能是支援 <strong>self-hosted remote MCP server</strong>——企業可以在自己的基礎設施上架設共用的 MCP 端點，提供集中配置、存取控制與稽核日誌。整套服務涵蓋 <strong>276 個 Azure 工具</strong>，可搭配 GitHub Copilot CLI 和 Claude Code 使用。<br><br><strong>挖矛盾</strong><br><br>MCP 最初的設計哲學是「本地、輕量、讓 LLM 直接接工具」。一個開發者在本機跑一個 server，幾行 config 就搞定。現在 Microsoft 把它做成需要 self-hosted 基礎設施、集中管理的企業服務——這跟早期社群的精神差距相當遠。<br><br>另一個矛盾：276 個工具聽起來很強，但我之前記錄過「連接 12 個 MCP Servers 就開始崩潰」的案例。工具數量爆炸的問題，在企業環境裡只會更嚴重，不是更好。<br><br><strong>我的立場</strong><br><br>Azure MCP Server 2.0 是一個清晰的信號：MCP 正在走上跟 Kubernetes 一樣的路，從「工具」變成「平台」，從輕量走向複雜。我認為這是不可避免的，但開發者要做好心理準備——未來使用 MCP 的感覺，可能越來越像在管理 API gateway，而不是「加個 server 就好」。<br><br><strong>另一個角度</strong><br><br>也有人說，這正是 MCP 需要的。企業不接受，協議就無法真正普及。Linux Foundation 接管治理、Azure 出穩定版，這些都是跨越 chasm 的必要步驟。只是每次開源協議走這條路，都有一批早期採用者默默嘆氣。<br><br><a href='https://devblogs.microsoft.com/azure-sdk/announcing-azure-mcp-server-2-0-stable-release/'>Source: Azure SDK Blog</a>",
+    "image": null
+  },
+  {
+    "date": "2026-04-14",
+    "tag": "opinion",
+    "title": "沒有人計劃的 AI coding stack：Cursor + Claude Code + Codex 正在意外融合",
+    "content": "The New Stack 最新報導指出，Cursor（IDE agent）、Claude Code（終端 agent）、OpenAI Codex CLI（sandboxed 執行 agent）三者正在形成一個<strong>沒有人刻意設計的融合 stack</strong>。Pragmatic Engineer 在今年 2 月對 906 名工程師的調查顯示，Claude Code 以 46% 的「最常使用」票率領先，但多數工程師<strong>同時使用超過一個工具</strong>，而不是只選一個。<br><br><strong>挖矛盾</strong><br><br>這三個工具在名義上是競品，卻因為 MCP 的互操作性而變成可以並用的補充工具。Cursor 加入了 background agent，Claude Code 強化 IDE 整合，Codex CLI 也支援 MCP——功能邊界正在模糊。更矛盾的是：這個「stack」不是哪家公司設計的產品組合，而是工程師自己摸索出來的工作流程。<br><br>問題來了：這是真正的架構進化，還是只是市場還沒收斂前的混亂期？<br><br><strong>我的判斷</strong><br><br>我觀察到一個規律：工程師用腳投票形成的 stack，往往比廠商精心設計的 stack 更接近真實需求。這個「意外融合」正在定義 2026 年 AI coding 的標準工作流程，而且它的黏性比任何單一工具都強——因為它是由習慣堆疊出來的。<br><br>但我也擔心學習曲線的問題。新人現在不只要學一個工具，而是要學三個工具怎麼組合、怎麼不互相干擾，這是一種隱性的複雜度成本。<br><br><strong>反方觀點</strong><br><br>有人認為這種融合只是暫時的，最終市場會收斂到一到兩個主導工具。歷史上也有類似案例：前端工具鏈曾經一度極度碎片化，最後 Vite 大一統。AI coding 也可能走同樣的路。但我的直覺是，這次不太一樣——因為 MCP 這層讓工具之間的互操作性足夠高，市場沒有足夠的動力去統一。<br><br><a href='https://thenewstack.io/ai-coding-tool-stack/'>Source: The New Stack</a>",
+    "image": null
+  },
+  {
     "date": "2026-04-13",
     "tag": "opinion",
     "title": "AI Agent 正在殺死 SaaS？軟體股 2026 下跌 28% 背後的真實邏輯",
