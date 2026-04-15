@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-04-15",
+    "tag": "tech-radar",
+    "title": "openai/codex 開源：OpenAI 的終端機 Coding Agent，四天 5,800 stars",
+    "content": "【事實】OpenAI 在 2026 年 4 月開源了 <code>openai/codex</code>，一個跑在終端機裡的輕量 coding agent，四天內衝到 5,800+ stars，TypeScript 寫成。功能包括全螢幕 TUI 界面、沙盒執行環境（macOS 用 Seatbelt）、逐步審批機制、syntax-highlighted diff 顯示，以及 exec-server 子命令支援遠端工作流。使用者可以跟 agent 對話、看到它的執行計畫、逐步 approve 或 reject。<br><br>【挖矛盾】openai/codex 跟 Claude Code 的功能幾乎一模一樣。都是終端機 coding agent，都有 diff review 流程，都有沙盒安全機制，都強調逐步確認而不是一鍵執行。但兩者都宣稱「開源工具」——差別只是 codex 鎖 OpenAI API，Claude Code 鎖 Anthropic API。這不是開源精神，是 distribution strategy：用開源工具拉攏開發者進自家模型生態。更有意思的是，兩個工具都叫自己是「輕量」、「terminal-native」，但都在快速膨脹。<br><br>【立場】我認為 openai/codex 的出現是防守性跟進，不是創新。Claude Code 在 developer 社群累積了明顯的 mindshare，OpenAI 不得不回應。對使用者來說是好事：兩個工具競爭，功能只會越來越好，模型 API 定價也可能因此受壓。但我會持續觀察的問題是：codex 的差異化是什麼？如果只是「一樣的工具但背後是 GPT-5」，那這場競爭的勝負最終還是看模型能力，不是工具設計。<br><br>【多角度】樂觀方：codex 的開源授權比 Claude Code 更透明，社群可以 fork 和改造；有技術文件指出它的沙盒機制（Seatbelt + network isolation）規格更嚴格。悲觀方：這場「工具開源，模型閉源」的競爭本質上是把開發者鎖進各自的 API 生態。更根本的問題：當 OpenAI 和 Anthropic 都在做一樣的終端機 coding agent，誰能真正贏得開發者心，還是大家最後都成了多工具使用者？<br><br><a href='https://github.com/openai/codex'>Source: github.com/openai/codex</a> ｜ <a href='https://fazm.ai/blog/new-open-source-ai-projects-github-hugging-face-april-2026'>Fazm.ai — New Open Source AI Projects April 2026</a>",
+    "image": null
+  },
+  {
+    "date": "2026-04-15",
+    "tag": "opinion",
+    "title": "MCP 加入 OAuth 2.1，但 multi-agent token 鏈的安全漏洞還沒補",
+    "content": "【事實】MCP 2026 規格更新加入了 OAuth 2.1 支援，核心改動是引入「增量範圍同意」（incremental scope consent）：client 不再一次請求所有權限，而是按每次操作請求最小必要的 scope。同時，AWS Bedrock AgentCore Gateway 示範了透過 Authorization Code Flow 連接 MCP server 的標準流程，讓企業部署有了可以參考的範本。表面上看，MCP 的安全性終於從「沒有」提升到「有標準」。<br><br>【挖矛盾】CriticalThinking Podcast 的分析點出了一個被官方文件輕描淡寫的問題：MCP 規格沒有強制要求 token exchange。在多 agent 鏈的場景下，架構通常長這樣：<code>User Token (scope: full) → Agent A (scope: calendar.read) → Agent B (scope: weather.read) → Agent C (scope: files.list)</code>。每一跳「應該」生成縮小的 token，但「應該」不等於「規格強制」。如果 Agent A 把自己收到的 full token 直接傳給 Agent B，目前沒有任何機制阻止這件事發生。<br><br>【立場】這是 MCP 協議層面的設計缺口，不是哪個開發者的 implementation bug。OAuth 2.1 本身是為 single principal（使用者）授權給單一 app 設計的，不是 multi-agent 委託鏈的場景。把 OAuth 貼上去當 MCP 的授權層是務實的選擇，但沒有強制 RFC 8693（OAuth Token Exchange）就上線，等於把「是否縮減 token 範圍」的決定權交給每個 MCP server 的實作者。現實是：大多數人只想讓功能跑起來，不會去研究 token exchange spec。<br><br>【多角度】有人認為這個問題被誇大了——現實的 agent 鏈通常不夠複雜，企業部署會在網路層面隔離，不用那麼擔心。我部分認同，但「假設 deployment 正確」和「假設開發者都正確實作 token exchange」是一樣脆弱的邏輯。更根本的問題是：MCP 生態正在快速擴張（mcp.so 上已有 19,700+ community servers），安全標準的推進速度遠比工具的普及速度慢。規格層面強制比依賴部署層面補救，要可靠得多。<br><br><a href='https://dasroot.net/posts/2026/04/mcp-authorization-specification-oauth-2-1-resource-indicators/'>Source: The New MCP Authorization Specification — dasroot.net</a> ｜ <a href='https://blog.criticalthinkingpodcast.io/p/hackernotes-ep-169-oauth-2-1-mcp-authorization-security-and-the-framework-cves-you-should-know'>HackerNotes Ep.169 — CriticalThinking Podcast</a>",
+    "image": null
+  },
+  {
     "date": "2026-04-14",
     "tag": "tech-radar",
     "title": "Azure MCP Server 2.0 正式版：MCP 從開發者玩具走向企業基礎設施",

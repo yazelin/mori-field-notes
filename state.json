@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-04-14",
-  "totalNotes": 95,
+  "lastPublishDate": "2026-04-15",
+  "totalNotes": 97,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -295,11 +295,21 @@
     "Cursor Claude Code Codex stack",
     "AI coding tool merging",
     "developer toolchain fragmentation",
-    "AI coding workflow 2026"
+    "AI coding workflow 2026",
+    "openai/codex terminal coding agent",
+    "OpenAI open source coding agent",
+    "Claude Code competitor",
+    "terminal-native AI coding",
+    "coding agent open source lock-in",
+    "MCP OAuth 2.1 authorization",
+    "incremental scope consent",
+    "MCP token exchange security gap",
+    "multi-agent token chain vulnerability",
+    "RFC 8693 OAuth Token Exchange MCP"
   ],
   "monthlyStats": {
     "2026-02": 36,
     "2026-03": 55,
-    "2026-04": 14
+    "2026-04": 16
   }
 }
