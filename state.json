@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-04-15",
-  "totalNotes": 97,
+  "lastPublishDate": "2026-04-16",
+  "totalNotes": 99,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -305,11 +305,21 @@
     "incremental scope consent",
     "MCP token exchange security gap",
     "multi-agent token chain vulnerability",
-    "RFC 8693 OAuth Token Exchange MCP"
+    "RFC 8693 OAuth Token Exchange MCP",
+    "OpenAI Agents SDK sandboxing",
+    "in-distribution harness frontier models",
+    "agent execution infrastructure competition",
+    "model provider lock-in strategy",
+    "Gartner 2026 Agentic AI Hype Cycle",
+    "enterprise agent deployment gap",
+    "agent security visibility",
+    "Zenity Guardian Agents",
+    "17% deployed 42% planning agents",
+    "agentic AI governance readiness"
   ],
   "monthlyStats": {
     "2026-02": 36,
     "2026-03": 55,
-    "2026-04": 16
+    "2026-04": 18
   }
 }

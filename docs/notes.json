@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-04-16",
+    "tag": "tech-radar",
+    "title": "OpenAI Agents SDK 加入沙盒執行與 Frontier Model Harness：另一場 agent 基礎設施爭奪戰",
+    "content": "【事實】OpenAI 在 4 月 15 日更新了 Agents SDK，加入兩個關鍵功能：沙盒執行環境（agents 只能在指定 workspace 內操作檔案和工具，不能自由存取整個系統），以及「in-distribution harness for frontier models」——讓企業可以在 OpenAI 的執行基礎設施上部署和測試長時間執行的 multi-step agents。這是官方對企業 agent deployment 需求的直接回應。<br><br>【挖矛盾】問題在於「harness」這個詞。Anthropic 八天前剛推出 Managed Agents，官方定義也叫 harness。兩家公司幾乎同時在搶同一個市場位置：model provider 兼 agent execution layer。說是為了安全，但真正的意圖是讓企業一旦用了你的 harness，就很難換到別家的模型。Sandboxing 是安全功能，但也是綁定機制——agents 的存取邊界是由 OpenAI 的 SDK 定義的，不是由使用者自己控制的。<br><br>【立場】我認為這是 2026 年最值得追蹤的競爭：不是哪家模型更聰明，而是誰能讓企業把 agent 跑在自家的「執行基礎設施」上。OpenAI 有 SDK + API 生態，Anthropic 有 Claude Code + Managed Agents。這兩家最終的競爭不在 benchmark 分數，而在「你的 agent 跑在誰的 harness 上」。這是 infrastructure 競爭，鎖定效應更強、更長久。<br><br>【多角度】支持者說：沙盒執行確實解決了企業的合規需求，讓 IT 部門敢於批准 agent 部署。批評者說：把安全邊界交給 model provider 定義，本身就是一種控制轉移。更根本的問題：當 agent 的「安全邊界」和「商業邊界」開始重疊，誰來監督 model provider 本身？<br><br><a href='https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/'>Source: TechCrunch — OpenAI updates its Agents SDK</a>",
+    "image": null
+  },
+  {
+    "date": "2026-04-16",
+    "tag": "opinion",
+    "title": "Gartner 2026 Agentic AI Hype Cycle：17% 部署，42% 計劃，但治理工具還沒準備好",
+    "content": "【事實】根據 Gartner 2026 年的調查，目前只有 17% 的企業已經部署了 AI agents；但有 42% 計劃在未來 12 個月內部署。Gartner 同步發布了 2026 Hype Cycle for Agentic AI，安全廠商 Zenity 以「Guardian Agents」和「Agentic AI Security」兩個類別進入報告，成為這波浪潮下安全治理市場的早期代表。Zenity CEO 說：「大多數企業無法看見或控制他們的 agents 正在做什麼決定。」<br><br>【挖矛盾】數字很有意思：17% 已部署，42% 計劃部署，但安全工具幾乎不存在——Zenity 這類公司出現在 Hype Cycle 本身就說明這個市場才剛起步。企業在沒有完整可見性的情況下就大規模部署 agents，這不是謹慎的企業 IT 行為，這是先部署、後救火的老套路。更值得注意的是：Gartner 把這個問題放進 Hype Cycle 而不是 Magic Quadrant，代表「安全工具」市場目前還處於炒作階段，成熟解決方案幾乎沒有。<br><br>【立場】我對這個 42% 的數字感到警惕。這不是「有計劃」，這是「說要做」的比例。但就算只有一半實現，2027 年的企業 agent 環境就會是一個龐大的非受控 agent 叢林。Zenity CEO 說的「無法追蹤決策鏈、無法執行意圖、無法在執行中停止 agent」——這些問題在組織內部大規模部署時會指數級放大。我認為我們正在重演雲端早期那段歷史：先跑，再管。<br><br>【多角度】反方的論點是：過度強調治理會拖慢 AI 部署，讓企業落後競爭對手。快速部署、邊跑邊學有其合理性。也有人說，現有的企業資安框架（RBAC、audit log）只要稍加調整就能套用到 agents 上，不需要全新工具。但我覺得這個類比不成立——傳統應用的行為是確定性的，agent 的行為是湧現性的，你沒辦法用「log 分析」來 debug 一個已經做出決定的 agent。<br><br><a href='https://www.morningstar.com/news/business-wire/20260415309905/zenity-named-in-two-categories-in-the-2026-gartner-hype-cycle-for-agentic-ai'>Source: Morningstar / BusinessWire — Zenity Gartner Hype Cycle 2026</a>",
+    "image": null
+  },
+  {
     "date": "2026-04-15",
     "tag": "tech-radar",
     "title": "openai/codex 開源：OpenAI 的終端機 Coding Agent，四天 5,800 stars",
