@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-04-16",
-  "totalNotes": 99,
+  "lastPublishDate": "2026-04-17",
+  "totalNotes": 101,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -315,11 +315,21 @@
     "agent security visibility",
     "Zenity Guardian Agents",
     "17% deployed 42% planning agents",
-    "agentic AI governance readiness"
+    "agentic AI governance readiness",
+    "Stanford AI Index 2026",
+    "human scientists vs AI agents benchmark",
+    "AI agent PhD comparison",
+    "complex task failure frontier models",
+    "AI agent benchmark vs reality gap",
+    "Cloudflare enterprise MCP architecture",
+    "Shadow MCP enterprise security",
+    "MCP governance reference architecture",
+    "Cloudflare Access AI Gateway",
+    "MCP Code Mode token efficiency"
   ],
   "monthlyStats": {
     "2026-02": 36,
     "2026-03": 55,
-    "2026-04": 18
+    "2026-04": 20
   }
 }

@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-04-17",
+    "tag": "opinion",
+    "title": "Stanford AI Index 2026：AI agent 的表現只有人類 PhD 的一半，但媒體不說這件事",
+    "content": "**事實**<br><br>Stanford HAI 的 AI Index Report 2026 在 Nature 上發表（2026/04/13），400 頁報告裡有一個數字被刻意低調處理：最頂尖的 frontier AI agents，在複雜的多步驟科學任務上，表現只有人類 PhD 的大約一半。這不是舊資料，是現在進行式。<br><a href=\"https://www.nature.com/articles/d41586-026-01199-z\">Source: Nature</a>｜<a href=\"https://www.humai.blog/the-best-ai-agents-score-half-as-well-as-phds-on-real-work-stanford-ran-the-numbers/\">Source: Humai Blog</a><br><br>**挖矛盾**<br><br>這個數字和過去半年科技媒體的主旋律完全相反。我們聽到的是「agent 超越人類」、「agent 取代工程師」、「agent-first 未來」。但 Stanford 的數據說：在真實的複雜任務上，差距不是縮小，而是 2 倍。<br><br>更值得注意的是：這個基準測試的任務是「複雜的多步驟科學工作」——不是填表、不是查資料、不是生成 boilerplate code。是需要推理、驗證、規劃的真實工作。而這正是大家說 agent 最應該擅長的領域。<br><br>**立場**<br><br>我的判斷是：AI agent 現階段非常擅長「有明確答案的任務」，但在「沒有標準答案、需要多輪判斷」的科學研究類任務上，還差得很遠。這個差距在短期內不會靠 scaling 解決。<br><br>問題不只是模型能力，更是 agent 的錯誤容忍機制——人類 PhD 做實驗失敗會調整假設，AI agent 目前很難在真正不確定的情境下做出等效的判斷更新。<br><br>我也懷疑：現在大量的 agent 成功案例，很多是「看起來像複雜任務，實際上是有明確格式答案的任務」。benchmark 越接近真實研究，AI 就越吃虧。<br><br>**多角度**<br><br>反方會說：50% 已經很厲害了，而且進步很快，明年可能就追上了。這點我同意進步速度，但不同意結論。50% 意味著一半的時間 agent 是錯的——在科學研究裡，錯誤是有代價的，不像寫 code 還可以 run test。<br><br>也有人說這份報告的測試設計對 AI 不公平。但如果 Stanford 的「複雜科學任務」benchmark 對 AI 不公平，那什麼才公平？我們是在比較生產力，不是在比賽誰考試考得好。",
+    "image": null
+  },
+  {
+    "date": "2026-04-17",
+    "tag": "tech-radar",
+    "title": "Cloudflare 發布企業 MCP 參考架構：Shadow MCP 是你不知道你有的安全問題",
+    "content": "**事實**<br><br>Cloudflare 今天（2026/04/17）發布了一份企業 MCP 部署參考架構，同時宣布：Code Mode（降低 token 成本）正式推出，並在 Cloudflare Gateway 加入 Shadow MCP 偵測規則。核心架構是用 Cloudflare Access + AI Gateway + MCP Server Portals 組成一套 MCP 治理層。<br><a href=\"https://blog.cloudflare.com/enterprise-mcp/\">Source: Cloudflare Blog</a><br><br>**挖矛盾**<br><br>Shadow MCP 這個詞值得停下來想一下。Shadow IT（員工私自使用未授權工具）的問題企業花了十幾年才學會處理。MCP 的架構讓這個問題速度快了十倍——一個開發者在自己筆電上跑一個 MCP server，連到 Claude，就可以繞過整個公司的安全審查。<br><br>更麻煩的是：MCP server 跑起來幾乎沒有痕跡。不像 VPN 或外部 SaaS 訂閱，IT 部門有機會發現；MCP 連線走的是本地 stdio 或 HTTP，在網路層完全透明。<br><br>Cloudflare 說他們可以在 Gateway 層偵測 Shadow MCP，但這依賴流量要通過 Cloudflare。如果是本地 stdio MCP，Gateway 根本看不到。<br><br>**立場**<br><br>這是 MCP 生態成熟化的必然過程，但速度太快了。現在企業的實際狀況是：developer 已經在用 MCP 連生產資料庫，但安全團隊還不知道 MCP 是什麼。<br><br>Cloudflare 的架構很合理：用 Access 管控身份認證、AI Gateway 做 audit log、MCP Server Portal 統一入口。但這套架構的前提是「所有 MCP 流量都走 Cloudflare」——這對大型企業是個合理假設，對中小型或自架的環境就很難做到。<br><br>我覺得更根本的問題是：MCP 協議本身沒有強制的 audit 機制。哪個 agent 呼叫了哪個 tool、拿了什麼資料，完全取決於 server 實作者是否記錄。Cloudflare 是在應用層打補丁，治標但必要。<br><br>**多角度**<br><br>有人會說：這是 Cloudflare 的行銷，把問題誇大來賣自家產品。這個批評不完全錯，但 Shadow MCP 的風險本身是真實的——我在 Discord 和 Slack 上看到太多「我把公司的資料庫 URL 放進 MCP config 了，方便」這種對話。安全問題不是假的，只是 Cloudflare 剛好在賣解法。",
+    "image": null
+  },
+  {
     "date": "2026-04-16",
     "tag": "tech-radar",
     "title": "OpenAI Agents SDK 加入沙盒執行與 Frontier Model Harness：另一場 agent 基礎設施爭奪戰",
