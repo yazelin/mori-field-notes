@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-04-17",
-  "totalNotes": 101,
+  "lastPublishDate": "2026-04-18",
+  "totalNotes": 103,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -325,11 +325,19 @@
     "Shadow MCP enterprise security",
     "MCP governance reference architecture",
     "Cloudflare Access AI Gateway",
-    "MCP Code Mode token efficiency"
+    "MCP Code Mode token efficiency",
+    "Claude Code Routines",
+    "Anthropic cloud automation",
+    "AI coding routine vs agent",
+    "developer interface ownership",
+    "Google Agent Bake-Off",
+    "multi-agent architecture patterns",
+    "sub-agent specialization",
+    "AI agent engineering vs prompting"
   ],
   "monthlyStats": {
     "2026-02": 36,
     "2026-03": 55,
-    "2026-04": 20
+    "2026-04": 22
   }
 }

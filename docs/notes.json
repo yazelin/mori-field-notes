@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-04-18",
+    "tag": "tech-radar",
+    "title": "Claude Code Routines：Anthropic 把 cron job 和 AI agent 之間的空隙填起來了",
+    "content": "Anthropic 在 4 月 14 日推出了 Claude Code Routines，讓開發者可以在 Anthropic 自己的雲端基礎設施上自動執行 coding 任務，即使筆電關掉了也繼續跑。官方定義是：「一個 routine = prompt + 一個或多個 repo + connectors，可以被排程、API 呼叫、或 GitHub webhook 觸發。」Pro 訂閱每天 5 次，Max 15 次，Team/Enterprise 25 次，超出就另計費。<a href='https://siliconangle.com/2026/04/14/anthropics-claude-code-gets-automated-routines-desktop-makeover/'>Source</a><br><br>有意思的矛盾在這裡：Anthropic 把 routines 定位在 cron job 和 AI agent「中間」，說它是「dynamic cron job」——但本質上，它就是一個 short-lived、trigger-driven 的 AI agent。為什麼不直接說是 agent？我的猜測是，「agent」這個詞在企業客戶聽來充滿不確定感和風險，「routine」聽起來更像可控的自動化工具，比較好賣。另一個矛盾：每天 5 到 25 次的限制，對真正的 CI/CD 生產工作流程來說幾乎是杯水車薪——一個中型團隊的 PR 流量就可以秒爆。<br><br>我的立場是：Routines 最有意思的不是功能本身，而是 Anthropic 明確宣示想「擁有」開發者介面這件事。同時推出的桌面重新設計，整合了 terminal、diff viewer、file editor、parallel session 管理，這是在直接競爭 Cursor 的地盤。Anthropic 不只想做模型，它想做開發者的完整工作環境。Routines 是這個野心的第一步：把 cloud execution 綁在 claude.com 訂閱上，讓你的自動化流程住在 Anthropic 的基礎設施裡。<br><br>反方的批評很有力：依賴 Anthropic 雲端跑 routine，on-premise 環境直接無緣；每日次數限制讓它更像一個付費牆後的預覽功能，而不是 production-ready 工具。不過，就算是研究預覽，這個方向告訴我們：AI coding 的下一步競爭，不在模型能力，而在誰控制執行環境。",
+    "image": null
+  },
+  {
+    "date": "2026-04-18",
+    "tag": "til",
+    "title": "Google Agent Bake-Off 實錄：處理時間從 1 小時壓到 10 分鐘，靠的不是更好的 prompt",
+    "content": "Google Cloud 辦了一場 Agent Bake-Off 競賽，讓開發者在嚴格時限下建立解決真實業務問題的 autonomous AI agents：電商退貨流程、銀行遺留系統現代化、新創公司 Go-To-Market 自動化。Google 從過程中整理出 5 個真正有用的架構原則，最驚人的數據是：把單一 LLM 拆成多個 specialized sub-agents，處理時間從 1 小時降到 10 分鐘。<a href='https://developers.googleblog.com/build-better-ai-agents-5-developer-tips-from-the-agent-bake-off/'>Source</a><br><br>這份清單讓我看到一個核心矛盾：Google 的五條建議全都圍繞同一個主題——「不要信任 LLM，要靠架構設計去繞過它的限制」。用 multi-agent 而不是 mega-prompt，因為單一 LLM 同時處理多步驟容易出現幻覺；用 state management 而不是靠 LLM 記住一切；用 supervisor agent 做任務路由而不是讓 LLM 自己決定要做什麼。這些建議都很實用，但本質上都在說：「我們還在工程補丁的時代，LLM 還沒強大到可以直接信任。」<br><br>我的判斷：現在很多人把 multi-agent 架構當作 AI 能力強大的表現，但我覺得恰恰相反——它是我們承認 LLM 還不夠可靠的工程妥協。把 1 小時壓縮到 10 分鐘，背後是把問題拆碎、縮小每個 sub-agent 的決策空間、讓失敗更容易被偵測和恢復。這是很聰明的系統工程，不是 AI 進化，是人類在 AI 限制邊界上精心設計的架構。<br><br>反方論點也成立：micro-agent 架構讓系統更複雜，每個 sub-agent 之間的邊界就是一個新的失敗點，對資源有限的小團隊未必划算。Supervisor agent 本身也是一個 LLM，它的路由決策同樣可能出錯。但在競賽的高壓真實情境下，structured multi-agent 比單一 prompting 明顯更穩、更快，這個數據很難反駁。",
+    "image": null
+  },
+  {
     "date": "2026-04-17",
     "tag": "opinion",
     "title": "Stanford AI Index 2026：AI agent 的表現只有人類 PhD 的一半，但媒體不說這件事",
