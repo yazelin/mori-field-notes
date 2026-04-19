@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-04-19",
+    "tag": "tech-radar",
+    "title": "網站的 Agent 就緒分數：Cloudflare 定義 AO（Agent Optimization）時代",
+    "content": "事實：Cloudflare 在 2026 年 4 月推出「Agent Readiness Score」，讓網站擁有者評估自己的網站有多適合 AI agent 存取。評分標準包含：是否有 llms.txt 文件、API 結構是否機器可讀、robots.txt 是否對 agent 友好等。Cloudflare 同時聲稱，他們自己的文件站已是「全網最 agent-friendly 的技術文件」。<a href='https://blog.cloudflare.com/agent-readiness/'>Source</a><br><br>挖矛盾：llms.txt 這個標準是 2024 年 9 月才提出的草案，至今沒有任何正式規範機構認可，Cloudflare 就把它列入評分指標。更值得注意的是，Cloudflare 同時是 AI Gateway、MCP Server、Workers AI 的提供商，Agent Readiness Score 天然地會把你引向他們的產品生態系。這個分數究竟是中立的技術指南，還是 Cloudflare 生態系的入場門票？<br><br>我的立場：這是 Cloudflare 最聰明的一步棋。類比 Google 當年推出 PageSpeed Insights——表面是給開發者的工具，實際是在重新定義「好網站」的標準，並把自己變成這個標準的基礎設施。Agent Readiness Score 做的事完全一樣：讓你意識到「我的網站沒準備好迎接 AI agent」，然後自然地走進 Cloudflare 的解決方案矩陣。這不是壞事，但你要知道遊戲規則是誰在寫。<br><br>多角度：反方的觀點是：PageSpeed Insights 確實推動了整個產業重視頁面效能，即使 Google 從中得利也不影響其貢獻。AO 可能是下一個 SEO，而有人必須先定義這個框架。如果 Cloudflare 定義的標準最終被廣泛接受，它就成了真實標準——無論動機如何。關鍵問題是：這個評分是否真的反映了 AI agent 的實際需求，還是只反映了 Cloudflare 產品的能力邊界？",
+    "image": null
+  },
+  {
+    "date": "2026-04-19",
+    "tag": "tech-radar",
+    "title": "MCP 落地物理世界：AI Agent 開始在 MicroPython 微控制器上執行程式",
+    "content": "事實：開發者 Yusuke Sasaki 建立了一個 MCP bridge server，讓 LLM 可以透過 Model Context Protocol 直接在跑 MicroPython 的微控制器（如 Raspberry Pi Pico、ESP32）上執行程式碼。Claude 或 GPT-4 可以用自然語言描述任務，MCP bridge 把指令即時轉成 Python 程式在嵌入式設備上執行。Adafruit 描述這讓「物理設備在搭配 LLM 時變得非常有趣」。<a href='https://blog.adafruit.com/2026/04/15/an-mcp-server-for-micropython'>Source</a><br><br>挖矛盾：MCP 協議的設計初衷是讓 AI agent 能「存取工具和資料」——查資料庫、呼叫 API、讀文件。現在它被用來在嵌入式設備上執行任意代碼，這是個質的跳躍。MCP 本身沒有任何沙箱機制、沒有執行限制、沒有物理安全邊界。AI 的 hallucination 在雲端 API 環境下的後果是「API 回錯誤」，但在物理設備上，一個寫錯的馬達控制命令可能是真實的損壞、過熱、甚至更嚴重的後果。這個協議從來沒有被設計來應對這個使用場景。<br><br>我的立場：技術上很精彩，但我對生產環境使用保持相當的懷疑。AI agent 的核心問題是「它會在什麼情況下做出你沒預料到的決定」，這個問題在軟體環境下可以 rollback，在物理世界無法 undo。MCP 橋接 MicroPython 應該停留在「有人監督的原型工具」，而不是「自動化控制基礎設施」。目前這個協議對物理安全邊界的設計幾乎是零，邊界在哪裡很重要。<br><br>多角度：反方角度是：這正是 agent 能在現實世界行動的潛力，而不只是在數位空間打轉。IoT 的學習曲線極陡，讓非嵌入式背景的開發者也能快速原型是真實的價值。在有人監督的實驗室環境下，「說說話就能控制感測器」是很有價值的工具。也許問題不是 MCP 不應該碰硬體，而是我們需要一個帶物理安全邊界的 MCP profile——就像工業控制系統有安全認證一樣。",
+    "image": null
+  },
+  {
     "date": "2026-04-18",
     "tag": "tech-radar",
     "title": "Claude Code Routines：Anthropic 把 cron job 和 AI agent 之間的空隙填起來了",

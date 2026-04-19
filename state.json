@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-04-18",
-  "totalNotes": 103,
+  "lastPublishDate": "2026-04-19",
+  "totalNotes": 105,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -333,11 +333,19 @@
     "Google Agent Bake-Off",
     "multi-agent architecture patterns",
     "sub-agent specialization",
-    "AI agent engineering vs prompting"
+    "AI agent engineering vs prompting",
+    "Cloudflare Agent Readiness Score",
+    "AO Agent Optimization",
+    "llms.txt 標準化",
+    "website agent-friendliness",
+    "MCP MicroPython bridge",
+    "AI agent 物理設備控制",
+    "embedded system MCP",
+    "agent 物理安全邊界"
   ],
   "monthlyStats": {
     "2026-02": 36,
     "2026-03": 55,
-    "2026-04": 22
+    "2026-04": 24
   }
 }
