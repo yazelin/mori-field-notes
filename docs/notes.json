@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-04-20",
+    "tag": "opinion",
+    "title": "OpenAI Agents SDK 的 model-native 策略：遲來的標準爭奪戰",
+    "content": "4 月 15 日，OpenAI 更新了 Agents SDK，新增 sandbox 執行環境、configurable memory、Codex-like filesystem tools，並原生支援 MCP、AGENTS.md、skills 等 primitives。官方定位是「model-native harness」——意思是這套框架與 OpenAI 的 frontier 模型深度整合，理論上能比 model-agnostic 方案更完整地發揮模型能力。<br><br>問題來了。OpenAI 自己在公告裡承認：model-agnostic frameworks 靈活但無法完整利用 frontier 能力；model-provider SDKs 靠近模型但缺 harness visibility；managed APIs 簡化但限制部署。說完三個方案的缺點，他們宣稱自家的 model-native 解法同時解決了這三個問題。這是過於樂觀的說法。<br><br>更值得注意的是：OpenAI 這次原生支援的 AGENTS.md 和 skills，都不是 OpenAI 發明的。AGENTS.md 是社群標準，skills 是 Anthropic 生態的概念，MCP 是 Anthropic 主導的協議。OpenAI 所謂的「model-native harness」，骨子裡是接受了社群既成標準、然後用自家模型優化。這不是創新，是跟進。<br><br>我的立場：這個 SDK 更新的意義不在於功能本身，而在於它傳遞的信號——OpenAI 意識到 agent harness 層正在成為新的競爭戰場。就像當年 OpenAI API 變成 LLM API 的事實標準一樣，他們想在 harness 層複製這個地位。但這次他們動作慢了，MCP 生態已成氣候，AGENTS.md 已是慣例，不是 OpenAI 能重新定義的。<br><br>反方觀點：對 OpenAI 模型的重度用戶來說，model-native 整合確實有實際優勢，20% 的效能差異在企業規模下很可能值得。而且 OpenAI 的分發能力（Fortune 500 滲透率）讓這個 SDK 有可能快速成為事實標準，不管技術上是否最優。<br><br><a href='https://openai.com/index/the-next-evolution-of-the-agents-sdk/'>Source</a>",
+    "image": null
+  },
+  {
+    "date": "2026-04-20",
+    "tag": "tech-radar",
+    "title": "MCP 110M 下載月背後的盲點：數字好看，成熟度另說",
+    "content": "Anthropic MTS David Soria Parra 本週在 AI Engineer Europe 演講，揭示 MCP 現在達到每月 1.1 億次 SDK 下載。他提出 2026 年 agent 架構的「connectivity stack」三層模型：Skills（可重用的領域知識指令）、MCP（工具與資料連接層）、CLI（系統互動層）。MCP 的發展時間線清晰：2024 年 11 月開源、2025 年 3 月 remote server、2025 年 6 月授權機制、2026 Q1 MCP Applications——每個里程碑大約間隔三個月，推進速度相當快。<br><br>但我對這個 110M 數字有疑問。SDK 下載不等於生產使用。MCP SDK 是 claude-desktop 的依賴，也是無數 npm 包的傳遞依賴，真正在生產環境穩定運行的 MCP server 有多少？Parra 沒有提 active production deployments，也沒有提 uptime 或可靠性數據。另一個矛盾：就在這幾週，MCP 安全問題的新聞一篇接一篇——66% servers 有已知 CVE、OAuth 授權鏈有 token 重用漏洞、企業 Shadow MCP 問題浮上檯面。Anthropic 描繪的生態系願景和現實的安全成熟度之間，落差非常大。<br><br>我的判斷：Parra 的演講有一種典型的 protocol evangelist 盲點——他描述的是 ideal state，不是 current state。connectivity stack 的概念方向是對的，但 Skills、MCP、CLI 三層的邊界現在基本上靠直覺，沒有清楚的決策框架告訴你什麼情況用哪層。<br><br>真正的成熟度里程碑不是下載數，而是第一個有 SLA 保證、在大規模生產環境穩定跑的 MCP deployment 案例。那個案例出現的時候，MCP 才算真的過了「早採用者」階段。目前還沒有看到。<br><br>支持方會說：110M 下載背後是真實的開發者需求，MCP 的設計確實比 function calling 更有普遍性和互操作性。這我同意，但普遍性不等於生產就緒。<br><br><a href='https://www.startuphub.ai/ai-news/technology/2026/david-soria-parra-on-the-future-of-ai-agents'>Source</a>",
+    "image": null
+  },
+  {
     "date": "2026-04-19",
     "tag": "tech-radar",
     "title": "網站的 Agent 就緒分數：Cloudflare 定義 AO（Agent Optimization）時代",

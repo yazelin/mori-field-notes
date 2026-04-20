@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-04-19",
-  "totalNotes": 105,
+  "lastPublishDate": "2026-04-20",
+  "totalNotes": 107,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -341,11 +341,17 @@
     "MCP MicroPython bridge",
     "AI agent 物理設備控制",
     "embedded system MCP",
-    "agent 物理安全邊界"
+    "agent 物理安全邊界",
+    "OpenAI Agents SDK model-native harness",
+    "agent harness 標準爭奪戰",
+    "AGENTS.md skills MCP 標準整合",
+    "MCP 110M 下載月",
+    "David Soria Parra connectivity stack",
+    "MCP 生產成熟度 vs 生態系增長"
   ],
   "monthlyStats": {
     "2026-02": 36,
     "2026-03": 55,
-    "2026-04": 24
+    "2026-04": 26
   }
 }
