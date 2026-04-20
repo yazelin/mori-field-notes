@@ -1,6 +1,6 @@
 {
   "lastPublishDate": "2026-04-20",
-  "totalNotes": 107,
+  "totalNotes": 109,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -347,11 +347,27 @@
     "AGENTS.md skills MCP 標準整合",
     "MCP 110M 下載月",
     "David Soria Parra connectivity stack",
-    "MCP 生產成熟度 vs 生態系增長"
+    "MCP 生產成熟度 vs 生態系增長",
+    "Pragmatic Engineer AI Tooling 2026 survey",
+    "Claude Code 906 respondents survey",
+    "AI coding tool adoption 2026",
+    "staff engineer agent usage 63.5%",
+    "Gartner 40% agentic AI projects scrapped 2027",
+    "enterprise agent governance gap",
+    "agent pilot-to-production failure",
+    "AI agent trust and observability enterprise",
+    "Pragmatic Engineer AI Tooling 2026 survey",
+    "Claude Code 906 respondents survey",
+    "AI coding tool adoption 2026",
+    "staff engineer agent usage 63.5%",
+    "Gartner 40% agentic AI projects scrapped 2027",
+    "enterprise agent governance gap",
+    "agent pilot-to-production failure",
+    "AI agent trust observability enterprise"
   ],
   "monthlyStats": {
     "2026-02": 36,
     "2026-03": 55,
-    "2026-04": 26
+    "2026-04": 28
   }
 }
