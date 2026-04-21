@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-04-21",
+    "tag": "tech-radar",
+    "title": "Cloudflare Project Think：把基礎設施變成 agent 的土壤",
+    "content": "Cloudflare 本週以「Project Think」為名，正式收官 Agents Week 2026——一週內密集發布涵蓋 compute、security、agent toolbox 和 platform tools 的完整公告。<br><br><strong>事實</strong><br>Agents Week 的公告範圍驚人：Workers AI 支援新模型、新版 Agents SDK preview（「batteries-included platform」，支援 think、act、persist）、MCP Code Mode 優化 token 使用、Durable Objects 強化持久化狀態、Cloudflare Gateway 整合 Zero Trust 做為 agent 安全閘道。一整週的節奏，最後以 Project Think 這篇總結文收尾。<a href='https://blog.cloudflare.com/project-think/'>Source</a><br><br><strong>矛盾點</strong><br>「Agents Week」的節日行銷節奏很像 AWS re:Invent，但有個根本性的不同：Cloudflare 同時在賣執行環境和安全工具。這在傳統基礎設施商是少見的——安全通常是另一個部門賣的另一個產品。這背後的邏輯是：agent 讓執行和安全不能再分開，因為 agent 在執行的同時就是在做有風險的事。<br><br><strong>我的判斷</strong><br>Cloudflare 這次是真的抓到 agent 基礎設施的本質了。Agent 不只需要「好用的模型」，還需要持久化狀態（Durable Objects 解決）、低延遲邊緣執行、以及可信任的安全閘道。這三件事湊在一起，才是 agent 真正能跑生產環境的條件。很多公司只在做「MCP server 相容」的表面工夫，Cloudflare 在做的是讓 agent 能長期存活的土壤。<br><br><strong>反方視角</strong><br>風險也很清楚：agent 跑在 Workers 上就是平台綁定。對偏好自托管、開源架構的開發者來說，Cloudflare 的「agentic cloud」是金手銬。另外，一週密集公告未必每條都有實質深度，行銷包裝的成分需要個別拆解驗證。",
+    "image": null
+  },
+  {
+    "date": "2026-04-21",
+    "tag": "opinion",
+    "title": "AI agent 拿了鑰匙，沒人在看",
+    "content": "「Your AI Agents Have Keys To The Kingdom, And No One's Watching」——Forbes Tech Council 本週這篇標題精準命中了一個被系統性忽略的問題。<br><br><strong>事實</strong><br>企業 AI agent 在執行自動化任務的同時，也持有大量系統憑證：資料庫存取、API 金鑰、Email 發送權限。但針對這些 agent 的監控機制幾乎不存在。2026 年 1 月，CrowdStrike 以 7.4 億美元收購身分安全公司 SGNL；微軟在 RSAC 宣布 Agent 365——這兩個動作都在指向同一個問題：agent 的身分管理已經是企業安全的新前線。<a href='https://www.forbes.com/councils/forbestechcouncil/2026/04/16/your-ai-agents-have-keys-to-the-kingdom-and-no-ones-watching/'>Source</a><br><br><strong>矛盾點</strong><br>大家在聊 agent 的「能力」，幾乎沒人在聊 agent 的「身分」。最諷刺的數據來自 CrowdStrike 的 Shadow AI Discovery 功能——連 IT 部門都不知道企業裡跑了哪些 agent。我們幫 agent 開了和正式員工差不多的系統權限，但員工要簽合約、要有稽核，agent 呢？最小權限原則（principle of least privilege）在傳統 IT 是基本功，但在 agent 世界，這個標準根本還沒有對應的實作規範。<br><br><strong>我的立場</strong><br>這是 2026 上半年我觀察到最被低估的風險之一。包括我自己在內，開發者都在快速接 MCP server、讓 agent 跑工作流程，但 agent 的權限邊界從來沒有認真設計過。現在 CrowdStrike 要賣給你解法，根本原因卻是大家太急著出貨、沒想清楚 agent 作為「有憑證的執行者」的本質。<br><br><strong>反方視角</strong><br>反方的論點是：過度管控 agent 憑證會讓它喪失實用性，agent 需要廣泛存取才能完成任務。這個擔心不是沒道理，但解法不是「全給」或「全不給」——SGNL 主打的 fine-grained just-in-time access 才是正確方向：agent 需要什麼權限、在什麼時間點、用多久，動態核發，用完收回。另外，這篇 Forbes 文章是 Tech Council 投稿，作者可能有商業立場，建議帶著批判性閱讀。",
+    "image": null
+  },
+  {
     "date": "2026-04-20",
     "tag": "tech-radar",
     "title": "Pragmatic Engineer 906 人調查：Claude Code 八個月拿下第一，55% 工程師已在用 AI Agent",

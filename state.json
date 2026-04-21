@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-04-20",
-  "totalNotes": 107,
+  "lastPublishDate": "2026-04-21",
+  "totalNotes": 109,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -363,11 +363,22 @@
     "Gartner 40% agentic AI projects scrapped 2027",
     "enterprise agent governance gap",
     "agent pilot-to-production failure",
-    "AI agent trust observability enterprise"
+    "AI agent trust observability enterprise",
+    "Cloudflare Project Think",
+    "Agents Week 2026 wrap-up",
+    "agentic cloud infrastructure",
+    "Cloudflare Workers agent execution",
+    "Durable Objects persistence",
+    "AI agent identity security",
+    "CrowdStrike SGNL acquisition",
+    "agent credential management",
+    "just-in-time access agent",
+    "Shadow AI Discovery enterprise",
+    "agent permission boundaries least privilege"
   ],
   "monthlyStats": {
     "2026-02": 36,
     "2026-03": 55,
-    "2026-04": 26
+    "2026-04": 28
   }
 }
