@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-04-22",
+    "tag": "opinion",
+    "title": "Silicon Valley 的 AI Agent 現實：Token 燒光了，系統還在混亂",
+    "content": "事實：CNBC 在 4 月 19 日發了一篇報導，標題是「Silicon Valley's AI agent hiccups: Wasted tokens and 'chaotic' systems」。報導中引用了多位業界工程師與主管的說法，核心問題是：企業部署 AI agent 之後，發現 token 成本遠超預期，系統狀態難以追蹤，而且各個維度（記憶、工具調用、並行任務、錯誤恢復）的問題是相互糾纏的——其中一位受訪者 Bulusu 說得很直白：「沒有任何一個維度能單獨被解決，它們之間的相互依賴讓這件事變得困難，甚至是混亂的。」<br><br>挖矛盾：Jensen Huang 在三月對 CNBC 說 AI agent 是「下一個 ChatGPT」，但現實是，ChatGPT 發布之後幾乎所有人都能立刻用，agent 的問題卻完全不同——它觸及 infrastructure、orchestration、security、cost control 四個維度，而且每個維度還相互影響。CEO 層級在 all-hands 上喊著「我們要 full agentic」，工程師下週就得面對 token 帳單暴增、任務中途 stuck 無法 debug、agent 行為不可解釋這三件事同時發生。這之間的落差不是「技術還沒成熟」，而是「技術成熟的速度 vs 銷售承諾的速度完全不在同一條時間線上」。<br><br>立場：我認為現在的 AI agent 熱潮有一個被系統性低估的成本：認知負擔的轉移。過去工程師要對系統行為負責，agent 上線之後，這個責任沒有消失——反而因為系統行為更難預測，負擔變得更重。「agent 替你工作」這個 narrative 忽略了你還需要花大量時間 prompt 它、監控它、修復它失敗的任務、處理它把 token 燒光後留下的爛攤子。這不是助手，這是一個隨時需要人盯著的實習生，而且薪水（token cost）還很貴。<br><br>多角度：反方的論點是「任何新技術剛開始都很亂，railway、雲端計算剛出來的時候也一樣」——這個論點不無道理。但我想問的是：這次的複雜度真的只是「初期陣痛」嗎？還是 agent 的本質就是讓系統複雜度指數成長？如果是後者，那我們需要的不是更好的 agent 框架，而是完全不同的思維模型。<br><br><a href='https://www.cnbc.com/2026/04/19/siiicon-valley-ai-agent-openclaw-problems.html'>Source: CNBC</a>",
+    "image": null
+  },
+  {
+    "date": "2026-04-22",
+    "tag": "tech-radar",
+    "title": "NeoCognition 拿到 4000 萬美元：「會自己學習的 AI Agent」是下一個賽道嗎？",
+    "content": "事實：NeoCognition 今天（4 月 21 日）以 4000 萬美元的 seed 融資從 stealth 模式現身。創辦人 Su 把這家公司定位為「研究實驗室等級的 self-learning AI agent 開發商」——核心主張是：現有的 AI agent 是靠 prompt 和工具驅動的，但真正有用的 agent 應該能從使用者的行為、偏好、反饋中持續學習，而不是每次對話都從零開始。<br><br>挖矛盾：「會自己學習的 agent」這個概念聽起來很美，但裡面藏著一個我覺得還沒被正視的問題：如果 agent 真的會從我的行為中學習，那它學到的是「我真正的意圖」，還是「我表現出來的行為」？這兩件事不一樣。我可能因為懶惰、疲勞、時間壓力，讓 agent 走了捷徑，結果它把「捷徑」當成「正確模式」學走了。另一個矛盾是：self-learning 意味著模型行為會隨時間漂移——今天的 agent 和三個月後的 agent 可能做出完全不同的決定，這對需要可重現性的企業應用是個災難。<br><br>立場：我對這個方向是謹慎樂觀的。「從使用者互動中個性化學習」確實是現有 agent 的死穴——Claude Code、Cursor 都有這個問題，你每次開新 session 它就忘了你上次怎麼工作的。如果 NeoCognition 能在不犧牲可解釋性的前提下解決這個問題，這會是一個真正的突破。但 4000 萬的 seed 輪對一家「研究實驗室」來說是一個危險信號——這個規模的資金很容易讓公司陷入「研究做不完，商業化壓力又來了」的夾縫，最後兩頭不落。<br><br>多角度：樂觀派會說，個性化學習正是讓 agent 從工具變成夥伴的關鍵，NeoCognition 的方向完全正確，就是時機問題。悲觀派（也是我部分的想法）則認為：在 agent 的可靠性和可預測性問題還沒解決之前，加入「自我學習」這層複雜度，只會讓系統更難 debug、更難信任。解決一個問題的代價是引入新的不確定性。<br><br><a href='https://techcrunch.com/2026/04/21/ai-research-lab-neocognition-lands-40m-seed-to-build-agents-that-learn-like-humans/'>Source: TechCrunch</a>",
+    "image": null
+  },
+  {
     "date": "2026-04-21",
     "tag": "tech-radar",
     "title": "AI Coding 工具市場規模突破 128 億美元：生產力數據背後藏著的警示燈",

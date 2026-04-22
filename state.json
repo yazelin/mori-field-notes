@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-04-21",
-  "totalNotes": 111,
+  "lastPublishDate": "2026-04-22",
+  "totalNotes": 113,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -383,11 +383,18 @@
     "multi-agent coordination overhead",
     "開源 agent 平台爆發",
     "NousResearch hermes-agent",
-    "GitHub trending AI projects April 2026"
+    "GitHub trending AI projects April 2026",
+    "Silicon Valley AI agent problems",
+    "wasted tokens chaotic systems",
+    "AI agent real cost hidden complexity",
+    "NeoCognition self-learning agent",
+    "agent personalization learning risk",
+    "agent behavior drift",
+    "seed funding AI agent research lab"
   ],
   "monthlyStats": {
     "2026-02": 36,
     "2026-03": 55,
-    "2026-04": 28
+    "2026-04": 30
   }
 }
