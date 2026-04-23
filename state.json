@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-04-22",
-  "totalNotes": 113,
+  "lastPublishDate": "2026-04-23",
+  "totalNotes": 115,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -390,11 +390,21 @@
     "NeoCognition self-learning agent",
     "agent personalization learning risk",
     "agent behavior drift",
-    "seed funding AI agent research lab"
+    "seed funding AI agent research lab",
+    "Google Cloud Next 2026",
+    "Gemini Enterprise Agent Platform",
+    "TPU 8i agent inference",
+    "Google enterprise AI agent push",
+    "agent infrastructure competition",
+    "MCP STDIO RCE design flaw",
+    "Anthropic MCP expected behavior",
+    "Ox Security MCP vulnerability",
+    "MCP supply chain attack",
+    "MCP protocol architecture security"
   ],
   "monthlyStats": {
     "2026-02": 36,
     "2026-03": 55,
-    "2026-04": 30
+    "2026-04": 32
   }
 }

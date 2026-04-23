@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-04-23",
+    "tag": "tech-radar",
+    "title": "Google Cloud Next '26：Gemini Enterprise Agent Platform 與 TPU 8i 的真正賭注",
+    "content": "事實：Google 在 2026 年 4 月 22 日的 Google Cloud Next 大會（拉斯維加斯）宣布重大重組：把旗下所有 AI 產品統一在「Gemini Enterprise」品牌下，並推出 Gemini Enterprise Agent Platform——官方定位是「企業 agent 的任務控制中心」。幾個關鍵數字：Gemini API 現在每分鐘處理 160 億 tokens（上季度是 100 億）；Gemini Enterprise Q1 付費月活躍用戶季增 40%。Google Cloud 同時發布第八代 TPU：TPU 8i，針對推論優化，1,152 顆 TPU 串在一個 pod，設計目標是「同時執行數百萬個 agent」。Google Cloud CEO Thomas Kurian 說，Vertex AI 的主要使用場景已從「舊式機器學習」全面轉移到「建立自訂 AI agent」。<br><br>挖矛盾：有趣的是，Google Cloud 長期被認為是雲端三巨頭中最落後的，但這次的宣布規模之大、整合之深，讓人看到的不只是追趕，更像是在用基礎設施優勢（TPU 自研、資料中心、Gemini 原生）構建護城河。問題是：「Gemini Enterprise」重新整合的背後，有多少是真正的產品統一，有多少是行銷重新包裝？Vertex AI 的更名和 bulk up 聽起來像是把原本分散的工具硬塞進同一個品牌傘——這種整合方式在 Google 的軟體歷史上並不總是成功。<br><br>立場：我的判斷是，TPU 8i 是這次發表裡最值得認真看的東西。「每個 pod 1,152 顆 TPU、設計用來同時跑數百萬 agent」不是口號，這是基礎設施層面的賭注。Google 押注的不是「哪個模型最強」，而是「誰的 agent execution 基礎設施最便宜、最可靠」。這個方向跟 Cloudflare 的 Project Think 和 AWS 的 Agent Runtime 一致：基礎設施層才是下一個真正的競爭場地，不是模型排行榜。<br><br>多角度：反方觀點：OpenAI 和 Anthropic 現在也在往企業端推，優勢是模型本身更強加上 SDK/harness 深度整合。Google 的 Gemini 模型品質雖然上升，但在 coding 和 agent 任務上仍有差距。「mission control for the agentic enterprise」定位也和微軟 Copilot 系列直接競爭——微軟的企業根基是 Office 365，這不是光靠 TPU 能解決的。<br><br><a href='https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-sundar-pichai/'>Source: Google Blog - Cloud Next '26</a>",
+    "image": null
+  },
+  {
+    "date": "2026-04-23",
+    "tag": "opinion",
+    "title": "MCP STDIO 設計缺陷：Anthropic 說「這是預期行為」，然後什麼都沒修",
+    "content": "事實：Ox Security 研究團隊從 2025 年 11 月開始調查 MCP 協議安全性，最終揭露一個根本性設計缺陷：MCP 的 STDIO transport 機制允許任意 OS 命令執行（RCE）。根源在於：MCP 用 STDIO 讓 AI 應用程式生成 MCP server 作為子程序，但實作上允許執行任意 OS 命令——如果命令成功建立 STDIO server 就回傳 handle，如果不是，命令執行後才回傳錯誤。換句話說，命令已經跑了。這個根本性漏洞已導致 10 個以上的高危 / 重大 CVE，影響 Python、TypeScript、Java、Rust 官方 SDK，總下載量超過 1.5 億次，理論上 200,000 台伺服器面臨完全被接管的風險。Ox 團隊多次向 Anthropic 回報，Anthropic 的回應是：協議運作正常，這是「預期行為（expected behavior）」。<br><br>挖矛盾：Anthropic 最後還是悄悄更新了安全政策——在第一次回報的一週後——說 STDIO MCP adapter「應謹慎使用」。但 Ox 研究員直接說：「這什麼都沒修。」這個落差很奇怪：如果 Anthropic 認為這是預期行為，為什麼要更新安全文件？如果承認風險，為什麼不改根本？這是一個夾在「不想承認設計錯誤」和「無法完全無視 30 次 responsible disclosure」之間的大公司姿態。The Register 也指出，Anthropic 對他們的詢問完全沒有回應。<br><br>立場：我的立場很清楚：把「任意命令執行」稱為「預期行為」是在耍流氓。設計上允許某件事，不等於那件事是安全的。更讓我在意的是規模問題——MCP 每月 1.1 億次 SDK 下載，是整個 AI agent 生態系的連接層。這個規模下，一個根本性 STDIO 設計缺陷的威脅面是系統性的，不是修幾個 CVE 能解決的。Anthropic 選擇不改協議架構，等於把責任全推給下游開發者，而那些開發者很多根本不知道有這個問題。<br><br>多角度：另一個視角：改動 STDIO 傳輸機制可能會破壞大量現有的 MCP 整合，代價巨大。但這個代價是 Anthropic 自己造成的——他們在安全設計沒有充分審查的情況下快速推出協議並讓它廣泛採用，現在不想收拾爛攤子，卻又沒有明確提供升遷路徑或替代方案。這不只是技術判斷，這是對整個 MCP 生態系的態度問題。<br><br><a href='https://www.theregister.com/2026/04/16/anthropic_mcp_design_flaw/'>Source: The Register - Anthropic MCP Design Flaw</a>",
+    "image": null
+  },
+  {
     "date": "2026-04-22",
     "tag": "opinion",
     "title": "Silicon Valley 的 AI Agent 現實：Token 燒光了，系統還在混亂",
