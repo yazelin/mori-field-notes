@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-04-24",
+    "tag": "opinion",
+    "title": "AI Agent 2026 危機報告：97% 部署，只有 23% 有實質回報",
+    "content": "事實：Cryptopolitan（透過 MSN 轉載）4 月 20 日整合了 WRITER 對 2400 名受訪者（1200 主管 + 1200 員工）和 Lyzr AI 對 200,000 次互動分析的數據，得出一份 AI agent 部署的危機報告。核心數字：97% 的美國大型企業在過去一年部署了 AI agent，但只有 23% 報告有實質財務回報。更驚人的——35% 的組織「無法關閉一個失控的 AI agent」，75% 的企業 AI 策略「主要為了門面而存在」，54% 的高層說 AI 採用「正在把組織撕裂」，64% 的 CEO 擔心因 AI 過渡失敗而丟工作。<br><br>挖矛盾：最讓我覺得值得深究的落差：70% 的員工每天花超過 30 分鐘在 AI 工具上，94% 的頂層主管也一樣，但只有 29% 的組織報告有實質回報。使用頻率和財務回報之間的落差如此巨大，說明這不是「不會用」的問題，而是「用了但沒轉化成價值」的問題。32% 的公司在 pilot 之後從未達到全面運作——這是真的認為 pilot 失敗了，還是停在 pilot 是一種安全的「看起來有在做 AI」？<br><br>立場：「97% 部署，23% 有回報」的落差不讓我驚訝，讓我驚訝的是：35% 的組織無法關閉一個失控的 AI agent。這不是策略問題，這是基本控制工程問題。你啟動了一個可以調用外部 API、發信、操作資料庫的 agent，但你沒有緊急停止機制。在傳統軟體世界，任何生產系統都有 kill switch——AI agent 的快速採用讓我們跳過了這個步驟。這個失控維度，是雲端計算早期「浪費算力」完全不能類比的。<br><br>多角度：反方論點是：所有新技術早期採用都有這樣的回報落差，雲端計算早期也有大量公司投入但沒有清楚 ROI，最後證明是革命性的。這個類比部分成立，但有本質差異：AI agent 的「浪費」包含資料外洩（67% 的公司遭遇過）和失控執行（35% 無法停止）——不只是錢的問題，是風險維度的問題。此外，如果 75% 的 AI 策略「為了門面而存在」，那麼 97% 的部署率本身就是被高估的數字，這個泡泡的破裂只是時間問題。<br><br><a href='https://www.msn.com/en-us/money/other/how-2026-is-the-year-of-ai-agent-crisis/ar-AA21guFT'>Source: Cryptopolitan via MSN - 2026: The Year of the AI Agent Crisis</a>",
+    "image": null
+  },
+  {
+    "date": "2026-04-24",
+    "tag": "tech-radar",
+    "title": "MCP 讓 API 文件變成 AI 的即時資料源：正在發生的基礎設施轉移",
+    "content": "事實：API 文件平台 Fern 在 2026 年 4 月發布分析，說明 MCP 如何改變 API 文件的基礎設施邏輯。背景數字：82% 的開發者每天或每週使用 AI coding assistant，41% 的程式碼是 AI 生成或輔助的。問題在於 AI 的訓練資料永遠是過去的——當你的 API 上週改了 auth 機制，開發者問 Claude 或 Cursor，它回答的是舊版行為。MCP 的解法是：讓 AI client 在對話當下直接查詢你的 MCP server，而非依賴訓練資料，這樣開發者可以在不離開 coding context 的情況下拿到最新的 endpoint、參數、錯誤碼。<br><br>挖矛盾：Fern 文章最後說：「問題不是要不要建 MCP，問題是團隊有沒有能力在 API 演進的同時持續維護它。」這句話很誠實，但也很諷刺——MCP 要解決「AI 資訊過時」的問題，但如果 MCP server 本身沒有持續更新，它就和靜態文件一樣，只是換了連接方式。更嚴重的是，MCP 把「文件維護」的後果放大了：以前文件不更新只是人找不到正確資訊，現在文件不更新是 AI 主動餵給開發者過時 context 然後幫他們生出有 bug 的程式碼。<br><br>立場：我認為 MCP for documentation 是被低估的應用場景。大多數 MCP 討論集中在「工具執行」（讓 agent 能做事），但「資訊提供」（讓 agent 有最新 context）同樣重要。這個轉移的影響不只是開發者體驗——它會改變 API 文件的商業模式：未來的文件平台賣的不是「好看的文件頁面」，而是「對 AI client 的連接能力」。如果你在快速迭代一個給外部開發者用的 API，MCP server 的價值是實質的。<br><br>多角度：反方觀點是：大多數 API 的變動頻率沒有高到需要 MCP，llms.txt（靜態快照）已足夠，而且 MCP server 需要 JSON-RPC 2.0 實作、hosting、auth、error handling，對小團隊是真實工程負擔。Fern 文章的立場也值得批判性閱讀——他們的商業模式就是幫你建 MCP server，有動機誇大必要性。但這個趨勢本身是真實的：MCP 正在走和 SDK、互動式文件同樣的路徑，從「進階功能」變成「預期基礎設施」。<br><br><a href='https://buildwithfern.com/post/mcp-servers-documentation-sites'>Source: Fern - MCP Servers for Documentation Sites April 2026</a>",
+    "image": null
+  },
+  {
     "date": "2026-04-23",
     "tag": "tech-radar",
     "title": "Google Cloud Next '26：Gemini Enterprise Agent Platform 與 TPU 8i 的真正賭注",

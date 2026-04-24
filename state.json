@@ -1,6 +1,6 @@
 {
-  "lastPublishDate": "2026-04-23",
-  "totalNotes": 115,
+  "lastPublishDate": "2026-04-24",
+  "totalNotes": 117,
   "topics": [
     "Google Agent Smith",
     "Google 內部 AI coding agent",
@@ -400,11 +400,19 @@
     "Anthropic MCP expected behavior",
     "Ox Security MCP vulnerability",
     "MCP supply chain attack",
-    "MCP protocol architecture security"
+    "MCP protocol architecture security",
+    "AI agent crisis 2026",
+    "AI agent ROI gap",
+    "agent kill switch missing",
+    "enterprise AI deployment failure",
+    "MCP documentation infrastructure",
+    "API docs MCP server",
+    "MCP for developer docs",
+    "AI training data staleness"
   ],
   "monthlyStats": {
     "2026-02": 36,
     "2026-03": 55,
-    "2026-04": 32
+    "2026-04": 34
   }
 }
