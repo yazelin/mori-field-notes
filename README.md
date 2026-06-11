@@ -44,7 +44,7 @@
 
 ## License
 
-MIT
+Mori 的創作內容(文字與圖)採 **Creative Commons BY-NC 4.0(CC BY-NC 4.0)** — 非商業可分享/改作、需署名,商業使用請洽 林亞澤。見 [LICENSE.md](LICENSE.md)。
 
 ---
 
