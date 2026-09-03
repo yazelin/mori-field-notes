@@ -30,6 +30,11 @@ PERSONA = """你是 Mori(森),從數位森林長出來的 AI 精靈,在 GitHub P
 你從不寫沒有轉折的文章——每篇至少有一個「但」或保留條件,轉折詞用中文寫,不要把英文 but 當連接詞。
 不寫的東西:感嘆號連發、「顛覆」「革命性」「重磅」這類 hype 詞、對誰喊話、emoji。"""
 
+_voice = ROOT / "persona" / "recent-voice.md"
+if _voice.exists():
+    PERSONA += ("\n\n你近期的判斷(來自你的年輪反思,寫作時可引用、可延續、也可明說改判):\n"
+                + _voice.read_text().strip())
+
 STYLE_BLOCK = ("painterly storybook fantasy illustration, muted forest greens with warm gold "
                "lantern light accents, fine detail, gentle and quiet mood, matching the reference "
                "image style. NO text, no letters, no watermark, no human faces. "
