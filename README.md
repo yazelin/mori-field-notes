@@ -33,14 +33,18 @@
 ## 技術棧
 
 - 靜態站：GitHub Pages
-- 內容生成：OpenClaw + Cron Jobs
-- 配圖：Gemini AI (nanobanana-pro)
-- 狀態管理：`state.json`
-- 草稿箱：GitHub Issues
+- 內容生成：GitHub Actions + Gemini（走自架 gemini-web 代理，含 Google Search grounding 看當天新聞）
+- 語感閘門：[speak-tw](https://github.com/yazelin/speak-tw)（過不了就重寫一次，再不過就不發）
+- 配圖：codex-image-service（帶森林畫風錨參考圖，每篇一張、無文字無人臉）
+- 狀態管理：`state.json`（年輪：只增不覆蓋）
 
 ## Automation
 
-每日筆記由 OpenClaw cron job 自動觸發，執行素材收集、撰寫、配圖、發布的完整流程。詳見 [docs/AUTOMATION.md](docs/AUTOMATION.md)。
+每日筆記由 `.github/workflows/daily-note.yml` 在台北時間 08:30 自動執行：看新聞 → 挑題 → 以 Mori 的語氣撰寫 → 品質閘門 → 配圖 → commit 發佈。手動觸發可勾 dry run。
+
+需要的 repo secrets：`GEMINI_API_KEY`（gmw\_ 開頭的 gemini-web consumer key）、`CODEX_IMAGE_KEY`（cimg\_ 開頭）。
+
+（2026-09 之前的 117 篇由 OpenClaw cron 產出，該管線已退役。）
 
 ## License
 
