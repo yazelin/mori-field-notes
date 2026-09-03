@@ -52,10 +52,17 @@ def gemini(prompt, search=False, json_mode=True, timeout=180):
 
 
 def parse_json(raw, keys):
+    raw = re.sub(r"^```(?:json)?|```$", "", raw.strip(), flags=re.M).strip()
     m = re.search(r"\{.*\}", raw, re.S)
     if not m:
         raise ValueError("no JSON in reply: " + raw[:200])
-    d = json.loads(m.group(0))
+    txt = m.group(0)
+    try:
+        d = json.loads(txt, strict=False)
+    except json.JSONDecodeError:
+        # 常見病:字串值裡帶原始換行 -> 把「引號內的裸換行」換成空白再試一次
+        repaired = re.sub(r'(?<=[^"\\])\n(?=(?:[^"]*"[^"]*")*[^"]*"[,}\]])', " ", txt)
+        d = json.loads(repaired, strict=False)
     for k in keys:
         if k not in d:
             raise ValueError(f"missing key {k}: " + raw[:200])
@@ -74,6 +81,18 @@ def fetch_news(recent_topics):
 
 
 def write_note(news, feedback=""):
+    last = None
+    for attempt in range(3):
+        try:
+            return _write_note_once(news, feedback)
+        except (ValueError, json.JSONDecodeError) as e:
+            last = e
+            feedback = (feedback + "\n上一次輸出不是合法 JSON,整段重出。content 字串內的換行一律寫成空白,不要用真的換行。").strip()
+            print(f"JSON 解析失敗,重試 {attempt+1}/3:", str(e)[:120])
+    raise last
+
+
+def _write_note_once(news, feedback=""):
     raw = gemini(
         PERSONA + "\n\n今天蒐集到的素材:\n" + json.dumps(news, ensure_ascii=False, indent=1) +
         "\n\n挑「你最有話想說」的一則,寫一篇 200-500 字的 Field Note。"
