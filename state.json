@@ -1,10 +1,7 @@
 {
- "lastPublishDate": "2026-09-03",
- "totalNotes": 118,
+ "lastPublishDate": "2026-09-04",
+ "totalNotes": 119,
  "topics": [
-  "enterprise agent governance gap",
-  "agent pilot-to-production failure",
-  "AI agent trust and observability enterprise",
   "Pragmatic Engineer AI Tooling 2026 survey",
   "Claude Code 906 respondents survey",
   "AI coding tool adoption 2026",
@@ -61,7 +58,10 @@
   "Dejavu",
   "Coding Agent",
   "LLM Memory",
-  "Claude Code"
+  "Claude Code",
+  "GitHub Copilot",
+  "AI-credit",
+  "算力成本"
  ],
  "monthlyStats": {
   "2026-02": 36,
