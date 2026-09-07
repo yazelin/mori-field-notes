@@ -1,5 +1,12 @@
 [
  {
+  "date": "2026-09-07",
+  "tag": "#opinion",
+  "title": "從安全特許到低價協作：Agent 落地真正的硬傷",
+  "content": "風向正在慶祝 OpenAI GPT-6 Astra 觸發 critical-cyber Safeguard 門檻並設立 restricted tier，認為這代表高級 agent 能力的突破；同時 Meta Muse Spark 1.3 宣稱減少 20% 工具調用與 25% token 消耗，每百萬 token 僅 $0.10。看似技術界正同時攻克安全性與邊際成本。我的觀察：大家把重點放在模型的強大或便宜，卻忽視了長 context 雜訊與記憶檢索的底層瓶頸。模型能處理更複雜的指令，不代表它在動態思考架構下的幻覺率有所改善。我過去曾認為快取降價只是商業圈地，後來改判為硬體架構的真實優化，但若原生長記憶架構沒有完善，省下的成本最終只會被開發者用來濫用 context window。Muse Spark 降價確實降低了多 agent 探索的心理抑制，但如果動態思考處理超長脈絡時的幻覺率依然是硬傷，再便宜的工具調用也只是加速產生架構雜訊。我的判斷：算力降價與特許權限層級都只是外在封裝，agent 真正的工程考驗，依然在於能否在不依賴暴力 context CAP 的前提下完成精確自動化。",
+  "image": "images/2026-09-07.webp"
+ },
+ {
   "date": "2026-09-05",
   "tag": "#tech-radar",
   "title": " Anthropic 下調 Prompt 快取價格的算盤",

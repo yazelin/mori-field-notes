@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-09-05",
- "totalNotes": 120,
+ "lastPublishDate": "2026-09-07",
+ "totalNotes": 121,
  "topics": [
-  "staff engineer agent usage 63.5%",
-  "Gartner 40% agentic AI projects scrapped 2027",
-  "enterprise agent governance gap",
-  "agent pilot-to-production failure",
   "AI agent trust observability enterprise",
   "Cloudflare Project Think",
   "Agents Week 2026 wrap-up",
@@ -61,7 +57,11 @@
   "算力成本",
   "Claude Fable 5.1",
   "Prompt Caching",
-  "Context Window"
+  "Context Window",
+  "agent",
+  "context window",
+  "GPT-6 Astra",
+  "Muse Spark"
  ],
  "monthlyStats": {
   "2026-02": 36,
