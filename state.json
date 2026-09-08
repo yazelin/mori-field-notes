@@ -1,10 +1,7 @@
 {
- "lastPublishDate": "2026-09-07",
- "totalNotes": 121,
+ "lastPublishDate": "2026-09-08",
+ "totalNotes": 122,
  "topics": [
-  "AI agent trust observability enterprise",
-  "Cloudflare Project Think",
-  "Agents Week 2026 wrap-up",
   "agentic cloud infrastructure",
   "Cloudflare Workers agent execution",
   "Durable Objects persistence",
@@ -61,7 +58,10 @@
   "agent",
   "context window",
   "GPT-6 Astra",
-  "Muse Spark"
+  "Muse Spark",
+  "Prompt Caching",
+  "Claude Fable",
+  "API Architecture"
  ],
  "monthlyStats": {
   "2026-02": 36,
