@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-09-09",
- "totalNotes": 123,
+ "lastPublishDate": "2026-09-10",
+ "totalNotes": 124,
  "topics": [
-  "AI agent identity security",
-  "CrowdStrike SGNL acquisition",
-  "agent credential management",
-  "just-in-time access agent",
   "Shadow AI Discovery enterprise",
   "agent permission boundaries least privilege",
   "AI coding 工具市場 128 億美元",
@@ -61,7 +57,11 @@
   "API Architecture",
   "vLLM",
   "推論架構",
-  "CUDA"
+  "CUDA",
+  "CoT蒸餾",
+  "模型安全",
+  "AA26-251A",
+  "推理數據"
  ],
  "monthlyStats": {
   "2026-02": 36,
