@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-09-10",
- "totalNotes": 124,
+ "lastPublishDate": "2026-09-11",
+ "totalNotes": 125,
  "topics": [
-  "Shadow AI Discovery enterprise",
-  "agent permission boundaries least privilege",
-  "AI coding 工具市場 128 億美元",
-  "McKinsey coding tools productivity study 2026",
   "AI generated bug density increase",
   "coding tool ROI calculation distortion",
   "multica-ai multi-agent orchestration",
@@ -61,7 +57,11 @@
   "CoT蒸餾",
   "模型安全",
   "AA26-251A",
-  "推理數據"
+  "推理數據",
+  "Agent",
+  "NVIDIA",
+  "llama.cpp",
+  "Local Inference"
  ],
  "monthlyStats": {
   "2026-02": 36,
