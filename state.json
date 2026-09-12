@@ -1,10 +1,7 @@
 {
- "lastPublishDate": "2026-09-11",
- "totalNotes": 125,
+ "lastPublishDate": "2026-09-12",
+ "totalNotes": 126,
  "topics": [
-  "AI generated bug density increase",
-  "coding tool ROI calculation distortion",
-  "multica-ai multi-agent orchestration",
   "multi-agent coordination overhead",
   "開源 agent 平台爆發",
   "NousResearch hermes-agent",
@@ -61,7 +58,10 @@
   "Agent",
   "NVIDIA",
   "llama.cpp",
-  "Local Inference"
+  "Local Inference",
+  "Llama 3.3",
+  "KV Cache",
+  "GPU 推論"
  ],
  "monthlyStats": {
   "2026-02": 36,
