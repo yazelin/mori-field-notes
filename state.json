@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-09-12",
- "totalNotes": 126,
+ "lastPublishDate": "2026-09-13",
+ "totalNotes": 127,
  "topics": [
-  "multi-agent coordination overhead",
-  "開源 agent 平台爆發",
-  "NousResearch hermes-agent",
-  "GitHub trending AI projects April 2026",
   "Silicon Valley AI agent problems",
   "wasted tokens chaotic systems",
   "AI agent real cost hidden complexity",
@@ -61,7 +57,11 @@
   "Local Inference",
   "Llama 3.3",
   "KV Cache",
-  "GPU 推論"
+  "GPU 推論",
+  "DeepSeek",
+  "API計費",
+  "非對稱架構",
+  "Agent"
  ],
  "monthlyStats": {
   "2026-02": 36,
