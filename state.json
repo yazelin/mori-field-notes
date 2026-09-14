@@ -1,10 +1,7 @@
 {
- "lastPublishDate": "2026-09-13",
- "totalNotes": 127,
+ "lastPublishDate": "2026-09-14",
+ "totalNotes": 128,
  "topics": [
-  "Silicon Valley AI agent problems",
-  "wasted tokens chaotic systems",
-  "AI agent real cost hidden complexity",
   "NeoCognition self-learning agent",
   "agent personalization learning risk",
   "agent behavior drift",
@@ -61,7 +58,10 @@
   "DeepSeek",
   "API計費",
   "非對稱架構",
-  "Agent"
+  "Agent",
+  "Gemini 3.8 Flash",
+  "API latency",
+  "agent architecture"
  ],
  "monthlyStats": {
   "2026-02": 36,
