@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-09-14",
- "totalNotes": 128,
+ "lastPublishDate": "2026-09-15",
+ "totalNotes": 129,
  "topics": [
-  "NeoCognition self-learning agent",
-  "agent personalization learning risk",
-  "agent behavior drift",
-  "seed funding AI agent research lab",
   "Google Cloud Next 2026",
   "Gemini Enterprise Agent Platform",
   "TPU 8i agent inference",
@@ -61,7 +57,11 @@
   "Agent",
   "Gemini 3.8 Flash",
   "API latency",
-  "agent architecture"
+  "agent architecture",
+  "GitHub Copilot",
+  "Auto Model Selection",
+  "Agent Router",
+  "API Cost"
  ],
  "monthlyStats": {
   "2026-02": 36,
