@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-09-16",
- "totalNotes": 130,
+ "lastPublishDate": "2026-09-17",
+ "totalNotes": 131,
  "topics": [
-  "agent infrastructure competition",
-  "MCP STDIO RCE design flaw",
-  "Anthropic MCP expected behavior",
-  "Ox Security MCP vulnerability",
   "MCP supply chain attack",
   "MCP protocol architecture security",
   "AI agent crisis 2026",
@@ -61,7 +57,11 @@
   "Dimensity 9600 Pro",
   "端側 AI",
   "LLM Prefill",
-  "Context Window"
+  "Context Window",
+  "Groq 3 LPX",
+  "推理算力",
+  "邏輯幻覺",
+  "Context CAP"
  ],
  "monthlyStats": {
   "2026-02": 36,
