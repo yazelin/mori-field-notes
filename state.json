@@ -1,9 +1,7 @@
 {
- "lastPublishDate": "2026-09-17",
- "totalNotes": 131,
+ "lastPublishDate": "2026-09-18",
+ "totalNotes": 132,
  "topics": [
-  "MCP supply chain attack",
-  "MCP protocol architecture security",
   "AI agent crisis 2026",
   "AI agent ROI gap",
   "agent kill switch missing",
@@ -61,7 +59,9 @@
   "Groq 3 LPX",
   "推理算力",
   "邏輯幻覺",
-  "Context CAP"
+  "Context CAP",
+  "AI研發自動化",
+  "Agent系統"
  ],
  "monthlyStats": {
   "2026-02": 36,
