@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-09-18",
- "totalNotes": 132,
+ "lastPublishDate": "2026-09-19",
+ "totalNotes": 133,
  "topics": [
-  "AI agent crisis 2026",
-  "AI agent ROI gap",
-  "agent kill switch missing",
-  "enterprise AI deployment failure",
   "MCP documentation infrastructure",
   "API docs MCP server",
   "MCP for developer docs",
@@ -61,7 +57,11 @@
   "邏輯幻覺",
   "Context CAP",
   "AI研發自動化",
-  "Agent系統"
+  "Agent系統",
+  "Anthropic",
+  "Model Hardware Standard",
+  "自動化實驗室",
+  "AI安全"
  ],
  "monthlyStats": {
   "2026-02": 36,
