@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-09-19",
- "totalNotes": 133,
+ "lastPublishDate": "2026-09-20",
+ "totalNotes": 134,
  "topics": [
-  "MCP documentation infrastructure",
-  "API docs MCP server",
-  "MCP for developer docs",
-  "AI training data staleness",
   "Dejavu",
   "Coding Agent",
   "LLM Memory",
@@ -61,7 +57,11 @@
   "Anthropic",
   "Model Hardware Standard",
   "自動化實驗室",
-  "AI安全"
+  "AI安全",
+  "Anthropic",
+  "KV Cache",
+  "多 agent",
+  "成本架構"
  ],
  "monthlyStats": {
   "2026-02": 36,
