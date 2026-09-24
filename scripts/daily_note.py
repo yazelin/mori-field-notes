@@ -43,7 +43,7 @@ if _voice.exists():
     VOICE_LINES = [re.sub(r"^-\s*(\(改判\)\s*)?", "", l).strip() for l in _voice.read_text().splitlines()
                    if l.strip().startswith("-")]
     # 近期判斷不再整包附進人設:8 條全在講算力、架構、噪音,整包餵進去,不管寫什麼結尾都被拉回這幾條。
-    # 改成 relevant_voice() 依文章用詞挑相關的,最多 2 條,不相關就不給。
+    # 改成 pick_voice() 請模型挑跟今天素材真的相關的,最多 2 條,不相關就不給。
 
 
 def gemini(prompt, search=False, json_mode=True, timeout=180):
@@ -212,8 +212,7 @@ def _prompt(material, feedback):
                 "\n\n挑「你最有話想說」的一則,寫一篇 200-500 字的 Field Note。"
                 "\n要求:第一人稱(我);至少一個具體事實或數字;素材裡有改變前、改變後的數字就把兩個原值都寫進內文;"
                 "結尾落在你自己的判斷,而非呼籲。")
-    mtext = material.get("title", "") + " " + material.get("article", "") + " " + json.dumps(material.get("news", ""), ensure_ascii=False)
-    rel = relevant_voice(mtext)
+    rel = material.get("voice") or []
     voice = ("\n\n你之前對相關題目下過的判斷(可以延續或改判,但要用新的話講、要落在這篇的具體內容上,不准照抄):\n"
              + "\n".join("- " + l for l in rel)) if rel else ""
     return (PERSONA + voice + head + "\n" + TW_PITFALLS +
@@ -327,20 +326,28 @@ def fix_punct(text):
     return re.sub(rf"(?<={_CJK})\s*([,;:?!])\s*(?={_CJK})", lambda m: _FW[m.group(1)], text)
 
 
-def _terms(text):
-    """粗略的關鍵詞:英文單字與中文二字詞片段。"""
-    t = text.lower()
-    return set(re.findall(r"[a-z][a-z0-9-]{2,}", t)) | {t[k:k + 2] for k in range(len(t) - 1) if re.match(r"[\u4e00-\u9fff]{2}", t[k:k + 2])}
-
-
-_STOP = {"不是", "只是", "無法", "僅是", "成本", "問題", "才是", "不等"}
-
-
-def relevant_voice(material_text, limit=2, min_hits=3):
-    """近期判斷裡跟今天素材用詞重疊夠多的,最多 limit 條。"""
-    mt = _terms(material_text)
-    scored = sorted(((len((_terms(l) - _STOP) & mt), l) for l in VOICE_LINES), reverse=True)
-    return [l for n, l in scored if n >= min_hits][:limit]
+def pick_voice(material, limit=2):
+    """請模型從近期判斷(年輪)裡挑跟今天素材真的在談同一件事的,最多 limit 條,沒有就空。
+    2026-09-24:原本整包附上 → 每篇結尾都被拉回算力、架構;改用字詞比對 → 英文原文跟中文判斷對不上,一條都挑不到。"""
+    if not VOICE_LINES:
+        return []
+    about = (material.get("title", "") + "\n" + material.get("article", "")[:3000]) if material.get("article") \
+        else json.dumps(material.get("news", []), ensure_ascii=False)[:3000]
+    try:
+        picks = parse_json(gemini(
+            "下面是一份素材,以及你過去寫下的幾條判斷。挑出跟這份素材講的是同一個主題、可以延續或改判的判斷,"
+            f"最多 {limit} 條。同一個主題的意思是:都在講推論速度、都在講快取價格、都在講記憶體瓶頸這種程度;"
+            "只是都提到 agent、AI、LLM、模型、成本這些大字眼的不算。寧可給空陣列,也不要勉強湊。"
+            "每挑一條都要寫一句理由,說出素材裡哪件事跟這條判斷講的是同一件事。\n\n素材:\n" + about +
+            "\n\n判斷:\n" + "\n".join(f"{k}. {l}" for k, l in enumerate(VOICE_LINES)) +
+            '\n只輸出 JSON:{"picks":[{"id":0,"why":"一句理由"}]},沒有就 {"picks":[]}'), ["picks"])["picks"]
+        for p in picks:
+            print("  年輪判斷相關:", p.get("id"), p.get("why", "")[:80])
+        ids = [p.get("id") for p in picks if isinstance(p, dict)]
+        return [VOICE_LINES[k] for k in ids if isinstance(k, int) and 0 <= k < len(VOICE_LINES)][:limit]
+    except Exception as e:
+        print("::warning::挑年輪判斷失敗,今天不帶:", str(e)[:120])
+        return []
 
 
 def copied_voice(text, min_len=8):
@@ -403,6 +410,8 @@ def main():
         news = fetch_news(state.get("topics", []))
         print("素材:", json.dumps([n["title"] for n in news], ensure_ascii=False))
         material = {"news": news}
+    material["voice"] = pick_voice(material)
+    print("帶入的年輪判斷:", material["voice"] or "無")
     note = write_note(material)
     note["content"] = fix_punct(note["content"]); note["title"] = fix_punct(note["title"])
     errs = gate(note)
