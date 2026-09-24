@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """每日一則 Field Note:看新聞 → 以 Mori 的語氣寫 200-500 字 → 更新 docs/。
 
-零 pip 相依。2026-09-24 起不再配圖:原本想要資訊圖表,但生圖模型只會畫同一片森林,
-數字也會自己編;真要圖表得從內文抽數據用程式畫,另案處理。舊筆記的圖保留。
+零 pip 相依。2026-09-24 起不再用生圖模型配圖(只會畫同一片森林,數字也會自己編),
+改成寫稿時一起抽圖表資料(chart),由首頁用 HTML/CSS 畫;圖表裡的每個數字都必須
+原樣出現在內文,對不上就不畫(validate_chart)。舊筆記的圖保留。
 env:
   GEMINI_API_KEY        gmw_ 開頭的 gemini-web consumer key(必填)
   GEMINI_WEB_BASE_URL   預設 https://ching-tech.ddns.net/gemini-web
@@ -109,10 +110,57 @@ def _write_note_once(news, feedback=""):
         "\n要求:第一人稱(我);至少一個具體事實或數字;結尾落在你自己的判斷,而非呼籲。"
         f"\ntag 從這裡挑一個:{VALID_TAGS}"
         "\n標題 25 字內,不用驚嘆號。"
+        "\n另外判斷內文有沒有值得畫成資訊圖表的數字,有就給 chart,沒有就給 null(純觀點文給 null)。"
+        "\nchart 只能用內文裡原樣出現過的數字,不准換算、不准估算、不准補內文沒有的數字。三種版型擇一:"
+        '\n  大數字 {"type":"stat","title":"圖表標題","value":"26%","label":"這個數字是什麼",'
+        '"extras":[{"label":"補充項","value":"約 30,000 個"}],"source":"資料來源(哪家公司/報告/發表會)","claimed":true}'
+        '\n  長條比較(2 到 6 個同單位數字) {"type":"bars","title":"...","items":[{"label":"項目","value":51,"display":"+51%"}],'
+        '"extras":[],"source":"...","claimed":true}'
+        '\n  前後對照(內文同時寫了改變前與改變後兩個數字才用) {"type":"vs","title":"...",'
+        '"before":{"label":"改變前","value":"..."},"after":{"label":"改變後","value":"..."},"delta":"...","source":"...","claimed":false}'
+        "\nclaimed:數字是廠商或發表者自己宣稱的給 true,第三方量測或官方統計給 false。"
         + (f"\n\n上一稿沒過檢查,理由如下,請修正後重寫:\n{feedback}" if feedback else "") +
-        '\n只輸出 JSON:{"tag":"...","title":"...","content":"...","topics":["主題關鍵詞1","主題關鍵詞2"]}',
+        '\n只輸出 JSON:{"tag":"...","title":"...","content":"...","topics":["主題關鍵詞1","主題關鍵詞2"],"chart":null}',
         json_mode=True)
     return parse_json(raw, ["tag", "title", "content", "topics"])
+
+
+def _nums(text):
+    """抽出文字裡的數字(去掉千分位逗號),用來比對圖表數字有沒有出現在內文。"""
+    return re.findall(r"\d+(?:\.\d+)?", str(text).replace(",", "").replace("，", ""))
+
+
+def validate_chart(chart, content):
+    """圖表資料合法且每個數字都在內文出現過才回傳,否則回 None(筆記照發,只是沒圖表)。"""
+    if not isinstance(chart, dict) or chart.get("type") not in ("stat", "bars", "vs"):
+        return None
+    shown = []  # 圖表上會顯示給讀者看的字串
+    try:
+        t = chart["type"]
+        if t == "stat":
+            shown += [chart["value"]]
+        elif t == "bars":
+            items = chart["items"]
+            if not 2 <= len(items) <= 6:
+                return None
+            for it in items:
+                float(it["value"]); shown += [it["display"]]
+        else:
+            shown += [chart["before"]["value"], chart["after"]["value"]]
+            if chart.get("delta"):
+                shown += [chart["delta"]]
+        shown += [x["value"] for x in chart.get("extras") or []]
+        if not str(chart.get("title", "")).strip() or not str(chart.get("source", "")).strip():
+            return None
+    except (KeyError, TypeError, ValueError):
+        return None
+    pool = set(_nums(content))
+    for v in shown:
+        ns = _nums(v)
+        if not ns or any(n not in pool for n in ns):
+            print(f"圖表數字「{v}」不在內文裡,這篇不畫圖表")
+            return None
+    return chart
 
 
 def gate(note):
@@ -157,6 +205,9 @@ def main():
 
     entry = {"date": today, "tag": note["tag"], "title": note["title"],
              "content": note["content"], "image": None}
+    chart = validate_chart(note.get("chart"), note["content"])
+    if chart:
+        entry["chart"] = chart
     if DRY:
         print("=== DRY RUN ===")
         print(json.dumps(entry, ensure_ascii=False, indent=1))
@@ -171,5 +222,25 @@ def main():
     print("published:", entry["title"])
 
 
+
+
+def _selfcheck():
+    c = "Claude 主導約 26% 的研發工作,平台同時運作近 30,000 個 agent。Prefill 提升 51%,每瓦提升 55%。"
+    ok = {"type": "stat", "title": "t", "value": "26%", "label": "l",
+          "extras": [{"label": "a", "value": "約 30,000 個"}], "source": "s"}
+    assert validate_chart(ok, c) == ok
+    assert validate_chart({**ok, "value": "27%"}, c) is None          # 內文沒有的數字
+    assert validate_chart({**ok, "source": ""}, c) is None            # 沒來源
+    bars = {"type": "bars", "title": "t", "source": "s", "items": [
+        {"label": "a", "value": 51, "display": "+51%"}, {"label": "b", "value": 55, "display": "+55%"}]}
+    assert validate_chart(bars, c) == bars
+    assert validate_chart({**bars, "items": bars["items"][:1]}, c) is None  # 只有一條不成圖
+    vs = {"type": "vs", "title": "t", "source": "s", "before": {"label": "a", "value": "100"},
+          "after": {"label": "b", "value": "25"}, "delta": "−75%"}
+    assert validate_chart(vs, c) is None                               # 換算出來的數字擋掉
+    assert validate_chart(None, c) is None
+    print("validate_chart ok")
+
+
 if __name__ == "__main__":
-    main()
+    _selfcheck() if "--selfcheck" in sys.argv else main()
