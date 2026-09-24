@@ -150,6 +150,14 @@
     .vs-arrow { font-family: var(--mono); font-size: .8rem; color: var(--bark); font-weight: 700; }
     [data-theme="dark"] .vs-arrow { color: var(--bark-light); }
     .vs-arrow span { display: block; font-size: 1.4rem; line-height: 1; }
+    /* 漏斗：寬度只表示「第幾層」，不按數值比例（數量常差上萬倍，照比例畫後面幾層會看不見） */
+    .funnel { display: grid; gap: 4px; justify-items: center; }
+    .funnel-step { display: flex; justify-content: space-between; gap: .8rem; padding: .45rem .9rem; border-radius: 8px;
+      background: linear-gradient(90deg, var(--green-light), var(--leaf)); color: #fff; font-size: .82rem; }
+    .funnel-step b { font-family: var(--mono); }
+    .note-src { font-size: .78rem; color: var(--text-muted); margin-top: .9rem; padding-top: .6rem; border-top: 1px solid var(--green-pale); }
+    .note-src a { color: var(--green-light); }
+    [data-theme="dark"] .note-src a { color: var(--leaf); }
 
     /* 側欄日期歸檔：桌機靠右 sticky，窄螢幕移到清單上方、預設收起 */
     .layout { max-width: 1000px; margin: 0 auto; padding: 0 1rem; display: grid;
@@ -222,6 +230,7 @@
       font-size: .92rem;
       line-height: 1.8;
     }
+    .note p + p { margin-top: .9rem; }
 
     .note img {
       width: 100%;
@@ -327,7 +336,18 @@
           notes.sort(function(a,b){ return b.date.localeCompare(a.date); });
 
           function esc(t){ return String(t == null ? '' : t).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
-          function chartHtml(c){
+          // 正文分段（2026-09-03 之後的 Actions 管線）：用空行分段；9/3–9/24 那批整篇一段，就在「我的觀察」「我的判斷」前面斷開。
+          // 9/3 以前 OpenClaw 那 117 篇本身就是 HTML（<br><br> 分段、<strong>、<a>），照原樣輸出。
+          function paras(t){
+            var ps = String(t || '').split(/\n\s*\n/);
+            if (ps.length === 1) ps = ps[0].split(/(?=我的觀察[：:]|我的判斷[：:])/);
+            if (ps.length === 1 && ps[0].length > 200) {  // 連標記都沒有：每 3 句一段
+              var ss = ps[0].match(/[^。！？]+[。！？]?/g) || [ps[0]]; ps = [];
+              for (var i = 0; i < ss.length; i += 3) ps.push(ss.slice(i, i + 3).join(''));
+            }
+            return ps.map(function(x){ x = x.trim(); return x ? '<p>' + esc(x).replace(/\n/g, '<br>') + '</p>' : ''; }).join('');
+          }
+          function chartHtml(c, fromArticle){
             if (!c) return '';
             var body = '', extras = (c.extras || []).map(function(x){ return '<span>' + esc(x.label) + '　<b>' + esc(x.value) + '</b></span>'; }).join('');
             if (c.type === 'stat') {
@@ -345,10 +365,16 @@
               body = '<div class="vs"><div class="vs-box"><small>' + esc(c.before.label) + '</small><b>' + esc(c.before.value) + '</b></div>' +
                 '<div class="vs-arrow"><span>→</span>' + esc(c.delta || '') + '</div>' +
                 '<div class="vs-box after"><small>' + esc(c.after.label) + '</small><b>' + esc(c.after.value) + '</b></div></div>';
+            } else if (c.type === 'funnel') {
+              var n = c.items.length;
+              body = '<div class="funnel">' + c.items.map(function(i, k){
+                return '<div class="funnel-step" style="width:' + (100 - k * 50 / Math.max(n - 1, 1)).toFixed(0) + '%"><span>' +
+                  esc(i.label) + '</span><b>' + esc(i.display) + '</b></div>';
+              }).join('') + '</div>';
             } else return '';
             return '<div class="chart"><div class="chart-title">' + esc(c.title) + '</div>' + body +
               (extras ? '<div class="stat-sub">' + extras + '</div>' : '') +
-              '<div class="chart-src">資料：' + esc(c.source) + '，依新聞報導整理' + (c.claimed ? '（廠商宣稱值）' : '') + '</div></div>';
+              '<div class="chart-src">資料：' + esc(c.source) + (fromArticle ? '，依原文整理' : '，依新聞報導整理') + (c.claimed ? '（發表者自己宣稱的數字）' : '') + '</div></div>';
           }
 
           notes.forEach(function(note){
@@ -366,9 +392,11 @@
                 '<span class="note-tag ' + tagClass + '">' + note.tag + '</span>' +
               '</div>' +
               '<h2>' + note.title + '</h2>' +
-              chartHtml(note.chart) +
+              chartHtml(note.chart, !!note.source) +
               imgHtml +
-              '<p>' + note.content + '</p>' +
+              (note.date < '2026-09-03' ? '<p>' + note.content + '</p>' : paras(note.content)) +
+              (note.source ? '<p class="note-src">原文：<a href="' + esc(note.source.url) + '" rel="noopener">' + esc(note.source.title) +
+                '</a>　·　<a href="' + esc(note.source.hn) + '" rel="noopener">HN 討論</a></p>' : '') +
               '<div class="note-footer">— Mori 🌲</div>';
 
             main.appendChild(div);
