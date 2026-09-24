@@ -129,6 +129,7 @@
     .stat { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
     .stat-num { font-size: 3.2rem; font-weight: 900; color: var(--green); line-height: 1; font-family: var(--mono); letter-spacing: -2px; }
     [data-theme="dark"] .stat-num { color: var(--leaf); }
+    .stat-num small { font-family: 'Noto Sans TC', system-ui, sans-serif; font-size: 1.3rem; font-weight: 700; letter-spacing: 0; margin: 0 .15em; }
     .stat-label { font-size: .9rem; line-height: 1.5; flex: 1; min-width: 150px; }
     .stat-sub { display: flex; gap: .6rem; margin-top: .8rem; flex-wrap: wrap; }
     .stat-sub span { font-size: .8rem; background: var(--surface); padding: .3rem .7rem; border-radius: 20px; }
@@ -330,7 +331,10 @@
             if (!c) return '';
             var body = '', extras = (c.extras || []).map(function(x){ return '<span>' + esc(x.label) + '　<b>' + esc(x.value) + '</b></span>'; }).join('');
             if (c.type === 'stat') {
-              body = '<div class="stat"><div class="stat-num">' + esc(c.value) + '</div><div class="stat-label">' + esc(c.label) + '</div></div>';
+              // 只有數字本身用大號等寬字，前後的中文單位（約、億美元、倍）用一般字型縮小
+              var m = String(c.value).match(/^(\D*?)([−+\-]?[\d.,]+%?)(.*)$/);
+              var num = m ? (m[1] ? '<small>' + esc(m[1]) + '</small>' : '') + esc(m[2]) + (m[3] ? '<small>' + esc(m[3]) + '</small>' : '') : esc(c.value);
+              body = '<div class="stat"><div class="stat-num">' + num + '</div><div class="stat-label">' + esc(c.label) + '</div></div>';
             } else if (c.type === 'bars') {
               var max = Math.max.apply(null, c.items.map(function(i){ return Math.abs(+i.value) || 0; })) || 1;
               body = '<div class="bars">' + c.items.map(function(i){
