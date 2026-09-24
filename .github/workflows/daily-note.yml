@@ -31,26 +31,19 @@ jobs:
         with:
           node-version: '22'
 
-      - name: 裝相依
-        run: pip install --quiet Pillow
-
       - name: 抓 speak-tw(語感閘門)
         run: git clone --depth 1 https://github.com/yazelin/speak-tw.git /tmp/speak-tw
 
       - name: 確認金鑰
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          CODEX_IMAGE_KEY: ${{ secrets.CODEX_IMAGE_KEY }}
         run: |
           [ -n "$GEMINI_API_KEY" ] || { echo "::error::缺 GEMINI_API_KEY secret"; exit 1; }
           case "$GEMINI_API_KEY" in gmw_*) ;; *) echo "::error::GEMINI_API_KEY 應是 gmw_ 開頭的 gemini-web consumer key"; exit 1;; esac
-          [ -n "$CODEX_IMAGE_KEY" ] || echo "::warning::缺 CODEX_IMAGE_KEY,今天的筆記會沒圖"
-          case "${CODEX_IMAGE_KEY:-cimg_}" in cimg_*) ;; *) echo "::error::CODEX_IMAGE_KEY 應是 cimg_ 開頭的 bearer token,不是 key_ 開頭的 handle"; exit 1;; esac
 
       - name: 產出今日筆記
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          CODEX_IMAGE_KEY: ${{ secrets.CODEX_IMAGE_KEY }}
           SPEAK_TW: /tmp/speak-tw/bin/speak-tw
           DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
         run: python scripts/daily_note.py
