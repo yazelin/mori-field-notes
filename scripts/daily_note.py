@@ -316,7 +316,8 @@ _CJK = r"[\u4e00-\u9fff「」（）、。]"
 _FW = {",": "\uff0c", ";": "\uff1b", ":": "\uff1a", "?": "\uff1f", "!": "\uff01"}
 
 
-TERM_FIX = {"酶": "酵素"}  # Big5 沒有、台灣也不這樣用的字,直接換掉比叫模型重寫可靠
+TERM_FIX = {"酶": "酵素", "證明瞭": "證明了", "表明瞭": "表明了", "說明瞭": "說明了", "為瞭": "為了", "除瞭": "除了",
+            "到瞭": "到了", "成瞭": "成了", "有瞭": "有了"}  # Big5 沒有、台灣也不這樣用的字,直接換掉比叫模型重寫可靠
 
 
 def fix_punct(text):
@@ -467,6 +468,7 @@ def _selfcheck():
     assert {"massive database", "210 million"} <= set(english_phrases("Claude Opus 用了 210 million tokens,從 massive database 找"))
     assert english_phrases("agent 塞滿 context window,Hacker News 上有人說 API 很貴") == []
     assert fix_punct("很重要,不是") == "很重要\uff0c不是" and fix_punct("Claude, GPT") == "Claude, GPT"
+    assert fix_punct("這證明瞭一件事,我瞭解") == "這證明了一件事\uff0c我瞭解"
     global VOICE_LINES
     VOICE_LINES = ["沒有邏輯約束的高速推論只是加速呈現錯誤與隨機噪音。"]
     assert copied_voice("缺乏智商基礎的高速推論只是加速呈現錯誤與隨機噪音,再快也沒用") is not None
