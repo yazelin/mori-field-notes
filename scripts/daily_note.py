@@ -219,8 +219,10 @@ def _prompt(material, feedback):
     return (PERSONA + voice + head + "\n" + TW_PITFALLS +
             f"\ntag 從這裡挑一個:{VALID_TAGS}\n標題 25 字內,不用驚嘆號。" + CHART_SPEC +
             (f"\n\n上一稿沒過檢查,理由如下,請修正後重寫:\n{feedback}" if feedback else "") +
-            "\n字串內不要用半形雙引號,引用改用「」;content 內不要換行。"
-            '\n只輸出 JSON:{"tag":"...","title":"...","content":"...","topics":["主題關鍵詞1","主題關鍵詞2"],"chart":null}')
+            "\n正文分成 3 到 5 段放進 paragraphs,每段講一件事,大致是:發生什麼事 → 對方或風向的論點 → 我的觀察 → 我的判斷。"
+            "每段 2 到 4 句,不要整篇擠成一段。"
+            "\n字串內不要用半形雙引號,引用改用「」;每個字串內都不要換行。"
+            '\n只輸出 JSON:{"tag":"...","title":"...","paragraphs":["第一段","第二段","..."],"topics":["主題關鍵詞1","主題關鍵詞2"],"chart":null}')
 
 
 def write_note(material, feedback=""):
@@ -236,7 +238,14 @@ def write_note(material, feedback=""):
 
 
 def _write_note_once(material, feedback=""):
-    return parse_json(gemini(_prompt(material, feedback), json_mode=True), ["tag", "title", "content", "topics"])
+    # 2026-09-24 起正文用 paragraphs 陣列:原本規定 content 不准換行(怕 JSON 壞),結果每篇都擠成一大段
+    d = parse_json(gemini(_prompt(material, feedback), json_mode=True), ["tag", "title", "topics"])
+    paras = [p.strip() for p in (d.get("paragraphs") or []) if str(p).strip()]
+    if paras:
+        d["content"] = "\n\n".join(paras)
+    elif not str(d.get("content", "")).strip():
+        raise ValueError("缺 paragraphs")
+    return d
 
 
 def _nums(text):

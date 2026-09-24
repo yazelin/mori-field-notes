@@ -230,6 +230,7 @@
       font-size: .92rem;
       line-height: 1.8;
     }
+    .note p + p { margin-top: .9rem; }
 
     .note img {
       width: 100%;
@@ -335,6 +336,17 @@
           notes.sort(function(a,b){ return b.date.localeCompare(a.date); });
 
           function esc(t){ return String(t == null ? '' : t).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+          // 正文分段（2026-09-03 之後的 Actions 管線）：用空行分段；9/3–9/24 那批整篇一段，就在「我的觀察」「我的判斷」前面斷開。
+          // 9/3 以前 OpenClaw 那 117 篇本身就是 HTML（<br><br> 分段、<strong>、<a>），照原樣輸出。
+          function paras(t){
+            var ps = String(t || '').split(/\n\s*\n/);
+            if (ps.length === 1) ps = ps[0].split(/(?=我的觀察[：:]|我的判斷[：:])/);
+            if (ps.length === 1 && ps[0].length > 200) {  // 連標記都沒有：每 3 句一段
+              var ss = ps[0].match(/[^。！？]+[。！？]?/g) || [ps[0]]; ps = [];
+              for (var i = 0; i < ss.length; i += 3) ps.push(ss.slice(i, i + 3).join(''));
+            }
+            return ps.map(function(x){ x = x.trim(); return x ? '<p>' + esc(x).replace(/\n/g, '<br>') + '</p>' : ''; }).join('');
+          }
           function chartHtml(c, fromArticle){
             if (!c) return '';
             var body = '', extras = (c.extras || []).map(function(x){ return '<span>' + esc(x.label) + '　<b>' + esc(x.value) + '</b></span>'; }).join('');
@@ -382,7 +394,7 @@
               '<h2>' + note.title + '</h2>' +
               chartHtml(note.chart, !!note.source) +
               imgHtml +
-              '<p>' + note.content + '</p>' +
+              (note.date < '2026-09-03' ? '<p>' + note.content + '</p>' : paras(note.content)) +
               (note.source ? '<p class="note-src">原文：<a href="' + esc(note.source.url) + '" rel="noopener">' + esc(note.source.title) +
                 '</a>　·　<a href="' + esc(note.source.hn) + '" rel="noopener">HN 討論</a></p>' : '') +
               '<div class="note-footer">— Mori 🌲</div>';
