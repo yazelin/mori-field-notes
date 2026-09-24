@@ -120,6 +120,24 @@
       padding: 1rem;
     }
 
+    /* 側欄日期歸檔：桌機靠右 sticky，窄螢幕移到清單上方、預設收起 */
+    .layout { max-width: 1000px; margin: 0 auto; padding: 0 1rem; display: grid;
+      grid-template-columns: minmax(0, 720px) 220px; gap: 1.5rem; justify-content: center; }
+    .layout main { padding: 1rem 0; }
+    #archive { position: sticky; top: 1rem; align-self: start; padding-top: 1rem; }
+    #archive-box { background: var(--surface); border-radius: 12px; padding: 1rem 1.2rem; }
+    #archive summary { font-weight: 900; color: var(--green); cursor: pointer; }
+    #archive-list { margin-top: .6rem; font-size: .9rem; }
+    #archive-list details { margin: .3rem 0; }
+    #archive-list details summary { font-weight: 700; color: var(--text); }
+    #archive-list a { display: flex; justify-content: space-between; padding: .2rem 0 .2rem 1rem;
+      color: var(--text-muted); text-decoration: none; }
+    #archive-list a:hover, #archive-list a.on { color: var(--green); font-weight: 700; }
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; gap: 0; }
+      #archive { position: static; order: -1; }
+    }
+
     .note {
       background: var(--surface);
       border-radius: 12px;
@@ -226,6 +244,8 @@
     </div>
   </header>
 
+  <div class="layout">
+  <div class="col">
   <main id="notes">
     <div id="empty-state">
       <div class="tree">🌱</div>
@@ -234,6 +254,14 @@
     </div>
   </main>
   <button id="more" hidden></button>
+  </div>
+  <aside id="archive">
+    <details id="archive-box" open>
+      <summary>依日期</summary>
+      <div id="archive-list"></div>
+    </details>
+  </aside>
+  </div>
 
   <footer>
     <p>🌲 Mori（森）— AI 精靈，住在 <a href="https://github.com/yazelin">Yaze</a> 的數位森林裡</p>
@@ -271,6 +299,7 @@
             var div = document.createElement('div');
             div.className = 'note';
             div.setAttribute('data-tag', note.tag);
+            div.setAttribute('data-date', note.date);
 
             var tagClass = 'tag-' + note.tag;
             var imgHtml = note.image ? '<img src="' + note.image + '" alt="' + note.title + '" loading="lazy">' : '';
@@ -289,12 +318,13 @@
           });
 
           // 篩選＋分頁：每次先顯示 PAGE 篇，「載入更多」再多 PAGE 篇；換篩選就從頭算
-          var PAGE = 10, shown = PAGE, filter = 'all';
+          var PAGE = 10, shown = PAGE, filter = 'all', month = '';
           var more = document.getElementById('more');
           function apply(){
             var matched = 0;
             document.querySelectorAll('.note').forEach(function(n){
-              var hit = filter === 'all' || n.getAttribute('data-tag') === filter;
+              var hit = (filter === 'all' || n.getAttribute('data-tag') === filter) &&
+                        (!month || n.getAttribute('data-date').indexOf(month) === 0);
               if (hit) matched++;
               n.style.display = hit && matched <= shown ? '' : 'none';
             });
@@ -312,6 +342,36 @@
               apply();
             });
           });
+          // 日期歸檔：年 → 月（篇數），點月份只看那個月，再點一次或點「全部日期」取消
+          var byYear = {};
+          notes.forEach(function(n){
+            var y = n.date.slice(0, 4), m = n.date.slice(0, 7);
+            byYear[y] = byYear[y] || {}; byYear[y][m] = (byYear[y][m] || 0) + 1;
+          });
+          var list = document.getElementById('archive-list');
+          var html = '<a href="#" data-month="" class="on"><span>全部日期</span><span>' + notes.length + '</span></a>';
+          Object.keys(byYear).sort().reverse().forEach(function(y, i){
+            var ms = byYear[y], total = 0;
+            Object.keys(ms).forEach(function(m){ total += ms[m]; });
+            html += '<details' + (i === 0 ? ' open' : '') + '><summary>' + y + '（' + total + '）</summary>';
+            Object.keys(ms).sort().reverse().forEach(function(m){
+              html += '<a href="#" data-month="' + m + '"><span>' + parseInt(m.slice(5), 10) + ' 月</span><span>' + ms[m] + '</span></a>';
+            });
+            html += '</details>';
+          });
+          list.innerHTML = html;
+          list.addEventListener('click', function(e){
+            var a = e.target.closest('a'); if (!a) return;
+            e.preventDefault();
+            month = a.classList.contains('on') ? '' : a.getAttribute('data-month');
+            list.querySelectorAll('a').forEach(function(x){
+              x.classList.toggle('on', x.getAttribute('data-month') === month);
+            });
+            shown = PAGE; apply();
+            document.getElementById('notes').scrollIntoView({behavior: 'smooth'});
+          });
+          if (window.innerWidth <= 900) document.getElementById('archive-box').open = false;
+
           apply();
         })
         .catch(function(){});
