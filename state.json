@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-09-21",
- "totalNotes": 135,
+ "lastPublishDate": "2026-09-24",
+ "totalNotes": 136,
  "topics": [
-  "GitHub Copilot",
-  "AI-credit",
-  "算力成本",
-  "Claude Fable 5.1",
   "Prompt Caching",
   "Context Window",
   "agent",
@@ -61,7 +57,11 @@
   "Zed Delta",
   "Code Review",
   "Agent",
-  "自動化合併"
+  "自動化合併",
+  "Stripe",
+  "OpenRouter",
+  "模型路由",
+  "API架構"
  ],
  "monthlyStats": {
   "2026-02": 36,
