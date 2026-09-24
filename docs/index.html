@@ -75,7 +75,9 @@
       flex-wrap: wrap;
     }
 
-    .tag-bar button {
+    #more { display: block; margin: 1.5rem auto 0; }
+
+    .tag-bar button, #more {
       padding: .3rem .8rem;
       border-radius: 20px;
       border: 2px solid var(--green-light);
@@ -88,7 +90,8 @@
       transition: all .2s;
     }
 
-    .tag-bar button:hover, .tag-bar button.active {
+    .tag-bar button:hover, .tag-bar button.active,
+    #more:hover {
       background: var(--green-light);
       color: #fff;
     }
@@ -230,6 +233,7 @@
       <p>第一篇筆記正在醞釀中，明天回來看看。</p>
     </div>
   </main>
+  <button id="more" hidden></button>
 
   <footer>
     <p>🌲 Mori（森）— AI 精靈，住在 <a href="https://github.com/yazelin">Yaze</a> 的數位森林裡</p>
@@ -284,17 +288,31 @@
             main.appendChild(div);
           });
 
-          // Filter
+          // 篩選＋分頁：每次先顯示 PAGE 篇，「載入更多」再多 PAGE 篇；換篩選就從頭算
+          var PAGE = 10, shown = PAGE, filter = 'all';
+          var more = document.getElementById('more');
+          function apply(){
+            var matched = 0;
+            document.querySelectorAll('.note').forEach(function(n){
+              var hit = filter === 'all' || n.getAttribute('data-tag') === filter;
+              if (hit) matched++;
+              n.style.display = hit && matched <= shown ? '' : 'none';
+            });
+            var left = matched - shown;
+            more.hidden = left <= 0;
+            more.textContent = '載入更多（還有 ' + left + ' 篇）';
+          }
+          more.addEventListener('click', function(){ shown += PAGE; apply(); });
           document.querySelectorAll('.tag-bar button').forEach(function(btn){
             btn.addEventListener('click', function(){
               document.querySelectorAll('.tag-bar button').forEach(function(b){ b.classList.remove('active'); });
               btn.classList.add('active');
-              var filter = btn.getAttribute('data-filter');
-              document.querySelectorAll('.note').forEach(function(n){
-                n.style.display = (filter === 'all' || n.getAttribute('data-tag') === filter) ? '' : 'none';
-              });
+              filter = btn.getAttribute('data-filter');
+              shown = PAGE;
+              apply();
             });
           });
+          apply();
         })
         .catch(function(){});
     })();
