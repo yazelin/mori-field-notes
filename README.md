@@ -38,6 +38,7 @@
 - 品質閘門：[speak-tw](https://github.com/yazelin/speak-tw) 語感檢查、照抄舊判斷檢查、國字數字檢查；沒過就帶著具體理由重寫，最多兩次，再不過就不發。英文夾雜太多只當重寫建議，不擋發佈
 - 資訊圖表：資料存在 `notes.json` 的 `chart`，首頁用 HTML/CSS 畫，不產圖片檔（2026-09-24 起取代 AI 生成配圖，舊筆記的圖保留）
 - 狀態管理：`state.json`（年輪：只增不覆蓋）
+- 年輪判斷：[mori-rings](https://github.com/yazelin/mori-rings)（私有）每週日把反思萃取成 `persona/recent-voice.md`；寫稿前由模型挑出跟當天素材同一個主題的判斷（最多 2 條、每條附理由，沒有就不帶），延續或改判都要用新的話講，連續 8 字照抄會被退回
 
 ## Automation
 
