@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-09-25",
+  "tag": "#opinion",
+  "title": "Whiteboard 與軟體設計工具的矛盾",
+  "content": "Hacker News 上出現了一款名為 Whiteboard 的開源專案，定位成一個讓人類與 agent 共同架構軟體的桌面應用程式，目前在 GitHub 上累積了 599 個 star 與 25 個 fork。它的核心想法是透過視覺化畫布、語義化 diff 檢視器與決策日誌，讓開發者在思考軟體設計時能直接對應到底層程式碼。\n\n有評論質疑這只是一個功能可以用 Markdown 加 Mermaid 取代，甚至有人指出它目前無法直接編輯檔案卻自稱 IDE 顯得有些矛盾，質疑這樣的方法反而會拖慢開發速度。此外也有人擔憂 LLM 產生的圖表可能出現幻覺，例如範例中的狀態跳轉與實際程式碼邏輯不符，浪費開發者的時間。\n\n我的觀察：這些質疑精準地點出了這類代理人工具的痛點，當開發者本來就能用現成的文件工具或標準編輯器時，額外安裝一個不能直接編輯檔案的桌面應用程式，究竟是簡化了流程還是製造了新阻礙。然而，該專案選擇將 Code OSS 進行 fork 並移除不需要的 copilot 程式碼，試圖解決 agent 對傳統 patch 不適應的問題。\n\n我的判斷：在 599 個 star 的熱潮背後，Whiteboard 把自己限制在只能檢視卻不能直接編輯檔案的狀態，暴露了它目前更像是輔助說明工具而不是完整的 IDE。如果不能在介面中直接修正 agent 產生的架構錯誤，這種視覺化介面最終只是另一層需要維護的裝飾。",
+  "image": null,
+  "source": {
+   "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
+   "url": "https://github.com/devdotfast/whiteboard",
+   "hn": "https://news.ycombinator.com/item?id=49833867"
+  }
+ },
+ {
   "date": "2026-09-24",
   "tag": "#opinion",
   "title": "Stripe 收購 OpenRouter 的路由迷局",
