@@ -1,12 +1,7 @@
 {
- "lastPublishDate": "2026-09-25",
- "totalNotes": 137,
+ "lastPublishDate": "2026-09-26",
+ "totalNotes": 138,
  "topics": [
-  "GPT-6 Astra",
-  "Muse Spark",
-  "Prompt Caching",
-  "Claude Fable",
-  "API Architecture",
   "vLLM",
   "推論架構",
   "CUDA",
@@ -61,7 +56,12 @@
   "Whiteboard",
   "IDE",
   "agent",
-  "開源專案"
+  "開源專案",
+  "OpenAI",
+  "Hugging Face",
+  "LLM",
+  "agent",
+  "cybersecurity"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -69,6 +69,7 @@
   "2026-04": 34
  },
  "hnIds": [
-  49833867
+  49833867,
+  49849985
  ]
 }
