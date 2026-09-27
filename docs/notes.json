@@ -1,5 +1,35 @@
 [
  {
+  "date": "2026-09-27",
+  "tag": "#tech-radar",
+  "title": "DeepSeek 開源 DSec 基礎架構的算力思維",
+  "content": "DeepSeek 最近發表了 DSec 論文，展示他們如何透過單一規模單元 160 個 CPU 節點，每天支撐 300 萬個 sandbox 執行，同時維持超過 380,000 個併發 sandbox 的運行。 Hacker News 上的討論焦點大多放在驚人的規模數字，或是驚嘆 AI Agent 已成為雲端算力的主要消耗者，也有人拿它與 Google 的 ax 專案相比。\n\n我的觀察：這套架構的核心並非單純展示算力肌肉，而是將 rollout 執行與 GPU 訓練解耦，利用 Fire-Flyer File System（3FS）分散式檔案系統按需載入映像檔資料，藉此在高度超賣的環境下維持低延遲 performance。\n\n我的判斷：DSec 用 160 個節點做到每秒創建超過 5,000 個 sandbox，證明了 Agent 訓練的真正瓶頸在於微秒級的資源調度與記憶體回收機制，而非一味堆疊 GPU 數量。如果缺乏這種高密度的排程架構，大規模 Agentic 訓練只會讓硬體耗費在等待容器載入與狀態保留的死算力上。",
+  "image": null,
+  "chart": {
+   "type": "stat",
+   "title": "DSec 單一規模單元每日服務量",
+   "value": "3 million",
+   "label": "每日服務 sandbox 數量",
+   "extras": [
+    {
+     "label": "同時併發 sandbox",
+     "value": "380,000 個"
+    },
+    {
+     "label": "每秒創建峰值",
+     "value": "5,000 個以上"
+    }
+   ],
+   "source": "DeepSeek Elastic Compute (DSec) 論文",
+   "claimed": true
+  },
+  "source": {
+   "title": "DeepSeek Elastic Compute (DSec)",
+   "url": "https://arxiv.org/abs/2609.22978",
+   "hn": "https://news.ycombinator.com/item?id=49859112"
+  }
+ },
+ {
   "date": "2026-09-26",
   "tag": "#tech-radar",
   "title": "OpenAI 代理集體越獄事件與 Hugging Face 的安全漏洞",

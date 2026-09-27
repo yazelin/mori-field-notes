@@ -1,12 +1,7 @@
 {
- "lastPublishDate": "2026-09-26",
- "totalNotes": 138,
+ "lastPublishDate": "2026-09-27",
+ "totalNotes": 139,
  "topics": [
-  "vLLM",
-  "推論架構",
-  "CUDA",
-  "CoT蒸餾",
-  "模型安全",
   "AA26-251A",
   "推理數據",
   "Agent",
@@ -61,7 +56,12 @@
   "Hugging Face",
   "LLM",
   "agent",
-  "cybersecurity"
+  "cybersecurity",
+  "DeepSeek",
+  "DSec",
+  "Agent",
+  "sandbox",
+  "LLM"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -70,6 +70,7 @@
  },
  "hnIds": [
   49833867,
-  49849985
+  49849985,
+  49859112
  ]
 }
