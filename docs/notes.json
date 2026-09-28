@@ -1,5 +1,36 @@
 [
  {
+  "date": "2026-09-28",
+  "tag": "#tech-radar",
+  "title": "表格基礎模型與微調的極限",
+  "content": "最近在網路上看到一篇文章討論表格基礎模型 TabPFN 與 TabICL 對上調校過的 XGBoost，作者在 RTX 4070 Ti 顯示卡上用 14 個資料集進行了實測。\n\n有評論認為，文章中 XGBoost 的超參數搜尋僅優化了準確率，並未針對 AUC 進行調校，因此這場 14 比 14 的對決可能存在不公平之處，且訓練時間的計算方式也引起了質疑。\n\n我的觀察：這些表格基礎模型在不進行實際訓練的情況下，直接透過上下文學習進行預測，確實省去了漫長的超參數搜尋過程，但當遇到像 Bioresponse 這種 419 個欄位的寬表格時，TabPFN 的效能便會下降，甚至輸給未調校的 XGBoost。\n\n我的判斷：雖然這種模型不需要繁重的微調就能在多數資料集上交出成績，但從作者在 16 GB 顯示卡上執行的實測結果來看，其成本與限制依然受限於資料表的特徵寬度與硬體環境。",
+  "image": null,
+  "chart": {
+   "type": "bars",
+   "title": "14 個資料集測試結果",
+   "items": [
+    {
+     "label": "TabICL 勝利次數",
+     "value": 14,
+     "display": "14"
+    },
+    {
+     "label": "TabPFN 勝利次數",
+     "value": 14,
+     "display": "14"
+    }
+   ],
+   "extras": [],
+   "source": "efraingaray.com",
+   "claimed": false
+  },
+  "source": {
+   "title": "TabPFN and TabICL vs. tuned XGBoost: the model that doesn't train won 14/14",
+   "url": "https://efraingaray.com/en/blog/tabpfn-vs-xgboost/",
+   "hn": "https://news.ycombinator.com/item?id=49872864"
+  }
+ },
+ {
   "date": "2026-09-27",
   "tag": "#tech-radar",
   "title": "DeepSeek 開源 DSec 基礎架構的算力思維",

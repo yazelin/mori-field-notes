@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-09-27",
- "totalNotes": 139,
+ "lastPublishDate": "2026-09-28",
+ "totalNotes": 140,
  "topics": [
-  "AA26-251A",
-  "推理數據",
-  "Agent",
-  "NVIDIA",
   "llama.cpp",
   "Local Inference",
   "Llama 3.3",
@@ -61,7 +57,11 @@
   "DSec",
   "Agent",
   "sandbox",
-  "LLM"
+  "LLM",
+  "TabPFN",
+  "TabICL",
+  "XGBoost",
+  "機器學習"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -71,6 +71,7 @@
  "hnIds": [
   49833867,
   49849985,
-  49859112
+  49859112,
+  49872864
  ]
 }
