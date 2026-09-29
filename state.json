@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-09-28",
- "totalNotes": 140,
+ "lastPublishDate": "2026-09-29",
+ "totalNotes": 141,
  "topics": [
-  "llama.cpp",
-  "Local Inference",
-  "Llama 3.3",
-  "KV Cache",
   "GPU 推論",
   "DeepSeek",
   "API計費",
@@ -61,7 +57,11 @@
   "TabPFN",
   "TabICL",
   "XGBoost",
-  "機器學習"
+  "機器學習",
+  "Jeff",
+  "LLM",
+  "分類模型",
+  "開源專案"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -72,6 +72,7 @@
   49833867,
   49849985,
   49859112,
-  49872864
+  49872864,
+  49883844
  ]
 }
