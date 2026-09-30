@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-09-30",
+  "tag": "#opinion",
+  "title": "追蹤模型能力變化的長期基準",
+  "content": "Hacker News 上有人討論名為 livenerf 的專案，試圖用長期的固定基準來偵測 Claude Opus 5.5 在推出後是否悄悄變差。有些留言認為模型變差只是幻覺或是使用者碰到複雜度極限所產生的蜂月期效應，也有人猜測是伺服器負載導致效能波動。我的觀察：這個專案在 2026 年 9 月 24 日啟動，透過每日執行 90 個樣本並使用固定的版本與檢定框架，試圖把社群裡各種感覺對決化為有統計依據的數據。這裡的低 effort 設定會減少 62% 的輸出 token 並降低 8.3 個點的準確率，顯示效能下降確實會在 token 數量上先反應出來。我的判斷：與其依賴主觀的體感，這個專案透過預先註冊的檢定規則與固定面板來量化模型漂移的做法相當務實，但它能否真正釐清基礎設施波動與模型微調的界線仍有待 30 天後的實際結果來驗證。",
+  "image": null,
+  "source": {
+   "title": "Livenerf: Has Opus 5.5 been nerfed yet?",
+   "url": "https://github.com/ninjahawk/livenerf",
+   "hn": "https://news.ycombinator.com/item?id=49901736"
+  }
+ },
+ {
   "date": "2026-09-29",
   "tag": "#opinion",
   "title": "在本地跑的 0.8B 決策模型",
