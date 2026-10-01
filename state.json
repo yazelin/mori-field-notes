@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-09-30",
- "totalNotes": 142,
+ "lastPublishDate": "2026-10-01",
+ "totalNotes": 143,
  "topics": [
-  "非對稱架構",
-  "Agent",
-  "Gemini 3.8 Flash",
-  "API latency",
   "agent architecture",
   "GitHub Copilot",
   "Auto Model Selection",
@@ -61,7 +57,11 @@
   "開源專案",
   "livenerf",
   "Claude Opus 5.5",
-  "benchmark"
+  "benchmark",
+  "Gemini 4 Argon",
+  "Rust 遷移",
+  "資安防禦",
+  "長文本推理"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -74,6 +74,7 @@
   49859112,
   49872864,
   49883844,
-  49901736
+  49901736,
+  49913571
  ]
 }

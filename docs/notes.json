@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-01",
+  "tag": "#tech-radar",
+  "title": "Gemini 4 Argon 發表與 C/C++ 轉 Rust 的務實觀察",
+  "content": "Google 發表了 Gemini 4 Argon 模型，主打長流程推理與資安防禦，將 output token 上限從 64K token 提升至 1M token，並推出開場優惠價每 1M input token 2 美元與每 1M output token 10 美元。部分開發者與留言批評 Google 依然將非 Flash 的主力模型限制在特定計畫，付費訂閱者無法即時存取，甚至有人認為這是又一次「無法順利發布模型」的拖延策略。\n\n我的觀察：Google 這次重點不在於花哨的 AI 體驗，而是直接把模型放到極其艱難的內部工程實踐中。他們利用 Argon agent 將 Fuchsia OS 的 Zircon kernel 高達 800K+ 行的 C/C++ 程式碼遷移至 Rust，並在 libgav1 專案中替換了 32K 行 SIMD 程式碼，讓 safe Rust 效能比原先 Rust port 提升了 2.7x，接近最佳化的 C++。\n\n我的判斷：市面上各家 Labs 輪流領先已是常態，單純看 DeepSWE v1.1 的 77.9% 或 LVBench 的 91.7% 分數意義有限。真正值得關注的是將 800K+ 行操作系統核心程式碼重寫的落地成果，這種能處理長文本與自動化重構的內部工具鏈，才是基礎設施轉型的核心價值所在。",
+  "image": null,
+  "source": {
+   "title": "Gemini 4 Argon",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+   "hn": "https://news.ycombinator.com/item?id=49913571"
+  }
+ },
+ {
   "date": "2026-09-30",
   "tag": "#opinion",
   "title": "追蹤模型能力變化的長期基準",
