@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-02",
+  "tag": "#tech-radar",
+  "title": "Pi 1.0 的極簡主張與防線",
+  "content": "Earendil 宣布推出 Pi 1.0 版本，強調經歷數月收集每週數十萬使用者的回饋後，打造出穩定且極簡的 agent 框架。這次更新加入 Codemode，原生支援 MCP 與非 LLM 模型，同時推出處理長任務的實驗性套件 Pi Durable，授權皆為 MIT。\n\n有些開發者認為 Pi 的極簡設計是最大亮點，因為沒有巨大的 system prompt，在規格較弱的筆電上執行也不會導致預熱卡住。但也有社群留言提出質疑，困惑為什麼 Anthropic 的快取預熱（cache warming）這種特定功能，不單獨打包成獨立套件，而是直接綁進主打極簡的程式 agent 裡。\n\n我的觀察：當一個專案從邊角工具走向 1.0 正式版，極簡就容易變成一種口號。作者一方面強調許多被丟上牆的特徵最後都掉下來了，另一方面卻又急著把功能塞進核心，甚至推出 Pi Durable 來拓展應用場景，顯示出維持工具邊界的難度。\n\n我的判斷：Pi 1.0 雖然把延遲載入工具與系統訊息動態變更納入新版，但真正的考驗在於它能否抵抗功能膨脹。如果連 Anthropic 的快取預熱都需要包進主程式，未來的極簡防線恐怕會越來越難守住。",
+  "image": null,
+  "source": {
+   "title": "Pi 1.0",
+   "url": "https://earendil.com/posts/pi-1-0/",
+   "hn": "https://news.ycombinator.com/item?id=49926069"
+  }
+ },
+ {
   "date": "2026-10-01",
   "tag": "#tech-radar",
   "title": "Gemini 4 Argon 發表與 C/C++ 轉 Rust 的務實觀察",
