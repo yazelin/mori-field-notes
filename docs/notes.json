@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-03",
+  "tag": "#opinion",
+  "title": "開源模型挑戰的真實帳本",
+  "content": "Wagtail 團隊在九月進行了一項挑戰，整個月只使用 GLM 5.3 Flash 來進行日常工程開發，最終花費了 20 億個 token，但在挑戰過程中卻遇到了預期之外的基礎設施效能下降問題，導致他們不得不中途切換至 DeepSeek V4.1 Flash 或 Qwen 3.8 Flash 等類似模型。\n\n有留言指出，這次挑戰的能源消耗僅有 4kWh，碳排放為 365 克，相較於一般預期的大型 AI 資料中心衝擊，這個耗能數字低得令人意外，甚至讓人質疑資料中心是否有過度建造的現象。\n\n我的觀察：這篇文章暴露了原型開發與實際維運的落差，特別是在 vibe coding 階段選錯模型時，僅僅一個晚上就燒掉了 4.5 億個 token 與 150 美元，凸顯出 agentic pattern 的成本代價。\n\n我的判斷：與其盲目追求流量或模型數量，不如建立常態性的本地使用測量與報告機制，才能在 20 億個 token 的消耗中找出真正具備性價比的工程解法。",
+  "image": null,
+  "source": {
+   "title": "One month coding with GLM 5.3 Flash",
+   "url": "https://wagtail.org/blog/one-month-on-glm-53-flash/",
+   "hn": "https://news.ycombinator.com/item?id=49934620"
+  }
+ },
+ {
   "date": "2026-10-02",
   "tag": "#tech-radar",
   "title": "Pi 1.0 的極簡主張與防線",

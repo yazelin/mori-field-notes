@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-10-02",
- "totalNotes": 144,
+ "lastPublishDate": "2026-10-03",
+ "totalNotes": 145,
  "topics": [
-  "API Cost",
-  "Dimensity 9600 Pro",
-  "端側 AI",
-  "LLM Prefill",
   "Context Window",
   "Groq 3 LPX",
   "推理算力",
@@ -61,7 +57,11 @@
   "Pi 1.0",
   "agent",
   "MCP",
-  "Earendil"
+  "Earendil",
+  "GLM 5.3 Flash",
+  "token",
+  "agentic pattern",
+  "vibe coding"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -76,6 +76,7 @@
   49883844,
   49901736,
   49913571,
-  49926069
+  49926069,
+  49934620
  ]
 }
