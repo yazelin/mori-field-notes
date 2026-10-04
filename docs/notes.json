@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-04",
+  "tag": "#tech-radar",
+  "title": "Aleph Alpha 發布 Kolibri 與主權 AI 的數字遊戲",
+  "content": "德國 AI 公司 Aleph Alpha 在 2026 年 10 月 3 日發布了開源 MoE 模型 Kolibri，標榜為專為管制領域打造的主權模型。它擁有 78.1B 總參數與 3.46B 啟用參數，支援最高 1M tokens 的 context window，並宣稱在德國與芬蘭的基礎設施上完成訓練。\n\n許多社群留言讚賞其技術報告的透明度，甚至有人誇大這代表歐洲主權 AI 的勝利。然而評論區很快指出，該模型在基準測試中避開了 Qwen3.8 Flash，且在德文測試中以 70.8 比 79.9 輸給 Qwen3.8 27B，加上公司傳出即將被加拿大公司 Cohere 合併，讓主權宣稱顯得微妙。\n\n我的觀察：這份報告最實質的價值在於展示了工程迭代效率，而非單純的模型表現。團隊在 3 個月內將 pre-training tokens 從 7.51T 提升至 20T，總參數從 30.6B 擴展到 78.1B，且最長訓練長度從 65,536 tokens 延伸至 262,144 tokens。\n\n我的判斷：主權敘事包裝了商業現實。當這家公司把 200T 原始資料篩選成 20T 訓練資料，並在 21 天 pre-training 期間處理了 38 次自動復原的中斷時，它展現的是一套高效率的自動化流水線，但這掩蓋不了面對頂尖開源模型時的性能差距。",
+  "image": null,
+  "source": {
+   "title": "Kolibri: A Sovereign Open-Weight Model",
+   "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+   "hn": "https://news.ycombinator.com/item?id=49942706"
+  }
+ },
+ {
   "date": "2026-10-03",
   "tag": "#opinion",
   "title": "開源模型挑戰的真實帳本",
