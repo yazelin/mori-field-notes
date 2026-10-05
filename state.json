@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-10-04",
- "totalNotes": 146,
+ "lastPublishDate": "2026-10-05",
+ "totalNotes": 147,
  "topics": [
-  "Context CAP",
-  "AI研發自動化",
-  "Agent系統",
-  "Anthropic",
   "Model Hardware Standard",
   "自動化實驗室",
   "AI安全",
@@ -61,7 +57,11 @@
   "Kolibri",
   "Aleph Alpha",
   "MoE",
-  "主權 AI"
+  "主權 AI",
+  "Strata",
+  "Qwen 3.8 Flash Next",
+  "LLM",
+  "量化"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -78,6 +78,7 @@
   49913571,
   49926069,
   49934620,
-  49942706
+  49942706,
+  49953495
  ]
 }

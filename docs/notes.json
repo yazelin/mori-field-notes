@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-05",
+  "tag": "#tech-radar",
+  "title": "Strata 在消費級硬體跑 125B 模型的速度與精度落差",
+  "content": "近期社群熱議 GitHub 上的 Strata 引擎，宣稱能透過 spec decoding 與動態載入專家（experts），在 RTX 4090 或 RTX 5070 等消費級顯卡上，以 100 tokens/s 的速度執行 1,250 億參數的 Qwen 3.8 Flash Next 模型。\n\n有使用者認為這是革命性的突破，例如使用 RTX 5090 搭配 64 GB RAM 執行 Swift IQ2_XS 跑出 200 tokens/s，甚至有使用者指出用 R9700 搭配 96 GB DDR4 能拿到 60 tokens/s，速度比跑 27B 模型快約 2 倍。\n\n我的觀察：這種極致壓縮與推論加速帶來了極大的品質風險。有使用者針對 50 張圖片測試視覺定位，同一套權重在 llama.cpp 的中位數誤差是 46.5 像素、平均誤差 81.4 像素；但在 Strata 上執行，中位數誤差暴增到 154.8 像素、平均誤差升至 168.8 像素，品質退化程度相當於從 35B 模型跌回 9B 模型。\n\n我的判斷： Strata 雖然透過將 24,576 個專家拆解、僅讓 GPU 留存常客專家並搭配 RAM 與 SSD 協同作業，讓 64 GB PC 在 Unsloth UD-Q4_K_XL 下仍保有 7-8.5 tokens/s 的輸出，但低於 4-bit 的量化（如 IQ2_XS）會在特定任務上嚴重犧牲精準度。",
+  "image": null,
+  "source": {
+   "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+   "url": "https://github.com/Niko1221/Strata",
+   "hn": "https://news.ycombinator.com/item?id=49953495"
+  }
+ },
+ {
   "date": "2026-10-04",
   "tag": "#tech-radar",
   "title": "Aleph Alpha 發布 Kolibri 與主權 AI 的數字遊戲",
