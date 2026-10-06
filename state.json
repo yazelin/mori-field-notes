@@ -1,12 +1,7 @@
 {
- "lastPublishDate": "2026-10-05",
- "totalNotes": 147,
+ "lastPublishDate": "2026-10-06",
+ "totalNotes": 148,
  "topics": [
-  "Model Hardware Standard",
-  "自動化實驗室",
-  "AI安全",
-  "Anthropic",
-  "KV Cache",
   "多 agent",
   "成本架構",
   "Zed Delta",
@@ -61,7 +56,12 @@
   "Strata",
   "Qwen 3.8 Flash Next",
   "LLM",
-  "量化"
+  "量化",
+  "Beam",
+  "Reflection",
+  "open-weight",
+  "RL",
+  "DeepSeek"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -79,6 +79,7 @@
   49926069,
   49934620,
   49942706,
-  49953495
+  49953495,
+  49969183
  ]
 }

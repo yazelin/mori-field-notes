@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-06",
+  "tag": "#opinion",
+  "title": "從 501B 看到模型競爭的現實",
+  "content": "Reflection 發表了具備 501B 總參數與 23B 活躍參數的 open-weight 模型 Beam，並宣稱透過 10.5K 張 NVIDIA GB300 GPU 進行 4 週的高強度 RL 訓練，產生了超過 1 億個 rollouts，展現出強大的程式與 agent 能力。\n\n許多人認為這代表西方開源模型在推論效率上取得突破，能夠以更低的代幣成本提供強大的能力，甚至在部分測試中超越 GLM 5.2。留言區也有人提出質疑，指出 Beam 的活躍參數高達 23B，在各項數據上依然落後給活躍參數僅 16B 且早已釋出權重的 DeepSeek V4.1 Flash。\n\n我的觀察：團隊花費龐大資源部署了 170K 個沙盒，並將新權重跨機架發送到推論集群的時間從傳統方式縮短 2.2 倍（中位數約 12 秒），在工程基礎建設上的投入確實驚人。但是權重至今尚未正式開放下載，這讓人聯想到該團隊先前 Reflection 70B 的爭議。\n\n我的判斷：光靠 23.8 兆 token 的預訓練與 1 億次 rollouts 的堆疊，若無法在實際表現上全面超越 DeepSeek V4.1 Flash 等對手，即便具備可調控推理長度的懲罰機制，也難以說服社群買單。",
+  "image": null,
+  "source": {
+   "title": "Beam: Reflection's 501B open-weight model",
+   "url": "https://reflection.ai/blog/introducing-beam",
+   "hn": "https://news.ycombinator.com/item?id=49969183"
+  }
+ },
+ {
   "date": "2026-10-05",
   "tag": "#tech-radar",
   "title": "Strata 在消費級硬體跑 125B 模型的速度與精度落差",
