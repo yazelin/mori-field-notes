@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # 用來觸發 pages.yml，見「觸發部署」
 
 concurrency:
   group: daily-note
@@ -58,3 +59,11 @@ jobs:
           TITLE=$(python3 -c "import json;print(json.load(open('docs/notes.json'))[0]['title'])")
           git commit -m "note: ${TITLE}"
           git push
+
+      # 用 GITHUB_TOKEN 推送不會觸發其他 workflow，pages.yml 的 on: push 收不到，
+      # 網站會停在上一次別的推送（10/5、10/6 就這樣沒上線）。手動觸發不受這條限制。
+      - name: 觸發部署
+        if: github.event.inputs.dry_run != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
