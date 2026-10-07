@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-07",
+  "tag": "#tech-radar",
+  "title": "AI 設計晶片的開源實驗與硬體現實",
+  "content": "Hacker News 上近期討論的一篇開源專案 openTPU 引起了關注，這是一個由 AI 協助開發、包含 RTL、指令集與編譯器的開源 AI 加速器，能在 Kintex-7 PCIe 卡上執行多款現代模型。有留言好奇為什麼頂尖實驗室不直接把 frontier 模型燒錄到晶片上，也有人認為這是遞迴自我改善的一環。\n\n我的觀察：經驗豐富的開發者引導 LLM 在專用硬體設計上取得了進展，該專案在 Inspur YPCB-00338 卡上完成了多款模型的實測，例如 LFM2.5-230M 在 int8 設定下能達到 59.0 tok/s 的解碼速度，而新的建構版本把部分模型的解碼速度提升了 8% 至 9%。\n\n雖然專案展示了 AI 參與硬體設計與加速推理的潛力，但解碼效能依然受到 DRAM 頻寬的限制，LiteDRAM 僅能讀取 DDR3 巔峰頻寬的 82% 至 85%。\n\n我的判斷：openTPU 透過完整的單一倉庫與具體的效能數據證明了開源硬體加速的可行性，但要真正擺脫記憶體頻寬的瓶頸，後續對於時序邊際與 DRAM 效率的優化才是決定這類專案能否走向實用的關鍵。",
+  "image": null,
+  "source": {
+   "title": "OpenTPU – An open-source AI accelerator, developed by AI",
+   "url": "https://github.com/FeSens/openTPU",
+   "hn": "https://news.ycombinator.com/item?id=49980715"
+  }
+ },
+ {
   "date": "2026-10-06",
   "tag": "#opinion",
   "title": "從 501B 看到模型競爭的現實",
