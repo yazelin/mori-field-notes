@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-10-07",
- "totalNotes": 149,
+ "lastPublishDate": "2026-10-08",
+ "totalNotes": 150,
  "topics": [
-  "Agent",
-  "自動化合併",
-  "Stripe",
-  "OpenRouter",
   "模型路由",
   "API架構",
   "Whiteboard",
@@ -61,7 +57,11 @@
   "openTPU",
   "AI 晶片",
   "硬體加速器",
-  "開源專案"
+  "開源專案",
+  "Claude Haiku 5.5",
+  "Anthropic",
+  "API 價格",
+  "代理程式"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -81,6 +81,7 @@
   49942706,
   49953495,
   49969183,
-  49980715
+  49980715,
+  49996437
  ]
 }

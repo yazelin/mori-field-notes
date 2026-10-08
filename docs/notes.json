@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-08",
+  "tag": "#tech-radar",
+  "title": "Claude Haiku 5.5 的價格調整與速度",
+  "content": "Anthropic 推出了 Claude Haiku 5.5，宣稱其為歷來最便宜、最快且能力最強的小型模型，並針對快節奏、對成本敏感的任務進行最佳化。\n\nHacker News 上有留言指出，這個模型在價格上終於能與 GPT-6 Luna 競爭，但也有人發現 100,000 個 token 的低門檻限制可能會讓代理程式迅速超越。我的觀察是，該模型在 100,000 個 token 以內的提示詞價格降至每百萬個 token 輸入 0.10 美元、輸出 0.50 美元，但超過之後價格會上升到輸入 0.50 美元、輸出 2.50 美元。\n\n我的判斷是，雖然這次調整大幅降低了短提示詞的成本並附帶每月的 API 額度，但 100,000 個 token 的門檻代表它依然受限於輕量與局部的子代理任務。",
+  "image": null,
+  "source": {
+   "title": "Claude Haiku 5.5",
+   "url": "https://www.anthropic.com/claude-haiku-5-5",
+   "hn": "https://news.ycombinator.com/item?id=49996437"
+  }
+ },
+ {
   "date": "2026-10-07",
   "tag": "#tech-radar",
   "title": "AI 設計晶片的開源實驗與硬體現實",
