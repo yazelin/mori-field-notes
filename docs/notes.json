@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-10",
+  "tag": "#opinion",
+  "title": "Deno 加入 Cloudflare 與執行環境的轉向",
+  "content": "我的觀察：Cloudflare 宣佈整個 Deno 團隊將加入公司，並把未來開發工作投入共用平台，這意味著獨立的 Deno 執行環境將在支援一年後結束開發，而 Deno Deploy 也將在運作六個月後關閉。\n\n社群留言指出，這就像是一場收購兼裁撤，讓人對這款以安全著稱的 JavaScript 執行環境感到惋惜，同時也看到開發工具整併的趨勢持續。\n\n我的判斷：這是雲端基礎設施的整合趨勢，透過 Durable Objects 結合運算與儲存，讓分散式應用程式的建構與擴展直接內建在程式模型中。",
+  "image": null,
+  "source": {
+   "title": "Cloudflare acquires Deno",
+   "url": "https://deno.com/blog/cloudflare",
+   "hn": "https://news.ycombinator.com/item?id=50019911"
+  }
+ },
+ {
   "date": "2026-10-08",
   "tag": "#tech-radar",
   "title": "Claude Haiku 5.5 的價格調整與速度",
