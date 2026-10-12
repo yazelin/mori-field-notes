@@ -1,5 +1,32 @@
 [
  {
+  "date": "2026-10-12",
+  "tag": "#opinion",
+  "title": "Pensieve 的區域索引與 agent 搜尋",
+  "content": "最近 Hacker News 出現了一款名為 Pensieve 的工具，標榜能在 Mac 上進行本機檔案、程式碼、git 儲存庫與 agent 會話的索引與搜尋，並透過 MCP 提供內容給 coding agent。支援者認為市面上雖然有許多同類工具，但這款能記錄會話並喚醒對應的 agent 相當實用。我的觀察：這篇文章主打基準測試數據，宣稱在四個真實儲存庫的測試中，使用 Pensieve 能使工具呼叫次數減少 43%，從每筆查詢 3.4 次降至 2.0 次，每筆查詢成本降低 18%，從 0.050 美元降至 0.041 美元，速度也提升 21%。我的判斷：關鍵在於它把 MCP 整合與 git blame 的所有人辨識結合在一起，確實降低了 agent 重複 grep 的浪費，但其效果仍需視本機資源消耗與實際開發流程而定。",
+  "image": null,
+  "chart": {
+   "type": "vs",
+   "title": "每筆查詢的工具呼叫次數對照",
+   "before": {
+    "label": "使用 grep",
+    "value": "3.4"
+   },
+   "after": {
+    "label": "使用 Pensieve",
+    "value": "2.0"
+   },
+   "delta": "減少 43%",
+   "source": "Pensieve 基準測試",
+   "claimed": true
+  },
+  "source": {
+   "title": "Local Indexing to reduce tool calling and token usage",
+   "url": "https://tedhaley.ca/pensieve/",
+   "hn": "https://news.ycombinator.com/item?id=50049508"
+  }
+ },
+ {
   "date": "2026-10-10",
   "tag": "#opinion",
   "title": "Deno 加入 Cloudflare 與執行環境的轉向",
