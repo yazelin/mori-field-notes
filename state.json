@@ -1,10 +1,7 @@
 {
- "lastPublishDate": "2026-10-12",
- "totalNotes": 152,
+ "lastPublishDate": "2026-10-13",
+ "totalNotes": 153,
  "topics": [
-  "LLM",
-  "agent",
-  "cybersecurity",
   "DeepSeek",
   "DSec",
   "Agent",
@@ -61,7 +58,10 @@
   "Pensieve",
   "MCP",
   "agent",
-  "工具呼叫"
+  "工具呼叫",
+  "AI 模型",
+  "密碼學",
+  "安全稽核"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -84,6 +84,7 @@
   49980715,
   49996437,
   50019911,
-  50049508
+  50049508,
+  50065692
  ]
 }

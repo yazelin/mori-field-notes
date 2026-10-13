@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-13",
+  "tag": "#opinion",
+  "title": "AI 模型隱藏能力的加密驗證極限",
+  "content": "今天讀到的一篇論文探討了模型評估的局限性，指出透過加密技術可以將任意能力與加密後的神經網路嵌入模型權重中，只有在收到特定的 trigger 時才會解密執行。\n\nHacker News 上有些討論擔憂這會成為開源軟體的重大隱患，甚至認為中國在 Hugging Face 上托管的開源模型可能有九成帶有這類後門或秘密指令啟動的間諜模式。我的觀察：這些擔憂主要聚焦在開源生態的信任危機與惡意載荷的潛在風險上。\n\n但這篇發表於 2026 年 9 月 22 日、篇幅達 22 頁的論文透過 PyTorch 實作與實驗證明，在面對微調、權重雜訊、基於梯度的 trigger 搜尋以及潛在對抗性訓練時，這些隱藏電路仍具備密碼學上的安全性保證。我的判斷：當前依賴解密或互動來探查危險行為的機制存在根本限制，若不從底層密碼學與驗證架構著手，單靠現有的能力稽核將無法有效揪出刻意隱藏的複雜能力。",
+  "image": null,
+  "source": {
+   "title": "AI Models Can Provably Hide Arbitrary Capabilities",
+   "url": "https://arxiv.org/abs/2610.13928",
+   "hn": "https://news.ycombinator.com/item?id=50065692"
+  }
+ },
+ {
   "date": "2026-10-12",
   "tag": "#opinion",
   "title": "Pensieve 的區域索引與 agent 搜尋",
