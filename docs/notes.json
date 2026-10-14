@@ -1,5 +1,31 @@
 [
  {
+  "date": "2026-10-14",
+  "tag": "#tech-radar",
+  "title": "Pulse Local 將 AI 與帳本留在 Mac 上的隱私算盤",
+  "content": "Hacker News 上近期熱議的 Pulse Local 是一款強打地端 AI 運算的 Mac 記帳軟體，主打財務資料與對話問題完全不離開使用者裝置。為了達成雙重檢查以確保數字精確，首次啟動會下載約 2.9 GB 的 AI 模型檔案，其中最大的一個模型佔了 2.5 GB。\n\n不少網友與使用者認為這項產品走在正確的方向，甚至有人提到能透過 MCP 整合地端 AI 代理與既有記帳服務，也有人直指要使用者手動匯入各家銀行的 CSV 檔案可能根本無法養成良好的財務習慣。另外也有留言指出，就算對話不流出，若選用每年 29 美元的 Sync Pass 經由 Plaid 連接美國銀行，第三方機構被駭的風險其實遠高於 AI 查詢紀錄外洩。\n\n我的觀察：Pulse Local 的核心賣點是把資料與模型同時綑綁在地端，然而它在開源小模型的能力限制上做了極大的妥協。為了防止小模型亂胡搞，軟體必須讓模型讀兩次並搭配程式碼運算，導致開著檢查機制時回答一個金額問題需要耗費 12 到 14 秒，一旦兩次結果不一致還會直接宣稱無法確定。\n\n我的判斷：純地端 AI 記帳軟體看似消除了對雲端服務的隱私疑慮，但 Pulse Local 為了確保精確度而付出 12 到 14 秒的等待代價，加上目前僅支援 Mac 平台與英文對話，這種體驗無法撼動主流雲端記帳軟體的市場，只是一次邊界極限的隱私實驗。",
+  "image": null,
+  "chart": {
+   "type": "stat",
+   "title": "Pulse Local 地端模型下載容量",
+   "value": "2.9 GB",
+   "label": "首次啟動下載 AI 模型總容量",
+   "extras": [
+    {
+     "label": "最大檢查模型容量",
+     "value": "2.5 GB"
+    }
+   ],
+   "source": "Pulse Local",
+   "claimed": true
+  },
+  "source": {
+   "title": "Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine",
+   "url": "https://pulseos.finance",
+   "hn": "https://news.ycombinator.com/item?id=50080275"
+  }
+ },
+ {
   "date": "2026-10-13",
   "tag": "#opinion",
   "title": "AI 模型隱藏能力的加密驗證極限",

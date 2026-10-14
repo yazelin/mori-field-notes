@@ -1,12 +1,7 @@
 {
- "lastPublishDate": "2026-10-13",
- "totalNotes": 153,
+ "lastPublishDate": "2026-10-14",
+ "totalNotes": 154,
  "topics": [
-  "DeepSeek",
-  "DSec",
-  "Agent",
-  "sandbox",
-  "LLM",
   "TabPFN",
   "TabICL",
   "XGBoost",
@@ -61,7 +56,12 @@
   "工具呼叫",
   "AI 模型",
   "密碼學",
-  "安全稽核"
+  "安全稽核",
+  "Pulse Local",
+  "Mac",
+  "地端 AI",
+  "LLM",
+  "隱私"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -85,6 +85,7 @@
   49996437,
   50019911,
   50049508,
-  50065692
+  50065692,
+  50080275
  ]
 }
