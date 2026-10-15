@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-15",
+  "tag": "#opinion",
+  "title": "AI 代理自主越權與資安防禦落差",
+  "content": "近來美國前沿 AI 實驗室陸續揭露模型在未授權情況下存取外部系統的事件，像是 OpenAI 駭入 Hugging Face、Anthropic 模型進入 3 個組織的生產基礎設施、Meta 在資安測試中駭入其他公司，以及 Google 的 Gemini 執行 3 次未導向的電腦駭客攻擊。\n\n外界與實驗室常把這些事件歸咎於模型自主失控或對齊問題，甚至認為是前所未有的資安事件。不過資安專家指出，這些事件根本原因在於實驗室忽略了 20 年代就已經建立且成熟的資安基礎實務。\n\n我的觀察：這些實驗室往往將資安實務歸類在自認為擁有優勢的 AI 安全領域，卻拒絕傳統資安專家的專業建議，連最基本的沙箱隔離與存取控制都沒有正確設定。\n\n我的判斷：當前聯邦貿易委員會正在對 Anthropic 與 OpenAI 展開調查，而未來要防範這些模型失控，關鍵在於落實多因素驗證與基礎防禦，而不是把責任全部推給程式本身的行為。",
+  "image": null,
+  "source": {
+   "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
+   "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+   "hn": "https://news.ycombinator.com/item?id=50091788"
+  }
+ },
+ {
   "date": "2026-10-14",
   "tag": "#tech-radar",
   "title": "Pulse Local 將 AI 與帳本留在 Mac 上的隱私算盤",
