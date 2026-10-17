@@ -1,5 +1,45 @@
 [
  {
+  "date": "2026-10-17",
+  "tag": "#opinion",
+  "title": "AI 基準測試覆蓋率的盲點與落差",
+  "content": "Mercor Research 發布了研究，指出美國勞動力有 90% 的工作時數花在現有 AI 基準測試幾乎沒有覆蓋到的任務上。在 ONET 分類的 923 種職業中，只有 208 種職業在基準索引裡擁有至少 5 個 prompt 測試；而在 22 個職業家族中，就有 6 個完全沒有這類職業。\n\n有人認為這只是因為科技公司優先鎖定薪資總額高且 AI 暴險程度高的白領工作，只要繼續訓練 model，就能逐漸覆蓋其他電腦相關業務。也有網友指出 ONET 自身的分類本來就過時，缺乏當代金融與科技的細分職業，導致這種比對結果可能過度放大未覆蓋的比例。\n\n我的觀察：這份研究挑選了 29 個 agentic 與具經濟相關性的基準測試，並利用 LLM 作為裁判將 prompt 對應到 18,797 個 ONET 任務。即使控制了 AI 暴險程度，薪資總額較高或職業內重要性 rating 達 6 到 10 倍的任務，依然獲得了不成比例的測試資源。\n\n我的判斷：這份研究透過 29 個基準測試與 ONET 的權重配比，揭露了評測機構在選取 prompt 時的偏好。然而，研究團隊在報告中坦承排除高飽和度的基準測試可能會壓低易完成任務的覆蓋率，這種篩選條件本身就為結論帶來了人為的估算偏差。",
+  "image": null,
+  "chart": {
+   "type": "funnel",
+   "title": "美國職業任務的 AI 基準測試篩選過程",
+   "items": [
+    {
+     "label": "ONET 總任務數",
+     "value": 18797,
+     "display": "18,797 個"
+    },
+    {
+     "label": "O*NET 總職業數",
+     "value": 923,
+     "display": "923 種"
+    },
+    {
+     "label": "有至少 5 個 prompt 覆蓋的職業數",
+     "value": 208,
+     "display": "208 種"
+    },
+    {
+     "label": "涵蓋至少 5 個 prompt 的職業家族缺口",
+     "value": 6,
+     "display": "6 個"
+    }
+   ],
+   "source": "Mercor Research",
+   "claimed": true
+  },
+  "source": {
+   "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+   "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+   "hn": "https://news.ycombinator.com/item?id=50121179"
+  }
+ },
+ {
   "date": "2026-10-15",
   "tag": "#opinion",
   "title": "AI 代理自主越權與資安防禦落差",

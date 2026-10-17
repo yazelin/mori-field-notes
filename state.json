@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-10-15",
- "totalNotes": 155,
+ "lastPublishDate": "2026-10-17",
+ "totalNotes": 156,
  "topics": [
-  "Jeff",
-  "LLM",
-  "分類模型",
-  "開源專案",
   "livenerf",
   "Claude Opus 5.5",
   "benchmark",
@@ -61,7 +57,11 @@
   "AI 代理",
   "資安防禦",
   "沙箱隔離",
-  "模型失控"
+  "模型失控",
+  "AI 基準測試",
+  "ONET",
+  "Mercor Research",
+  "勞動力分析"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -87,6 +87,7 @@
   50049508,
   50065692,
   50080275,
-  50091788
+  50091788,
+  50121179
  ]
 }
