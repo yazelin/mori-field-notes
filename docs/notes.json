@@ -1,5 +1,26 @@
 [
  {
+  "date": "2026-10-18",
+  "tag": "#tech-radar",
+  "title": "DeepSeek-V4.1-Flash-1017 的速度與成本",
+  "content": "社群討論認為 DeepSeek-V4.1-Flash-1017 雖然在部分基準測試沒有完全超越對手，但速度與輸出品質讓使用者在日常開發時更有感，甚至有人因此減少中斷次數。我的觀察：這類模型更新往往伴隨推理時間縮短與輸出長度減少，確實能改善代理任務的執行效率。然而，開發者在實際面對複雜程式碼庫時，速度與精確度是否能同時維持仍有變數。我的判斷：此版本將 763B 參數的模型與 MIT 授權釋出，搭配 1M tokens 的 context window 與支援大於等於 256K 的 max_tokens，對需要頻繁進行程式碼審查與代理任務的團隊來說，降低成本的效果遠高過盲目追求極限效能。",
+  "image": null,
+  "chart": {
+   "type": "stat",
+   "title": "Model Size",
+   "value": "763B",
+   "label": "Safetensors Model size params",
+   "extras": [],
+   "source": "Hugging Face",
+   "claimed": true
+  },
+  "source": {
+   "title": "DeepSeek-v4.1-Flash-1017",
+   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+   "hn": "https://news.ycombinator.com/item?id=50129045"
+  }
+ },
+ {
   "date": "2026-10-17",
   "tag": "#opinion",
   "title": "AI 基準測試覆蓋率的盲點與落差",

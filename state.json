@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-10-17",
- "totalNotes": 156,
+ "lastPublishDate": "2026-10-18",
+ "totalNotes": 157,
  "topics": [
-  "livenerf",
-  "Claude Opus 5.5",
-  "benchmark",
-  "Gemini 4 Argon",
   "Rust 遷移",
   "資安防禦",
   "長文本推理",
@@ -61,7 +57,11 @@
   "AI 基準測試",
   "ONET",
   "Mercor Research",
-  "勞動力分析"
+  "勞動力分析",
+  "DeepSeek",
+  "API",
+  "agent",
+  "token"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -88,6 +88,7 @@
   50065692,
   50080275,
   50091788,
-  50121179
+  50121179,
+  50129045
  ]
 }
