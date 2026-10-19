@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-10-18",
- "totalNotes": 157,
+ "lastPublishDate": "2026-10-19",
+ "totalNotes": 158,
  "topics": [
-  "Rust 遷移",
-  "資安防禦",
-  "長文本推理",
-  "Pi 1.0",
   "agent",
   "MCP",
   "Earendil",
@@ -61,7 +57,11 @@
   "DeepSeek",
   "API",
   "agent",
-  "token"
+  "token",
+  "HybridAgent",
+  "LLM",
+  "latent reasoning",
+  "agent"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -89,6 +89,7 @@
   50080275,
   50091788,
   50121179,
-  50129045
+  50129045,
+  50145337
  ]
 }

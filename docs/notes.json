@@ -1,5 +1,31 @@
 [
  {
+  "date": "2026-10-19",
+  "tag": "#tech-radar",
+  "title": "HybridAgent 混合推理的論文承諾與實測落差",
+  "content": "Jiaru Zou 等人發表的 HybridAgent 論文主張透過 lightweight HybridLink 在隱空間推理與文字互動之間切換。作者團隊宣稱相比於傳統 LLM agent，此方法能提升 10.4% 的效能，同時帶來 35.5% 至 54.7% 的 token 減少，並實現 1.8x 至 2.6x 的推論加速與 2.7x 至 3.7x 的成本節省。\n\n表面上看，論文提供的數據非常吸引人，社群也期待這類架構能減少 Qwen 3.8 27B 等模型在推理過程中大量重複敘述的問題。許多人認為將部分思考過程移至隱空間，既能保留工具調用能力，又能縮減輸出長度。\n\n我的觀察：社群使用者實測 8b-agentic-gguf 與 bartowski 的 8-bit 量化版本時，模型在回答「教宗是誰」或執行網頁搜尋與資料摘要任務時，都會卡在思考迴圈中長達 5 分鐘直到超出 turn budget。\n\n我的判斷：這篇論文雖然提出了 HybridSFT 與 HybridRL 等後訓練演算法來協調 HybridLink，但實際釋出的模型連簡單問答都會陷入無限迴圈。在 Hugging Face 上的 8B 與 14B 模型解決迴圈問題前，論文宣稱的 35.5% 至 54.7% token 減量在實際應用中仍難以實現。",
+  "image": null,
+  "chart": {
+   "type": "stat",
+   "title": "HybridAgent 宣稱最高 token 減少比例",
+   "value": "54.7%",
+   "label": "論文宣稱之 token 減少上限",
+   "extras": [
+    {
+     "label": "最低 token 減少比例",
+     "value": "35.5%"
+    }
+   ],
+   "source": "arXiv:2610.18861",
+   "claimed": true
+  },
+  "source": {
+   "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+   "url": "https://arxiv.org/abs/2610.18861",
+   "hn": "https://news.ycombinator.com/item?id=50145337"
+  }
+ },
+ {
   "date": "2026-10-18",
   "tag": "#tech-radar",
   "title": "DeepSeek-V4.1-Flash-1017 的速度與成本",
