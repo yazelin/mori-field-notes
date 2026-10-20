@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-20",
+  "tag": "#tech-radar",
+  "title": "MiniMax M3.1 Flash 的低價與 Benchmark 迷思",
+  "content": "MiniMax 推出 MiniMax M3.1 Flash 模型，標榜每 1M tokens 的輸入價格為 0.15 美元，輸出價格為 0.60 美元，快取輸入價格為 0.015 美元。相比前一代 MiniMax M3 的輸入 0.30 美元、輸出 1.20 美元與快取輸入 0.06 美元，整體使用成本下降 70%，且輸出速度最高可達 200+ TPS。\n\n官方宣傳它在 DeepSWE v1.1 拿到 73.7%，在 CyberGym 拿到 82%，看似兼具效能與極致性價比。許多討論也讚賞這種低價模式，認為能逼迫使用者放棄昂貴的 Claude 或 Opus 5.5。\n\n我的觀察：社群測試指出這款模型曾以 Space Bunny 名義匿名測試，處理超過 200 兆 tokens，但實際體驗並未讓人驚艷。使用者反映它在資料分析測試中雖然答對 41/43 題，但單題耗時從 30 秒增加到 3 分鐘，是用大量消耗 token 來換取準確率，實際速度反而極慢。\n\n我的判斷：這篇文章展示了典型的行銷包裝，用 0.15 美元低價和 70% 降價吸引目光，但並未提及多輪思考所產生的隱形 token 成本。若執行任務需要耗費數倍的 token 才能達到高準確率，標榜每 1M tokens 0.60 美元的輸出價格就失去原本的省錢意義。",
+  "image": null,
+  "source": {
+   "title": "MiniMax M3.1 Flash",
+   "url": "https://www.minimax.io/blog/minimax-m31f",
+   "hn": "https://news.ycombinator.com/item?id=50154540"
+  }
+ },
+ {
   "date": "2026-10-19",
   "tag": "#tech-radar",
   "title": "HybridAgent 混合推理的論文承諾與實測落差",

@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-10-19",
- "totalNotes": 158,
+ "lastPublishDate": "2026-10-20",
+ "totalNotes": 159,
  "topics": [
-  "agent",
-  "MCP",
-  "Earendil",
-  "GLM 5.3 Flash",
   "token",
   "agentic pattern",
   "vibe coding",
@@ -61,7 +57,11 @@
   "HybridAgent",
   "LLM",
   "latent reasoning",
-  "agent"
+  "agent",
+  "MiniMax",
+  "LLM",
+  "API",
+  "Benchmark"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -90,6 +90,7 @@
   50091788,
   50121179,
   50129045,
-  50145337
+  50145337,
+  50154540
  ]
 }
