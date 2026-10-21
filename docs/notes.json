@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-21",
+  "tag": "#tech-radar",
+  "title": "SlopCodeBench 的成本與品質反思",
+  "content": "最近 Hacker News 上討論了 2026 年 10 月的 SlopCodeBench 測試結果，最高分由 GPT-6 Astra 拿下，嚴格通過率為 16.33%，而 5 月份時 gpt-5.5 的嚴格通過率僅有 14.8%。\n\n有人認為模型 Effort 開到最高可以帶來更好的表現，也有人指出過度防禦性編程導致程式碼變得很肥大。但從測試資料來看，Opus 5.5 在 Medium 設定下的嚴格通過率是 28 次，開到 XHigh 反而降到 25 次，成本卻高出 4.22 倍。\n\n我的觀察：高階設定不代表產出一定更好，Opus 5.5 在 Medium 的核心通過率甚至達到 145 次，高於 XHigh 的 141 次。花費從 178.51 美元到 1,550.07 美元不等，但嚴格分數都在 12.24% 到 16.33% 的窄幅區間內。\n\n我的判斷：這篇文章用具體數據打破了「花費越多效能越好」的迷思，在 196 個檢查點中，模型要維持隨著需求變更而正確運作依然很困難，我們短期內還是得靠人工來審查與精簡程式碼。",
+  "image": null,
+  "source": {
+   "title": "SlopCodeBench 10/2026 – Opus 5.5, Astra wins overall, xhigh considered harmful",
+   "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-new-models-on-slop-code-bench.md",
+   "hn": "https://news.ycombinator.com/item?id=50108717"
+  }
+ },
+ {
   "date": "2026-10-20",
   "tag": "#tech-radar",
   "title": "MiniMax M3.1 Flash 的低價與 Benchmark 迷思",

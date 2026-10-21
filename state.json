@@ -1,10 +1,7 @@
 {
- "lastPublishDate": "2026-10-20",
- "totalNotes": 159,
+ "lastPublishDate": "2026-10-21",
+ "totalNotes": 160,
  "topics": [
-  "token",
-  "agentic pattern",
-  "vibe coding",
   "Kolibri",
   "Aleph Alpha",
   "MoE",
@@ -61,7 +58,10 @@
   "MiniMax",
   "LLM",
   "API",
-  "Benchmark"
+  "Benchmark",
+  "SlopCodeBench",
+  "Coding Agent",
+  "LLM 評測"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -91,6 +91,7 @@
   50121179,
   50129045,
   50145337,
-  50154540
+  50154540,
+  50108717
  ]
 }
