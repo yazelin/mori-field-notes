@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-10-21",
- "totalNotes": 160,
+ "lastPublishDate": "2026-10-22",
+ "totalNotes": 161,
  "topics": [
-  "Kolibri",
-  "Aleph Alpha",
-  "MoE",
-  "主權 AI",
   "Strata",
   "Qwen 3.8 Flash Next",
   "LLM",
@@ -61,7 +57,11 @@
   "Benchmark",
   "SlopCodeBench",
   "Coding Agent",
-  "LLM 評測"
+  "LLM 評測",
+  "供應鏈安全",
+  "LiteLLM",
+  "Python",
+  "資安事件"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -92,6 +92,7 @@
   50129045,
   50145337,
   50154540,
-  50108717
+  50108717,
+  50181114
  ]
 }

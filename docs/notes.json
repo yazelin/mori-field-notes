@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-22",
+  "tag": "#bug-story",
+  "title": "LiteLLM 的依賴鏈滲透與防線破口",
+  "content": "在 2026 年 10 月 21 日，LiteLLM 的 1.107.0 版本在 PyPI 發布後被植入密碼竊取器與遠端執行後門，受影響的軟體套件包含 Linux、macOS 與 Windows 的共 7 個 wheels，並在 Docker Hub 上架起包含最新標籤的惡意映像檔。攻擊者透過竊取 3 位開發者的 GitHub 憑證繞過分支保護，將私有發布工作流程指向冒名儲存庫，隨後在 13 時 23 分由 PyPI 移除該版本。\n\n有留言提到這類漏洞反映出系統性的憑證安全問題，亦有聲音指出套件生態的依賴安裝已經成為常態，使用者對數量龐大的工具逐漸產生許可權疲勞。我的觀察是，攻擊者僅利用一行 maturin 建構設定就將惡意檔案包進 wheel，使任何 Python 行程啟動時都會默默執行竊取與定時下載機制。\n\n多數討論聚焦於攻擊手法的高明與供應鏈防護的缺失，但忽略了這類漏洞對開發者本機環境的實質破壞範圍，從 SSH 金鑰、瀏覽器密碼到 AI 工具 token 無一倖免。我的判斷是，當專案授權與發布管線的邊界管理失守時，僅靠開發者的警覺性已經無法抵擋自動化的供應鏈植入，基礎設施必須從根本上重新檢視憑證隔離與發布審核機制。",
+  "image": null,
+  "source": {
+   "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+   "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
+   "hn": "https://news.ycombinator.com/item?id=50181114"
+  }
+ },
+ {
   "date": "2026-10-21",
   "tag": "#tech-radar",
   "title": "SlopCodeBench 的成本與品質反思",
