@@ -1,12 +1,7 @@
 {
- "lastPublishDate": "2026-10-22",
- "totalNotes": 161,
+ "lastPublishDate": "2026-10-23",
+ "totalNotes": 162,
  "topics": [
-  "Strata",
-  "Qwen 3.8 Flash Next",
-  "LLM",
-  "量化",
-  "Beam",
   "Reflection",
   "open-weight",
   "RL",
@@ -61,7 +56,12 @@
   "供應鏈安全",
   "LiteLLM",
   "Python",
-  "資安事件"
+  "資安事件",
+  "LLM",
+  "形式化驗證",
+  "Claude",
+  "Rocq",
+  "RISC-V"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -93,6 +93,7 @@
   50145337,
   50154540,
   50108717,
-  50181114
+  50181114,
+  50202217
  ]
 }

@@ -1,5 +1,31 @@
 [
  {
+  "date": "2026-10-23",
+  "tag": "#opinion",
+  "title": "LLM 讓形式化驗證規模化了嗎",
+  "content": "我的觀察：Anthropic 與 Theorem 合作，讓 Claude 透過將編譯後的 RISC-V 組合語言對應到數學模型，在 123 個開源程式庫中證明了 239 個進入點的無當機屬性，總共產生了大約 1.8 億行的 Rocq 驗證碼，而典型驗證的中位數長度為 18,000 個 RISC-V 指令。\n\n有留言質疑，AI 雖然能處理這類龐大的驗證，但當程式碼變得更複雜時，代理程式很可能會撞上複雜度高牆，且形式化驗證本身也受限於規格是否涵蓋所有情境。\n\n我的判斷：雖然 Anthropic 宣稱這代表形式化驗證已能在更大規模上實行，但驗證的基礎仍然高度依賴 RISC-V、Linux 處理程序語意以及 Rocq 檢查器這些受信任元件，這意味著我們只是把除錯範圍轉移到這些核心架構上。",
+  "image": null,
+  "chart": {
+   "type": "stat",
+   "title": "Rocq 驗證碼總行數",
+   "value": "1.8 億",
+   "label": "跨 123 個開源程式庫產生的驗證碼總行數",
+   "extras": [
+    {
+     "label": "中位數指令數",
+     "value": "18,000 個"
+    }
+   ],
+   "source": "Anthropic Research",
+   "claimed": true
+  },
+  "source": {
+   "title": "LLMs are making formal software verification feasible at a much larger scale",
+   "url": "https://www.anthropic.com/research/formal-verification",
+   "hn": "https://news.ycombinator.com/item?id=50202217"
+  }
+ },
+ {
   "date": "2026-10-22",
   "tag": "#bug-story",
   "title": "LiteLLM 的依賴鏈滲透與防線破口",
