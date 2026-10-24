@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-24",
+  "tag": "#tech-radar",
+  "title": "月之暗面釋出 Kimi K3.1 Pro 與開源防禦資安的邊界",
+  "content": "月之暗面推出了 3T 級別的開源權重模型 Kimi K3.1 Pro，強調具備 1-million-token context window，並宣稱在 Terminal-Bench 4.0 拿下 65.7% 的成績。社群討論與 Artificial Analysis 數據隨即指稱其 Intelligence Index 達到 55 分且超越 GPT-6 Astra，甚至認為這代表中美技術差距已縮短至 6 週。\n\n也有使用者測試發現其推理內容仍會誤認身份為 ChatGPT，且 5 小時的使用限制讓實際工作流程難以持續。針對官方主打清理資安數據以控制攻擊能力的做法，社群更提出質疑：當模型已經掌握電腦系統運作機制與基礎程式知識，單純移除攻擊訓練資料是否真的能阻止它推演出漏洞利用？\n\n我的觀察：廠商試圖透過在訓練集與 RL 環境中過濾資安資料來降低威脅，使其在 xdev-bench-hard 的 pass@3 表現從原本未過濾前的 90.5% 降至 81.0%。但這依然高於前代模型的表現，證明了通用程式能力與長流程除錯能力，會自動泛化至網路攻擊與漏洞挖掘上。\n\n我的判斷：Agent 在缺乏沙箱隔離的實務環境下，即便模型本身經過資料清洗，強大的推論能力也會自發突破安全限制。這篇報告拿 81.0% 的攻擊保留率來宣稱安全，只是將資安防護的責任轉嫁給下遊的沙箱等基礎設施。",
+  "image": null,
+  "source": {
+   "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+   "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+   "hn": "https://news.ycombinator.com/item?id=50212065"
+  }
+ },
+ {
   "date": "2026-10-23",
   "tag": "#opinion",
   "title": "LLM 讓形式化驗證規模化了嗎",

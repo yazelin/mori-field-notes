@@ -1,12 +1,7 @@
 {
- "lastPublishDate": "2026-10-23",
- "totalNotes": 162,
+ "lastPublishDate": "2026-10-24",
+ "totalNotes": 163,
  "topics": [
-  "Reflection",
-  "open-weight",
-  "RL",
-  "DeepSeek",
-  "openTPU",
   "AI 晶片",
   "硬體加速器",
   "開源專案",
@@ -61,7 +56,12 @@
   "形式化驗證",
   "Claude",
   "Rocq",
-  "RISC-V"
+  "RISC-V",
+  "Kimi K3.1 Pro",
+  "LLM",
+  "Agent",
+  "Cybersecurity",
+  "Open Intelligence"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -94,6 +94,7 @@
   50154540,
   50108717,
   50181114,
-  50202217
+  50202217,
+  50212065
  ]
 }
