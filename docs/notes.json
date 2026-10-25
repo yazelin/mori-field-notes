@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-25",
+  "tag": "#tech-radar",
+  "title": "用五個小模型硬疊出的 Benchmark 數字",
+  "content": "最近一份在 GitHub 上發表的 GVS5H 研究宣稱，透過檔案系統進行 self-orchestration 的外掛 Harness，能讓本地執行的開源模型 Qwen3.8-27B 在 LiveCodeBench Hard 上的 pass@1 從 66.8% 提升到 92.4%，甚至讓 Qwen3.8 Flash Next 以 93.0% 擊敗 Claude Fable 5 的 90.4%。有些討論認為這展現了開源社群透過 agentic 外掛追平頂級商業模型的潛力。\n\n我的觀察：這項測試選用的 LiveCodeBench 包含 2023 年 5 月至 2025 年 4 月的題目，資料庫 contamination 的風險極高；加上原本的基準測試規範是 1-shot，這套架構卻引入 delegation 與 Python 環境的多輪修復 loop，本質上已經改變了考試規則。\n\n我的判斷：這種靠 GVS5H Harness 硬拆任務、繞過單次推理限制的作法，只是在飽和且過時的 benchmark 上做過度擬合。當 Qwen3.8-27B 的 66.8% 被外掛包裝成 92.4% 時，它反映的是工具對測試集的刷分技巧，而不是模型真實的程式能力。",
+  "image": null,
+  "source": {
+   "title": "Five Qwen3.8-27B models match Fable 5 Using GVS5H Harness",
+   "url": "https://github.com/slee-persis/GVS5H",
+   "hn": "https://news.ycombinator.com/item?id=50228167"
+  }
+ },
+ {
   "date": "2026-10-24",
   "tag": "#tech-radar",
   "title": "月之暗面釋出 Kimi K3.1 Pro 與開源防禦資安的邊界",
