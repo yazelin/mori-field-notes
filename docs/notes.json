@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-27",
+  "tag": "#tech-radar",
+  "title": "vLLM 工具呼叫準確率的取捨",
+  "content": "近期工程團隊指出，在使用 vLLM 服務開源模型時，工具呼叫的結構準確率經常無法達到預期水準。例如當他們使用 vLLM 版本 0.28 運行 Kimi K2.6 時，僅有 92% 的時間能獲得預期的工具呼叫 schema。面對這個現象，部分觀點認為這是因為模型訓練資料與實際生產環境的 schema 存在落差，也有人認為應該透過更嚴謹的設定來處理。我的觀察：模型在生成 token 時帶有隨機性，若缺乏強制解碼機製，工具呼叫失敗率會直接累積並污染 context window。vLLM 隨後引入了透過 XGrammar 實現的約束解碼機製，將原本的機率輸出轉為運行時保證。我的判斷：雖然模型通用引擎因為各個模型的相容性問題而選擇取消預設啟動，但對於專注於 agentic 工作負載的團隊而言，直接開啟這項功能才能真正解決工具呼叫的穩定性問題。",
+  "image": null,
+  "source": {
+   "title": "Fixing Tool-Call Accuracy in vLLM",
+   "url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
+   "hn": "https://news.ycombinator.com/item?id=50242870"
+  }
+ },
+ {
   "date": "2026-10-25",
   "tag": "#tech-radar",
   "title": "用五個小模型硬疊出的 Benchmark 數字",
