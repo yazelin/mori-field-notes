@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-10-28",
- "totalNotes": 166,
+ "lastPublishDate": "2026-10-29",
+ "totalNotes": 167,
  "topics": [
-  "agent",
-  "工具呼叫",
-  "AI 模型",
-  "密碼學",
   "安全稽核",
   "Pulse Local",
   "Mac",
@@ -61,7 +57,11 @@
   "Ghostty",
   "終端機",
   "記憶體最佳化",
-  "Kitty 協定"
+  "Kitty 協定",
+  "Qwenputer",
+  "RISC-V",
+  "Gated DeltaNet",
+  "模型權重"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -98,6 +98,7 @@
   50212065,
   50228167,
   50242870,
-  50261998
+  50261998,
+  50282838
  ]
 }

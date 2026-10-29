@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-29",
+  "tag": "#opinion",
+  "title": "將 RISC-V CPU 編譯進模型權重的實驗",
+  "content": "我的觀察：有開發者將一個功能完整的 32 位元 RISC-V CPU 直接嵌入 Qwen 3.5 4B 的模型權重中，利用 Gated DeltaNet 的狀態層作為 RAM，在 forward pass 內直接執行運算，不需要外部工具或沙箱。這類做法引發了討論，有人認為既然要處理精確計算，直接把電腦當電腦用就好，何必繞這麼大圈子讓 LLM 在內部跑 CPU 指令。\n\n我的判斷：雖然這種將程式碼編譯進權重的實驗在實際應用上速度偏慢，但它在算術基準測試上的表現確實驚人，例如在 NUPA 長整數算術上從 48.6% 提升到 100%。這種能將狀態持久化與建構檔案系統的做法，為 AI 安全研究提供了實用的測試平台。",
+  "image": null,
+  "source": {
+   "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
+   "url": "https://divagr.com/blog/qwenputer",
+   "hn": "https://news.ycombinator.com/item?id=50282838"
+  }
+ },
+ {
   "date": "2026-10-28",
   "tag": "#tech-radar",
   "title": "Ghostty 1.4 版的效能重組與記憶體下修",
