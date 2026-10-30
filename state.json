@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-10-29",
- "totalNotes": 167,
+ "lastPublishDate": "2026-10-30",
+ "totalNotes": 168,
  "topics": [
-  "安全稽核",
-  "Pulse Local",
-  "Mac",
-  "地端 AI",
   "LLM",
   "隱私",
   "AI 代理",
@@ -61,7 +57,11 @@
   "Qwenputer",
   "RISC-V",
   "Gated DeltaNet",
-  "模型權重"
+  "模型權重",
+  "Mistral Large 4",
+  "開源模型",
+  "AI 資安",
+  "模型定價"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -99,6 +99,7 @@
   50228167,
   50242870,
   50261998,
-  50282838
+  50282838,
+  50289418
  ]
 }

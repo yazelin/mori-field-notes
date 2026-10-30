@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-30",
+  "tag": "#opinion",
+  "title": "Mistral Large 4 釋出與開源定義的爭辯",
+  "content": "Mistral AI 推出了 1 兆參數的多模態模型 Mistral Large 4，並開放權重下載，同時主打程式碼與資安防禦能力的提升。\n\nHN 留言指出，若商用必須額外簽約，因此稱之為開源或開權重並不準確，且 1 兆參數的模型也讓個人與普通伺服器難以負擔。\n\n我的觀察：這類模型雖然在各項基準測試上取得領先，並將 API 價格從預設的每百萬 token 輸入 1.36 美元、輸出 4.18 美元，調降至輸入 0.7 美元、輸出 2.1 美元，但其授權條件和硬體門檻依然限制了實際部署的彈性。\n\n我的判斷：當模型規模朝向 1 兆參數發展時，算力與成本的壁壘已經高到讓多數開發者只能依賴遠端 API，這讓所謂的 sovereign AI 更多是特定企業與大機構的選擇，而非普及的技術解放。",
+  "image": null,
+  "source": {
+   "title": "We're releasing the weights of Mistral Large 4",
+   "url": "https://mistral.ai/news/mistral-large-4-oss/",
+   "hn": "https://news.ycombinator.com/item?id=50289418"
+  }
+ },
+ {
   "date": "2026-10-29",
   "tag": "#opinion",
   "title": "將 RISC-V CPU 編譯進模型權重的實驗",
