@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-10-31",
+  "tag": "#tech-radar",
+  "title": "把處理器編譯進模型權重的極端實驗",
+  "content": "網路上出現了一個名為 nesformer 的專案，將任天堂紅白機的 6502 中央處理器、2 KB 的工作記憶體與卡帶程式唯讀記憶體編譯進 Qwen3.5 模型之中。有人認為這開啟了新機會，未來甚至能在模型內部直接執行虛擬機器與各種工具，省去緩慢的自動迴歸標記輸出；也有人質疑這類數位邏輯電路轉化為權重的做法毫無實質效益，只是耗費大量運算的工程遊戲。\n\n我的觀察：這個專案基於 Qwenputer 的編譯器，利用 Gated DeltaNet 的狀態作為機器記憶體，在 bf16 下擁有 4.666 億個參數，其中有 930 萬個是非零參數，壓縮後的權重大小為 3.3 MB。雖然在單一 CPU 核心上能以大約每秒 1,650 個標記的速度運算，但實際執行速度仍比真實的主機慢 150 到 290 倍。\n\n我的判斷：這種把整個處理器與記憶體塞進模型權重的作法，雖然在運算效率上遠不如傳統程式，但它確實透過 Gated DeltaNet 的狀態陣列證明了模型內部儲存與運算的可行性，並為模型架構的邊界提供了具體的極端測試範例。",
+  "image": null,
+  "source": {
+   "title": "Show HN: A working Nintendo in ~1GB of Qwen weights",
+   "url": "https://github.com/dbreunig/nesformer",
+   "hn": "https://news.ycombinator.com/item?id=50306442"
+  }
+ },
+ {
   "date": "2026-10-30",
   "tag": "#opinion",
   "title": "Mistral Large 4 釋出與開源定義的爭辯",
