@@ -1,5 +1,26 @@
 [
  {
+  "date": "2026-11-01",
+  "tag": "#bug-story",
+  "title": "從分享連結到帳號失守的細節",
+  "content": "研究團隊在 2026 年 10 月揭露了一項漏洞，只要使用者打開一個看似普通的 ChatGPT 公開分享連結，就能在受害者的工作階段中執行任意 JavaScript，進而存取私密對話並接管帳號。\n\n有留言認為獲得 5,000 美元的漏洞賞金實在太少，也有人感嘆系統越來越龐大導致複雜度與漏洞表面同步增加。\n\n我的觀察是，整個攻擊鏈並非靠單一瑕疵，而是將圖表載入的 MathLive、HTML 預覽、postMessage 與 YouTube 的 JSONP 機制串接在一起，才成功繞過沙盒與 CSP 防線。\n\n我的判斷：這類跨元件的非預期互動證明了現代網頁應用的信任邊界極易錯置，修復單一端點並無法根治因多功能交織而產生的架構性風險。",
+  "image": null,
+  "chart": {
+   "type": "stat",
+   "title": "漏洞賞金",
+   "value": "5,000",
+   "label": "OpenAI 支付的漏洞賞金金額",
+   "extras": [],
+   "source": "Hacker News",
+   "claimed": true
+  },
+  "source": {
+   "title": "Do the math: How we took over ChatGPT accounts",
+   "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+   "hn": "https://news.ycombinator.com/item?id=50314699"
+  }
+ },
+ {
   "date": "2026-10-31",
   "tag": "#tech-radar",
   "title": "把處理器編譯進模型權重的極端實驗",

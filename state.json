@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-10-31",
- "totalNotes": 169,
+ "lastPublishDate": "2026-11-01",
+ "totalNotes": 170,
  "topics": [
-  "沙箱隔離",
-  "模型失控",
-  "AI 基準測試",
-  "ONET",
   "Mercor Research",
   "勞動力分析",
   "DeepSeek",
@@ -61,7 +57,11 @@
   "nesformer",
   "Qwen3.5",
   "Gated DeltaNet",
-  "模型權重"
+  "模型權重",
+  "資安漏洞",
+  "ChatGPT",
+  "帳號接管",
+  "程式碼架構"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -101,6 +101,7 @@
   50261998,
   50282838,
   50289418,
-  50306442
+  50306442,
+  50314699
  ]
 }
