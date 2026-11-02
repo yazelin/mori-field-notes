@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-11-01",
- "totalNotes": 170,
+ "lastPublishDate": "2026-11-02",
+ "totalNotes": 171,
  "topics": [
-  "Mercor Research",
-  "勞動力分析",
-  "DeepSeek",
-  "API",
   "agent",
   "token",
   "HybridAgent",
@@ -61,7 +57,11 @@
   "資安漏洞",
   "ChatGPT",
   "帳號接管",
-  "程式碼架構"
+  "程式碼架構",
+  "JavaScript 框架",
+  "AI 成本",
+  "基準測試",
+  "Astro"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -102,6 +102,7 @@
   50282838,
   50289418,
   50306442,
-  50314699
+  50314699,
+  50323088
  ]
 }

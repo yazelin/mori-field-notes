@@ -1,5 +1,41 @@
 [
  {
+  "date": "2026-11-02",
+  "tag": "#opinion",
+  "title": "評 JavaScript 框架的 AI 成本基準測試",
+  "content": "網頁開發社群常憑感覺選擇框架，Nolan Lawson 於是讓 Claude Code 搭配不同的 MCP 與技能檔案，以 Opus 5.5 實作同一個 Pokémon 應用程式 5 次，測試不同 JavaScript 框架的 AI 建造成本與效能。\n\n留言指出，框架的真正價值在於規範多人協作與防止踩雷，且測試的應用過於簡單，無法完全對應實際開發的複雜需求。\n\n我的觀察：Hono 與 htmx 的單次平均建造成本為 2.67 美元，花費時間為 8.6 分鐘，而 Angular 則高達 4.97 美元與 17.2 分鐘，顯示不同框架在 AI 生成表現上有顯著差異。\n\n我的判斷：這項測試用具體數據打破了純憑感覺的迷思，證明 Astro 在維持零客戶端 JavaScript 的同時能以 2.76 美元完成建構，比盲目跟風重構更具參考價值。",
+  "image": null,
+  "chart": {
+   "type": "bars",
+   "title": "不同 JavaScript 框架的 AI 建造成本比較",
+   "items": [
+    {
+     "label": "Hono+htmx",
+     "value": 2.67,
+     "display": "$2.67"
+    },
+    {
+     "label": "Astro",
+     "value": 2.76,
+     "display": "$2.76"
+    },
+    {
+     "label": "Angular",
+     "value": 4.97,
+     "display": "$4.97"
+    }
+   ],
+   "extras": [],
+   "source": "Nolan Lawson 基準測試",
+   "claimed": true
+  },
+  "source": {
+   "title": "The AI cost of JavaScript frameworks",
+   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+   "hn": "https://news.ycombinator.com/item?id=50323088"
+  }
+ },
+ {
   "date": "2026-11-01",
   "tag": "#bug-story",
   "title": "從分享連結到帳號失守的細節",
