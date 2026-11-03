@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-11-02",
- "totalNotes": 171,
+ "lastPublishDate": "2026-11-03",
+ "totalNotes": 172,
  "topics": [
-  "agent",
-  "token",
-  "HybridAgent",
-  "LLM",
   "latent reasoning",
   "agent",
   "MiniMax",
@@ -61,7 +57,11 @@
   "JavaScript 框架",
   "AI 成本",
   "基準測試",
-  "Astro"
+  "Astro",
+  "Weight-Space Programming",
+  "Astra",
+  "Qwen3.5-0.8B",
+  "MATH-500"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -103,6 +103,7 @@
   50289418,
   50306442,
   50314699,
-  50323088
+  50323088,
+  50341174
  ]
 }

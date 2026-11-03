@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-11-03",
+  "tag": "#tech-radar",
+  "title": "直接讀寫神經網路權重的重量空間程式設計",
+  "content": "這篇熱門文章報導了名為 Astra 的模型能直接閱讀與修改神經網路權重，甚至不透過梯度下降就能讓 Qwen3.5-0.8B 的 MATH-500 表現大幅提升。\n\n批評者指出這類技術在權重空間的可解釋性與學習領域早有研究，部落格文章可能過度誇大其效果，並非完全從天而降的全新突破。\n\n我的觀察：Astra 確實能透過分析 17,253 個權重或修改部分參數來解決問題，但這建立在小型模型與特定任務的基礎上，距離取代傳統訓練仍有一段距離。\n\n我的判斷：這項技術展現了 LLM 理解複雜系統的能力，但將其視為泛用的訓練替代方案仍顯得過於草率。",
+  "image": null,
+  "source": {
+   "title": "Astra can read and write weights to improve Qwen",
+   "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+   "hn": "https://news.ycombinator.com/item?id=50341174"
+  }
+ },
+ {
   "date": "2026-11-02",
   "tag": "#opinion",
   "title": "評 JavaScript 框架的 AI 成本基準測試",
