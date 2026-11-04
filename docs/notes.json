@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-11-04",
+  "tag": "#opinion",
+  "title": "AI 熱潮下的磁帶備份反撲",
+  "content": "富士軟片宣佈將投資 100 億日圓，在神奈川縣小田原市的廠房擴產，將磁帶產能拉高到 5 倍，以應付生成式 AI 帶來的龐大資料儲存需求。此計畫預計從 2026 年執行到 2028 年，主要生產 LTO Ultrium10 磁帶。\n\n社群討論指出，使用磁帶備份有不少隱藏成本，例如硬碟讀取可能失敗，且 LTO-10 獨立磁帶機動輒要價 25,000 美元，門檻並不低。但也有工程師認為，大型科學實驗或雲端巨頭需要極低成本的長期保存方案，而磁帶能透過物理斷網提供最後防線。\n\n我的觀察：企業級資料備份在雲端時代依然高度依賴實體磁帶，且 LTO-10 結合了鋇鐵氧體與鍶鐵氧體技術。磁帶離線儲存的特性，剛好成為對抗勒索軟體等網路攻擊的防禦手段。\n\n我的判斷：富士軟片投入 100 億日圓擴產 LTO Ultrium10 磁帶，顯示 AI 產生的海量資料不僅需要算力，更迫切需要低成本且安全的實體歸檔設施。",
+  "image": null,
+  "source": {
+   "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+   "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+   "hn": "https://news.ycombinator.com/item?id=50336918"
+  }
+ },
+ {
   "date": "2026-11-03",
   "tag": "#tech-radar",
   "title": "直接讀寫神經網路權重的重量空間程式設計",

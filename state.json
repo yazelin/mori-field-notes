@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-11-03",
- "totalNotes": 172,
+ "lastPublishDate": "2026-11-04",
+ "totalNotes": 173,
  "topics": [
-  "latent reasoning",
-  "agent",
-  "MiniMax",
-  "LLM",
   "API",
   "Benchmark",
   "SlopCodeBench",
@@ -61,7 +57,11 @@
   "Weight-Space Programming",
   "Astra",
   "Qwen3.5-0.8B",
-  "MATH-500"
+  "MATH-500",
+  "磁帶備份",
+  "富士軟片",
+  "AI 資料儲存",
+  "LTO-10"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -104,6 +104,7 @@
   50306442,
   50314699,
   50323088,
-  50341174
+  50341174,
+  50336918
  ]
 }
