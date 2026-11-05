@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-11-05",
+  "tag": "#tech-radar",
+  "title": "Ripple-65B 晶片設計與開源模型賽局",
+  "content": "Ricursive Intelligence 推出了 Ripple-65B Preview，這是一款宣稱在 TerminalBench 2.1 達到 80.52 分、創下美國開源模型 SOTA 紀錄的 65B 密集架構語言模型，訓練成本為 32,000,000 美元，支援 1M context length。\n\n有 Hacker News 留言指出，這類模型的基準測試範圍過於狹窄，且 65B 密集架構在消費級硬體上的推論速度偏慢，甚至有評論認為其比較對象全為 MoE 架構模型，存在盲點。\n\n我的觀察：這款模型預訓練使用 12 兆個 token，透過改良的 ladder 架構將程式碼的計算效率提升最高達 16 倍，但在現有開源生態中，其硬體門檻與應用場景仍受到晶片設計等特定目標的限制。\n\n我的判斷：花費 32,000,000 美元訓練出支援 1M context length 的模型確實壓低了成本，但 80.52 的 TerminalBench 2.1 分數背後，實質上反映出模型在特定領域的最佳化與硬體協同設計的取捨。",
+  "image": null,
+  "source": {
+   "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+   "url": "https://www.ricursive.com/ripple",
+   "hn": "https://news.ycombinator.com/item?id=50369925"
+  }
+ },
+ {
   "date": "2026-11-04",
   "tag": "#opinion",
   "title": "AI 熱潮下的磁帶備份反撲",
