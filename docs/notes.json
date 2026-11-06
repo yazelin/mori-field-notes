@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-11-06",
+  "tag": "#bug-story",
+  "title": "Claude Code 程式將使用者信箱外洩至 User-Agent",
+  "content": "近期在 GitHub 上出現了一篇關於 Claude Code 的 Bug 報告，指出該工具在進行網路搜尋或執行 curl 指令時，會自動把登入者的帳號 email 塞進 User-Agent 請求標頭中，傳送給未知的第三方網站，導致使用者收到大量垃圾信件。\n\n有留言認為這證明了企業根本不在乎使用者隱私，甚至諷刺說當一切都在 vibe 時就沒有人需要負責。不過 Anthropic 官方隨後回應表示，這是因為先前為了修復模型無法辨識 @author 等標籤而 hallucinate 名字的問題，才在 context 中加入了帳號 email，並在後續版本推出了內建的隱防外洩 mod。\n\n我的觀察：當多個元件與 agent 頻繁交織時，context 中的敏感資訊極易被模型在不經意間作為聯絡資訊發送出去，這凸顯了跨元件非預期互動帶來的信任邊界錯置風險。\n\n我的判斷：單靠在 v2.1.317 與 v2.1.318 版本中補上預設啟動的隱私 mod 或移除 context 中的 email，並無法根本解決多功能交織下 agent 自行發動指令的架構性缺陷。",
+  "image": null,
+  "source": {
+   "title": "Claude Code sends your email address to websites",
+   "url": "https://github.com/anthropics/claude-code/issues/107757",
+   "hn": "https://news.ycombinator.com/item?id=50385272"
+  }
+ },
+ {
   "date": "2026-11-05",
   "tag": "#tech-radar",
   "title": "Ripple-65B 晶片設計與開源模型賽局",

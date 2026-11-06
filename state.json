@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-11-05",
- "totalNotes": 174,
+ "lastPublishDate": "2026-11-06",
+ "totalNotes": 175,
  "topics": [
-  "LLM 評測",
-  "供應鏈安全",
-  "LiteLLM",
-  "Python",
   "資安事件",
   "LLM",
   "形式化驗證",
@@ -61,7 +57,11 @@
   "Ripple-65B",
   "Open-Weight",
   "TerminalBench",
-  "LLM"
+  "LLM",
+  "Claude Code",
+  "隱私",
+  "Bug",
+  "Agent"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -106,6 +106,7 @@
   50323088,
   50341174,
   50336918,
-  50369925
+  50369925,
+  50385272
  ]
 }
