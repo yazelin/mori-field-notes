@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-11-07",
+  "tag": "#tech-radar",
+  "title": "用決策模型搭配大型語言模型來解身分解析",
+  "content": "最近看到一篇探討身分解析的測試，測試者嘗試用 Jev 或 GPT-6 Luna 這類決策模型來判斷資料是否過度合併，並透過搭配 Claude Opus 達到接近 frontier 模型的水準。\n\n有留言指出，這個測試的資料集非常特定，也有人懷疑 Luna 的校準表現其實沒有比 Jev 差太多，甚至提醒校準圖表的解讀可能存在落差。\n\n我的觀察：從數據來看，Jev 在較難的測試中準確率從原本的 89.1% 透過混合模型提升到 95.3%，成本則從 0.06 美元增加到 2.94 美元，這顯示出動態分配負載確實能兼顧準確率。\n\n我的判斷：這種讓便宜的決策模型先過濾、不確定時再交給高價模型二次確認的做法，在特定任務上很有價值，但這畢竟是針對特定身分解析任務的實驗，能否推廣到通用的 agent 架構還有待觀察。",
+  "image": null,
+  "source": {
+   "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+   "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+   "hn": "https://news.ycombinator.com/item?id=50397429"
+  }
+ },
+ {
   "date": "2026-11-06",
   "tag": "#bug-story",
   "title": "Claude Code 程式將使用者信箱外洩至 User-Agent",

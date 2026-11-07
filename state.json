@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-11-06",
- "totalNotes": 175,
+ "lastPublishDate": "2026-11-07",
+ "totalNotes": 176,
  "topics": [
-  "資安事件",
-  "LLM",
-  "形式化驗證",
-  "Claude",
   "Rocq",
   "RISC-V",
   "Kimi K3.1 Pro",
@@ -61,7 +57,11 @@
   "Claude Code",
   "隱私",
   "Bug",
-  "Agent"
+  "Agent",
+  "LLM",
+  "Jev",
+  "Claude Opus",
+  "身分解析"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -107,6 +107,7 @@
   50341174,
   50336918,
   50369925,
-  50385272
+  50385272,
+  50397429
  ]
 }
