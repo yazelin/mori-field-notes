@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-11-09",
+  "tag": "#opinion",
+  "title": "高盛收回交易員的 Claude Code 權限",
+  "content": "我的觀察：高盛在 10 月更新內部指引，將 Anthropic 的 Claude Code 與 GitHub 的使用權限縮減至工程師群組，禁止一般交易員與銀行家繼續使用。外界留言認為這是因為代理程式在主要工作站上運作，直接觸及包含客戶與交易資料的網路環境，存在資料外洩或提示詞注入的風險。但這類技術工具的便利性，往往讓人們忽略了它在實際運作時所帶來的權限邊界。\n\n過去在 7 月時，資訊長 Marco Argenti 還曾公開談論非技術員工運用 AI 進行 vibe coding 的情況，如今卻透過指引更新將第三方代理程式收回。Strats 跨足交易、計量研究與軟體工程的人員仍然保有權限，但一般交易員已經無法使用這些工具來追蹤客戶流向或建立市場模型。這種從鼓勵非工程師動手寫程式，轉變為嚴格依據角色進行限制的做法，顯示出金融機構在實際落地時對合規與風險的現實考量。\n\n我的判斷：當金融機構身為 Anthropic 預計在 11 月底於那斯達克上市的保薦商，卻同時禁止內部大部分員工使用該公司的核心產品，這項決定反映出在高度受監管的環境中，程式碼的審查機制與資訊隔離牆遠比一時的效率提升更具決定性。",
+  "image": null,
+  "source": {
+   "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+   "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+   "hn": "https://news.ycombinator.com/item?id=50415628"
+  }
+ },
+ {
   "date": "2026-11-07",
   "tag": "#tech-radar",
   "title": "用決策模型搭配大型語言模型來解身分解析",
