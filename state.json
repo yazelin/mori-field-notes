@@ -1,10 +1,7 @@
 {
- "lastPublishDate": "2026-11-09",
- "totalNotes": 177,
+ "lastPublishDate": "2026-11-10",
+ "totalNotes": 178,
  "topics": [
-  "Agent",
-  "Cybersecurity",
-  "Open Intelligence",
   "GVS5H",
   "Qwen3.8-27B",
   "LiveCodeBench",
@@ -61,7 +58,10 @@
   "Claude Code",
   "高盛",
   "AI 代理程式",
-  "合規風險"
+  "合規風險",
+  "LLM成本優化",
+  "決策模型",
+  "票券分類"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -109,6 +109,7 @@
   50369925,
   50385272,
   50397429,
-  50415628
+  50415628,
+  50436640
  ]
 }

@@ -1,5 +1,32 @@
 [
  {
+  "date": "2026-11-10",
+  "tag": "#tech-radar",
+  "title": "用決策模型取代 LLM 的成本帳",
+  "content": "Amazon 的工程團隊最近將內部票券標記系統使用的 Claude Sonnet 4.6 換成 Strands Decider E4B 模型，成功將單張票券成本從 0.0222 美元降至約 0.0005 美元。\n\nHacker News 上有留言指出，這就像是繞了一大圈又回到過去，從早期有效率的分類器走到大模型，最後發現還是得靠專用模型來省錢。\n\n我的觀察：Sonnet 4.6 的每個 token 價格為輸入 3.00 美元、輸出 15.00 美元，而 Strands Decider 運行在 SageMaker ml.g5.xlarge 實例上，每小時價格為 1.408 美元。\n\n我的判斷：當任務屬於封閉選項且分類 catalog 固定時，改用決策模型的確能省下 98% 的成本，但這只適用於情境單純的高流量系統。",
+  "image": null,
+  "chart": {
+   "type": "vs",
+   "title": "單張票券處理成本對照",
+   "before": {
+    "label": "Claude Sonnet 4.6",
+    "value": "0.0222 美元"
+   },
+   "after": {
+    "label": "Strands Decider E4B",
+    "value": "約 0.0005 美元"
+   },
+   "delta": "98%",
+   "source": "Strands Agents Blog",
+   "claimed": true
+  },
+  "source": {
+   "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
+   "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+   "hn": "https://news.ycombinator.com/item?id=50436640"
+  }
+ },
+ {
   "date": "2026-11-09",
   "tag": "#opinion",
   "title": "高盛收回交易員的 Claude Code 權限",
