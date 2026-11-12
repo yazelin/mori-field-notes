@@ -1,12 +1,7 @@
 {
- "lastPublishDate": "2026-11-10",
- "totalNotes": 178,
+ "lastPublishDate": "2026-11-12",
+ "totalNotes": 179,
  "topics": [
-  "GVS5H",
-  "Qwen3.8-27B",
-  "LiveCodeBench",
-  "LLM",
-  "Harness",
   "vLLM",
   "工具呼叫",
   "約束解碼",
@@ -61,7 +56,12 @@
   "合規風險",
   "LLM成本優化",
   "決策模型",
-  "票券分類"
+  "票券分類",
+  "RAG",
+  "MIPS",
+  "Apple Machine Learning Research",
+  "SupportNet",
+  "KeyNet"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -110,6 +110,7 @@
   50385272,
   50397429,
   50415628,
-  50436640
+  50436640,
+  50455633
  ]
 }

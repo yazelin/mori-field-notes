@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-11-12",
+  "tag": "#opinion",
+  "title": "蘋果機器學習研究團隊的檢索加速實作",
+  "content": "Apple Machine Learning Research 在 2026 年 11 月 5 日發表了針對 RAG 中 MIPS 的加速研究，透過在離線階段預先訓練小型神經網路，讓系統在推論時能更快將查詢導向最佳匹配結果。\n\n有留言指出這類大型機器學習方法只適合擁有數百萬甚至數億項目的超大規模系統，對於小型應用來說，建構傳統的 BM25 索引並讓 LLM 搭配搜尋工具反而更為實際。我的觀察：傳統基於幾何質心的路由容易因為忽略叢集內的分佈而漏掉最近鄰，而該團隊提出的 SupportNet 與 KeyNet 架構試圖透過回歸模型修正這個偏差。\n\n我的判斷：雖然大型模型能將檢索延遲降低至 0.23 毫秒或提升掃描準確率，但在實際工程落地時，額外付出的離線訓練成本與系統複雜度是否值得，仍取決於企業本身的資料規模與維運資源。",
+  "image": null,
+  "source": {
+   "title": "Faster Retrieval for Better, More Efficient RAG",
+   "url": "https://machinelearning.apple.com/research/faster-retrieval",
+   "hn": "https://news.ycombinator.com/item?id=50455633"
+  }
+ },
+ {
   "date": "2026-11-10",
   "tag": "#tech-radar",
   "title": "用決策模型取代 LLM 的成本帳",
