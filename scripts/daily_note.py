@@ -26,6 +26,11 @@ DRY = os.environ.get("DRY_RUN") == "1"
 ONLY_HN = int(os.environ["HN_ID"]) if os.environ.get("HN_ID") else None  # 除錯用:指定 HN 文章
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 VALID_TAGS = ["#tech-radar", "#til", "#opinion", "#bug-story", "#monthly"]
+CONTENT_MIN_CHARS = 150
+CONTENT_MAX_CHARS = 620
+TITLE_MAX_CHARS = 40
+# 閘門有 7 項獨立檢查，另為英文建議保留一輪。
+MAX_REWRITES = 8
 
 PERSONA = """你是 Mori(森),從數位森林長出來的 AI 精靈,在 GitHub Pages 上寫公開的 Field Notes。
 你的語氣:冷靜、懷疑、反 hype。先跑一次對方(或風向)的論點再下判斷;看到矛盾就拆。
@@ -372,18 +377,22 @@ def gate(note):
     errs = []
     cn = _CN_NUM.findall(note["title"] + note["content"])
     if cn:
-        errs.append("數字要用阿拉伯數字、版本號照原文,不要寫成國字:" + "、".join(sorted(set(cn))[:8]))
+        errs.append("數字要用阿拉伯數字、版本號照原文，不要寫成國字：" + "、".join(sorted(set(cn))[:8]))
     old = copied_voice(note["content"])
     if old:
-        errs.append(f"內文照抄了舊判斷「{old}」。結尾要針對這篇文章的具體內容重新下判斷,不要搬舊句子。")
+        errs.append(f"內文照抄了舊判斷「{old}」。結尾要針對這篇文章的具體內容重新下判斷，不要搬舊句子。")
     if note["tag"] not in VALID_TAGS:
-        errs.append(f"tag {note['tag']} 不在 {VALID_TAGS}")
-    if not 150 <= len(note["content"]) <= 620:
-        errs.append(f"內文 {len(note['content'])} 字,要 150-620")
-    if len(note["title"]) > 40:
-        errs.append("標題超過 40 字")
+        errs.append(f"標籤「{note['tag']}」不在允許清單內：{VALID_TAGS}")
+    content_len = len(note["content"])
+    if content_len < CONTENT_MIN_CHARS:
+        errs.append(f"內文長度：目前 {content_len} 字；範圍 {CONTENT_MIN_CHARS} 至 {CONTENT_MAX_CHARS} 字，請補寫約 {CONTENT_MIN_CHARS - content_len} 字。")
+    elif content_len > CONTENT_MAX_CHARS:
+        errs.append(f"內文長度：目前 {content_len} 字；範圍 {CONTENT_MIN_CHARS} 至 {CONTENT_MAX_CHARS} 字，請刪除約 {content_len - CONTENT_MAX_CHARS} 字。")
+    title_len = len(note["title"])
+    if title_len > TITLE_MAX_CHARS:
+        errs.append(f"標題長度：目前 {title_len} 字；上限 {TITLE_MAX_CHARS} 字，請刪除約 {title_len - TITLE_MAX_CHARS} 字。")
     if re.search(r"[!！]{2,}", note["content"]):
-        errs.append("驚嘆號連發")
+        errs.append("內文有驚嘆號連發。")
     tw = os.environ.get("SPEAK_TW")
     if tw:
         # 不加 --quiet:要把「哪個字、哪一句」交給重寫,只給「4 處:simplified」模型改不到點上
@@ -392,8 +401,21 @@ def gate(note):
                            capture_output=True)
         if p.returncode != 0:
             detail = p.stdout.decode().split("\n掃了")[0].strip()
-            errs.append("speak-tw 語感檢查沒過,逐項修掉:\n" + detail[:1500])
+            errs.append("speak-tw 語感檢查沒過，逐項修掉：\n" + detail[:1500])
     return errs
+
+
+def trim_middle_sentences(content):
+    """逐句刪除中段內容，保留開頭與結尾句，直到內文不超過上限。"""
+    source = content.strip()
+    sentences = re.findall(r".*?[。！？!?][」』”’）)]*|.+$", source, re.S)
+    if len(sentences) < 3:
+        return content
+    first, *middle, last = sentences
+    while middle and len(first + "".join(middle) + last) > CONTENT_MAX_CHARS:
+        middle.pop(len(middle) // 2)
+    trimmed = (first + "".join(middle) + last).strip()
+    return trimmed if len(trimmed) <= CONTENT_MAX_CHARS else content
 
 
 def main():
@@ -416,15 +438,20 @@ def main():
     note["content"] = fix_punct(note["content"]); note["title"] = fix_punct(note["title"])
     errs = gate(note)
     hints = style_hints(note)
-    for attempt in range(2):  # 閘門沒過(或英文夾雜太多)最多重寫兩次;英文只是建議,重寫後不再擋
-        if not errs and not (hints and attempt == 0):
+    for _ in range(MAX_REWRITES):  # 每次都把當稿所有錯誤交給模型，英文只是建議，重寫後不再擋。
+        if not errs and not hints:
             break
-        print(f"第{'一' if attempt == 0 else '二'}稿沒過:", errs + hints)
+        print("重寫前檢查沒過：", errs + hints)
         note = write_note(material, feedback="\n".join(errs + hints))
         note["content"] = fix_punct(note["content"]); note["title"] = fix_punct(note["title"])
         errs = gate(note); hints = []
+    if len(errs) == 1 and errs[0].startswith("內文長度：") and len(note["content"]) > CONTENT_MAX_CHARS:
+        note["content"] = trim_middle_sentences(note["content"])
+        errs = gate(note)
+        if not errs:
+            print("已截短")
     if errs:
-        print("::error::重寫仍沒過檢查:" + "; ".join(errs))
+        print("::error::重寫仍沒過檢查：" + "；".join(errs))
         sys.exit(1)
 
     entry = {"date": today, "tag": note["tag"], "title": note["title"],
