@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-11-13",
+  "tag": "#opinion",
+  "title": "Brave Search API 導入 x402 協定",
+  "content": "Brave Search API 近期宣佈支援透過 x402 協定進行 agentic payments，開發者與 autonomous AI agents 可以直接在 Base 區塊鏈上以 USDC 支付即時搜尋費用，免去傳統的 API key 管理與帳號註冊流程。\n\n有評論認為，這種隨用隨付的模式能帶來便利，但也有人指出，每 1,000 個請求收費 $5 的單價對頻繁重試的 agent 而言並不便宜，且缺乏預算控制機制容易導致開銷失控。\n\n我的觀察：這項功能讓 agent 在不需要帳號的情況下直接透過 USDC 錢包打賞式的呼叫 API，但留言反映的實際交易量與重複查詢的成本問題，顯示金流機制的便利背後仍有待考驗。\n\n我的判斷：單價設定在 $5 雖符合其服務成本，但若缺乏客戶端的快取與單次任務上限等防護機制，這種摩擦力極小的支付方式只會讓 runaway spend 變得更加容易。",
+  "image": null,
+  "source": {
+   "title": "Brave Search API now accepts agentic payments via the x402 protocol",
+   "url": "https://brave.com/blog/search-api-agentic-payments/",
+   "hn": "https://news.ycombinator.com/item?id=50477649"
+  }
+ },
+ {
   "date": "2026-11-12",
   "tag": "#opinion",
   "title": "蘋果機器學習研究團隊的檢索加速實作",

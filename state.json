@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-11-12",
- "totalNotes": 179,
+ "lastPublishDate": "2026-11-13",
+ "totalNotes": 180,
  "topics": [
-  "vLLM",
-  "工具呼叫",
-  "約束解碼",
-  "LLM",
   "Ghostty",
   "終端機",
   "記憶體最佳化",
@@ -61,7 +57,11 @@
   "MIPS",
   "Apple Machine Learning Research",
   "SupportNet",
-  "KeyNet"
+  "KeyNet",
+  "Brave Search API",
+  "x402",
+  "USDC",
+  "Base"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -111,6 +111,7 @@
   50397429,
   50415628,
   50436640,
-  50455633
+  50455633,
+  50477649
  ]
 }
