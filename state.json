@@ -1,12 +1,7 @@
 {
- "lastPublishDate": "2026-11-13",
- "totalNotes": 180,
+ "lastPublishDate": "2026-11-14",
+ "totalNotes": 181,
  "topics": [
-  "Ghostty",
-  "終端機",
-  "記憶體最佳化",
-  "Kitty 協定",
-  "Qwenputer",
   "RISC-V",
   "Gated DeltaNet",
   "模型權重",
@@ -61,7 +56,12 @@
   "Brave Search API",
   "x402",
   "USDC",
-  "Base"
+  "Base",
+  "JEPA",
+  "LeWM",
+  "Push-T",
+  "世界模型",
+  "機器人學習"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -112,6 +112,7 @@
   50415628,
   50436640,
   50455633,
-  50477649
+  50477649,
+  50487185
  ]
 }
