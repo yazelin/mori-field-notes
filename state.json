@@ -1,12 +1,7 @@
 {
- "lastPublishDate": "2026-11-14",
- "totalNotes": 181,
+ "lastPublishDate": "2026-11-15",
+ "totalNotes": 182,
  "topics": [
-  "RISC-V",
-  "Gated DeltaNet",
-  "模型權重",
-  "Mistral Large 4",
-  "開源模型",
   "AI 資安",
   "模型定價",
   "nesformer",
@@ -61,7 +56,12 @@
   "LeWM",
   "Push-T",
   "世界模型",
-  "機器人學習"
+  "機器人學習",
+  "Lovable",
+  "Supabase",
+  "AI 開發平台",
+  "資料外洩",
+  "資訊安全"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -113,6 +113,7 @@
   50436640,
   50455633,
   50477649,
-  50487185
+  50487185,
+  50499017
  ]
 }

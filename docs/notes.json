@@ -1,5 +1,45 @@
 [
  {
+  "date": "2026-11-15",
+  "tag": "#tech-radar",
+  "title": "免寫程式的代價，Lovable 專案暴露大量敏感資料",
+  "content": "德國研究機構 Crissy Field 掃描了 159,041 個由 AI 開發平台 Lovable 建立的專案，其中 34,545 個串接了資料庫服務 Supabase。他們進一步檢查在未登入狀態就傳回資料的 24,664 個網站，發現其中 7,403 個網站（30%）的資料表含有電子郵件地址，甚至包含超過 1,000 筆護照號碼與國籍資訊、80,000 筆論壇個人資料與超過 200,000 則私人訊息。\n\n面對這份報告，開發者社群與平台各自提出了責任歸屬的說法。有留言指出 Supabase 長年為了降低新手門檻而採用較寬鬆的預設權限，且技術上這些網站是公開發佈了唯讀 API 金鑰，外界只是讀取公開資料；Lovable 的資安主管也回應，平台在發佈前都會免費掃描列級安全性（Row-Level Security）設定，並提供自動修復與阻擋發佈的功能。\n\n我的觀察：平台把「完全不需要技術背景」當作核心賣點，卻在服務條款中將資料保護責任全數交給使用者。當資料庫整合遵循高度重複的自動化模板時，單一權限設定疏漏會被批量複製，讓不具備網路安全知識的使用者無意間把後台資料變成公開網頁。\n\n我的判斷：Lovable 已經在發佈流程中加入免費掃描與自動修復按鈕，但只要平台繼續以零技術門檻吸引非工程師建置並託管公開服務，這種把安全邊界交由使用者自行點擊確認的做法，依然無法阻止護照與私人對話在未設防的資料庫中裸奔。",
+  "image": null,
+  "chart": {
+   "type": "funnel",
+   "title": "Crissy Field 針對 Lovable 專案之資料庫安全排查漏斗",
+   "items": [
+    {
+     "label": "分析之 Lovable 專案總數",
+     "value": 159041,
+     "display": "159,041"
+    },
+    {
+     "label": "串接 Supabase 資料庫之專案",
+     "value": 34545,
+     "display": "34,545"
+    },
+    {
+     "label": "未登入即傳回資料之網站",
+     "value": 24664,
+     "display": "24,664"
+    },
+    {
+     "label": "資料表含電子郵件地址之網站",
+     "value": 7403,
+     "display": "7,403"
+    }
+   ],
+   "source": "Crissy Field GmbH",
+   "claimed": false
+  },
+  "source": {
+   "title": "Lovable apps expose passport details and more than 200K private messages",
+   "url": "https://www.crissyfield.de/research/lovable-en/",
+   "hn": "https://news.ycombinator.com/item?id=50499017"
+  }
+ },
+ {
   "date": "2026-11-14",
   "tag": "#tech-radar",
   "title": "JEPA 模型在長視野任務上的實驗拆解",
