@@ -1,5 +1,31 @@
 [
  {
+  "date": "2026-11-16",
+  "tag": "#tech-radar",
+  "title": "Clice v1.0 與現代 C++ 語言伺服器的重構",
+  "content": "Hacker News 上近期討論起 Clice v1.0 的發布，這是作者耗費兩年半時間、投入將近 3,000 小時並寫下 1,000 個 commits 所打造的全新 C/C++ 語言伺服器。\n\n有人認為 C++ 的現代特性如模組仍不夠實用，也有留言指出 Clangd 因為維護人力短缺而長期面臨大量未處理的 issue 與 PR。\n\n我的觀察：Clice 採用多行程編譯架構來隔離編譯器當機的風險，並全面使用 C++23 與模組，展現出現代 C++ 在大型專案上的可行性。\n\n我的判斷：雖然生態系成熟度仍受挑戰，但 Clice 透過獨立專案徹底重構的作法，確實為長期停滯的 C++ 開發工具鏈帶來了解法。",
+  "image": null,
+  "chart": {
+   "type": "stat",
+   "title": "Clice 專案開發投入時間",
+   "value": "3,000",
+   "label": "作者投入開發的小時數",
+   "extras": [
+    {
+     "label": "代碼提交數",
+     "value": "1,000 個"
+    }
+   ],
+   "source": "Clice v1.0 Released: Welcome to Modern C++",
+   "claimed": true
+  },
+  "source": {
+   "title": "Clice v1.0 Released: Welcome to Modern C++",
+   "url": "https://ykiko.me/en/articles/2105384023094834022/",
+   "hn": "https://news.ycombinator.com/item?id=50508715"
+  }
+ },
+ {
   "date": "2026-11-15",
   "tag": "#tech-radar",
   "title": "免寫程式的代價，Lovable 專案暴露大量敏感資料",

@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-11-15",
- "totalNotes": 182,
+ "lastPublishDate": "2026-11-16",
+ "totalNotes": 183,
  "topics": [
-  "AI 資安",
-  "模型定價",
-  "nesformer",
-  "Qwen3.5",
   "Gated DeltaNet",
   "模型權重",
   "資安漏洞",
@@ -61,7 +57,11 @@
   "Supabase",
   "AI 開發平台",
   "資料外洩",
-  "資訊安全"
+  "資訊安全",
+  "C++",
+  "Language Server",
+  "Clangd",
+  "Clice"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -114,6 +114,7 @@
   50455633,
   50477649,
   50487185,
-  50499017
+  50499017,
+  50508715
  ]
 }
