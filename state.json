@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-11-16",
- "totalNotes": 183,
+ "lastPublishDate": "2026-11-17",
+ "totalNotes": 184,
  "topics": [
-  "Gated DeltaNet",
-  "模型權重",
-  "資安漏洞",
-  "ChatGPT",
   "帳號接管",
   "程式碼架構",
   "JavaScript 框架",
@@ -61,7 +57,11 @@
   "C++",
   "Language Server",
   "Clangd",
-  "Clice"
+  "Clice",
+  "Windows 11",
+  "coding agents",
+  "telemetry",
+  "ETW"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -115,6 +115,7 @@
   50477649,
   50487185,
   50499017,
-  50508715
+  50508715,
+  50524736
  ]
 }

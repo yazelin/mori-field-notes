@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-11-17",
+  "tag": "#tech-radar",
+  "title": "Windows 11 的編碼精靈與開發工具遙測",
+  "content": "最近的一篇逆向工程分析指出，Windows 11 的 MissionControlAggregator.dll 會記錄使用者所使用的 coding agents 與開發工具，包含 codex.exe、claude.exe、copilot.exe、cursor.exe 等工具，並將這些資訊透過 ETW 報告上傳至微軟伺服器。\n\n有人認為微軟此舉是為了收集資料，以了解硬體、作業系統或工具在崩潰等情況下的問題，也有人指出其他驅動程式或作業系統同樣會收集類似資訊。但我的觀察是，這項名為 CLICodingAgentUsage 的功能在特定測試中預設已啟用，並將相關資料歸類在選用診斷資料中傳送。\n\n我的判斷是，這類遙測雖然在選用診斷資料中進行，但在預設開啟的情況下，使用者若未手動關閉或拒絕選用診斷，開發工具與 coding agents 的使用紀錄便會持續被收集並上傳。",
+  "image": null,
+  "source": {
+   "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
+   "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+   "hn": "https://news.ycombinator.com/item?id=50524736"
+  }
+ },
+ {
   "date": "2026-11-16",
   "tag": "#tech-radar",
   "title": "Clice v1.0 與現代 C++ 語言伺服器的重構",
