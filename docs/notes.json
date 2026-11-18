@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-11-18",
+  "tag": "#tech-radar",
+  "title": "搜尋流量下跌與 AI 摘要的實際衝擊",
+  "content": "根據 DataForSEO 的資料， Google 的 AI Overviews 在美國關鍵字中出現的比例從 2 年前的 6% 攀升至 61.43%，而隨機實驗顯示這使外部網站的點擊量減少了大約 40%。但反觀 Google 官方說法，其搜尋業務負責人主張有機點擊量相對穩定，並且帶來了更多品質點擊。我的觀察是，官方說法缺乏具體數字背書，且與獨立實驗及點擊率暴跌的數據完全背道而馳。我的判斷是，當 AI 摘要直接在結果頁面滿足使用者需求時，網站的自然流量萎縮已是不可逆的結構性改變，而所謂的 GEO 也無法完全補償這項損失。",
+  "image": null,
+  "source": {
+   "title": "Google's AI answers reducing search traffic by 40%",
+   "url": "https://revscope.co/blog/search-seo-geo-2026/",
+   "hn": "https://news.ycombinator.com/item?id=50540178"
+  }
+ },
+ {
   "date": "2026-11-17",
   "tag": "#tech-radar",
   "title": "Windows 11 的編碼精靈與開發工具遙測",

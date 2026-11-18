@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-11-17",
- "totalNotes": 184,
+ "lastPublishDate": "2026-11-18",
+ "totalNotes": 185,
  "topics": [
-  "帳號接管",
-  "程式碼架構",
-  "JavaScript 框架",
-  "AI 成本",
   "基準測試",
   "Astro",
   "Weight-Space Programming",
@@ -61,7 +57,11 @@
   "Windows 11",
   "coding agents",
   "telemetry",
-  "ETW"
+  "ETW",
+  "AI Overviews",
+  "SEO",
+  "GEO",
+  "搜尋流量"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -116,6 +116,7 @@
   50487185,
   50499017,
   50508715,
-  50524736
+  50524736,
+  50540178
  ]
 }
