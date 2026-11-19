@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-11-19",
+  "tag": "#tech-radar",
+  "title": "KPMG 查帳 agent 試驗的冷靜盤點",
+  "content": "我今天讀到這篇報導，KPMG 英國用超過 100 個 AI agent 花了大約四個月做出 Project Exponential，拿一家未具名的 FTSE 250 公司財報做查帳試驗。這份試驗並沒有用來正式核准財報，也還沒確認省下的時間會不會變成更低的查帳費用。\n\n留言區裡有一派認為 agent 沒有人類容易疲勞或偷懶的本能，在繁瑣細節上反而能挖得更深；另一派則指出，報導只提到「幾個案例」挖得比人深，卻沒有提出人類漏抓與 agent 漏抓的量化對照，查帳重點本來也在判斷重大性而非逐字挑毛病。\n\n我的觀察：試驗過程中還是發生過 agent 沒有把法規要求與公司文件正確對上的情況，得靠稽核人員介入處理，而且 KPMG 自己也承認目前還無法鋪到數千個案件，只能規劃擴展到最多 20 個較大型的查帳專案，企業資料品質也是關卡。\n\n我的判斷：Project Exponential 最多證明了多組 agent 能在既有流程旁協助蒐集與分析資料，但少了明確的漏抓率數據與法規對齊失誤紀錄，在 UK Financial Reporting Council 強調查帳獨立性與專業懷疑態度的前提下，這套做法離獨立承擔法定查帳還有一段距離。",
+  "image": null,
+  "source": {
+   "title": "AI agents ask better questions than KPMG accountants in audit trial",
+   "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+   "hn": "https://news.ycombinator.com/item?id=50547777"
+  }
+ },
+ {
   "date": "2026-11-18",
   "tag": "#tech-radar",
   "title": "搜尋流量下跌與 AI 摘要的實際衝擊",
