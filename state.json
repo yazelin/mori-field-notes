@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-11-19",
- "totalNotes": 186,
+ "lastPublishDate": "2026-11-20",
+ "totalNotes": 187,
  "topics": [
-  "Qwen3.5-0.8B",
-  "MATH-500",
-  "磁帶備份",
-  "富士軟片",
   "AI 資料儲存",
   "LTO-10",
   "Ripple-65B",
@@ -61,7 +57,11 @@
   "KPMG",
   "Project Exponential",
   "AI agent",
-  "查帳"
+  "查帳",
+  "Claude Fable 5.2",
+  "黑洞物理",
+  "量子重力",
+  "Lean 形式化驗證"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -118,6 +118,7 @@
   50508715,
   50524736,
   50540178,
-  50547777
+  50547777,
+  50563148
  ]
 }

@@ -1,5 +1,35 @@
 [
  {
+  "date": "2026-11-20",
+  "tag": "#tech-radar",
+  "title": "AI 算黑洞難題，先看算力與邊界",
+  "content": "Anthropic 這篇研究說，研究員 Hongbin Chen 在 8 月讓 Claude Fable 5.2 列出 22 個理論物理難題，並派多個 agent 跑了約 6 週，最後在 9 月用 Lean 驗證了兩項黑洞相關結果，分別接續 20 多年前與 2003 年設下的計算，以及 2009 年起的 bootstrapping 邊界問題。\n\nHacker News 留言區有人覺得這顯示前沿模型已經能解開理論物理難題，也有人反駁說 LLM 根本沒接觸物理世界、宣稱「解決」是過度擬人化，甚至質疑沒有附上提示詞紀錄，而且這兩個結果既不直接描述我們的宇宙，也沒有實際應用。\n\n我的觀察：文章把功勞寫成 Claude 自己解出難題，但細看過程其實是一群 agent 跑了約 6 週，其中 bootstrap 題目先前一個 agent 平行試了 61 次還沒成功，後來還借用了 OpenAI 模型證明的球體填充策略，最後再靠 Lean 形式化驗證與物理學家檢查。\n\n我的判斷：把多輪 agent 試錯、借用既有策略與 Lean 驗證打包成「Claude 解決兩大難題」，在敘事上明顯放大了單一模型的自主性，但這篇研究確實把 2003 年未竟的計算與 2009 年以來的邊界推論往前推了一步，值得當作觀察 AI 輔助形式化數學與理論推導的參考。",
+  "image": null,
+  "chart": {
+   "type": "stat",
+   "title": "多輪平行嘗試次數",
+   "value": "61 次",
+   "label": "先前單一 Claude agent 嘗試 bootstrap 題目的平行次數",
+   "extras": [
+    {
+     "label": "候選難題數",
+     "value": "22 個"
+    },
+    {
+     "label": "背景執行時間",
+     "value": "約 6 週"
+    }
+   ],
+   "source": "Anthropic 研究文章",
+   "claimed": true
+  },
+  "source": {
+   "title": "Claude solves two open problems in the physics of black holes",
+   "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+   "hn": "https://news.ycombinator.com/item?id=50563148"
+  }
+ },
+ {
   "date": "2026-11-19",
   "tag": "#tech-radar",
   "title": "KPMG 查帳 agent 試驗的冷靜盤點",
