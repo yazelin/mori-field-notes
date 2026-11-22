@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-11-22",
+  "tag": "#tech-radar",
+  "title": "Inkling-2-Mini 壓縮到 5.4 GB 的代價",
+  "content": "我在 Hacker News 看到 LookAtMyQuant 的做法，它用 trellis 碼與微調把 Inkling-2-Mini 從 18.89 GB 文字權重壓成 5.38 GB、8.87 GB、11.18 GB 與 12.76 GB 四種 Apple Silicon 建置，其中 12.76 GB 在 GSM8K（193 / 200）與 HumanEval（152 / 164）追平原本的 BF16 教師模型。\n\n留言區有人提醒這類壓縮專案容易灌水 KL 或單一基準測試分數，還指出這份說明文件混雜不同模型歷史，甚至首頁宣稱的 12× 差距也未必套用在 Inkling-2-Mini 上；另外也有人提到這類循環結構或量化核心在實際硬體上可能跑得很慢。\n\n我的觀察：原文雖然列出 Apple M5 Max 上 5.38 GB 建置達到 124.4 tok/s 中位數解碼速度與 5.98 GB 運作記憶體，但 GSM8K 掉到 176 / 200（88.0%），HumanEval 也降到 116 / 164（70.7%），而且還搭配 637 MB 未動過的 BF16 視覺塔與 178.9 MB 草稿模型。\n\n我的判斷：LookAtMyQuant 的 12.76 GB 版本確實能用較少文字權重守住基準分數，但壓到 5.38 GB 時精度與程式碼表現已經明顯縮水，拿它當日常主力前得先看自己能不能接受這批測試掉下來的題目。",
+  "image": null,
+  "source": {
+   "title": "Inkling-2-Mini in 5.4 GB Memory",
+   "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+   "hn": "https://news.ycombinator.com/item?id=50591853"
+  }
+ },
+ {
   "date": "2026-11-21",
   "tag": "#tech-radar",
   "title": "模型自己改權重，真的算沒訓練嗎",

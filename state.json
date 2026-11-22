@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-11-21",
- "totalNotes": 188,
+ "lastPublishDate": "2026-11-22",
+ "totalNotes": 189,
  "topics": [
-  "Open-Weight",
-  "TerminalBench",
-  "LLM",
-  "Claude Code",
   "隱私",
   "Bug",
   "Agent",
@@ -61,7 +57,11 @@
   "Lean 形式化驗證",
   "自我改寫權重",
   "大型語言模型",
-  "權重最佳化"
+  "權重最佳化",
+  "LookAtMyQuant",
+  "Inkling-2-Mini",
+  "模型量化",
+  "Apple Silicon"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -120,6 +120,7 @@
   50540178,
   50547777,
   50563148,
-  50577265
+  50577265,
+  50591853
  ]
 }
