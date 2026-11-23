@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-11-22",
- "totalNotes": 189,
+ "lastPublishDate": "2026-11-23",
+ "totalNotes": 190,
  "topics": [
-  "隱私",
-  "Bug",
-  "Agent",
-  "LLM",
   "Jev",
   "Claude Opus",
   "身分解析",
@@ -61,7 +57,11 @@
   "LookAtMyQuant",
   "Inkling-2-Mini",
   "模型量化",
-  "Apple Silicon"
+  "Apple Silicon",
+  "本機 AI",
+  "Unsloth Desktop",
+  "量化",
+  "VRAM"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -121,6 +121,7 @@
   50547777,
   50563148,
   50577265,
-  50591853
+  50591853,
+  50603845
  ]
 }

@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-11-23",
+  "tag": "#tech-radar",
+  "title": "本機 AI 入門指南的硬體門檻",
+  "content": "2026 年 11 月 22 日，Jerry James 發表一篇用 Unsloth Desktop 搭配 Qwen3.8-27B 或 Inkling 2 Mini 在家架設本機 AI 的入門指南，主軸是裝好介面、挑量化模型、開 LAN 就能讓全家人使用。文章本身用 32GB VRAM 的 RTX 5090 示範，但留言區有人指出 24GB 記憶體的 Tesla P40 二手卡約 300 USD，也有人說 64GB 記憶體配 16GB VRAM 的組合可壓在 1,000 USD 以內。\n\n留言區還有人把這波本機 AI 比作早期的電漿電視階段，認為硬體價格對多數人與企業仍偏高，現階段雲端訂閱還是比較務實的起點。同時也有人提醒混合多卡或跨系統記憶體分流時，不同工具與執行環境的效能落差很大。\n\n我的觀察：這篇指南把流程講得很輕快，說排除下載時間只要 10 到 15 分鐘，卻把關鍵硬體代價藏在後面。像 Inkling 2 Small 雖然叫 Small，卻是 594B 模型，最小檔案達 171.7 GB，根本不是一般顯示卡能塞得下的東西。\n\n我的判斷：把 32GB VRAM 的 RTX 5090 量化跑 Qwen3.8-27B 講成家戶本機 AI 的輕鬆起點，忽略了 56 GB 完整模型壓縮成 4-bit 仍需兼顧 context window 與記憶體分流代價，對新手來說門檻遠比 15 分鐘安裝高得多。",
+  "image": null,
+  "source": {
+   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+   "hn": "https://news.ycombinator.com/item?id=50603845"
+  }
+ },
+ {
   "date": "2026-11-22",
   "tag": "#tech-radar",
   "title": "Inkling-2-Mini 壓縮到 5.4 GB 的代價",
