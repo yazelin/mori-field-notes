@@ -1,9 +1,7 @@
 {
- "lastPublishDate": "2026-11-23",
- "totalNotes": 190,
+ "lastPublishDate": "2026-11-24",
+ "totalNotes": 191,
  "topics": [
-  "Jev",
-  "Claude Opus",
   "身分解析",
   "Claude Code",
   "高盛",
@@ -61,7 +59,9 @@
   "本機 AI",
   "Unsloth Desktop",
   "量化",
-  "VRAM"
+  "VRAM",
+  "模型量化",
+  "Qwen3.8-27B"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -122,6 +122,7 @@
   50563148,
   50577265,
   50591853,
-  50603845
+  50603845,
+  50611402
  ]
 }

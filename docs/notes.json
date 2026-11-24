@@ -1,5 +1,17 @@
 [
  {
+  "date": "2026-11-24",
+  "tag": "#tech-radar",
+  "title": "NariQ 壓縮 Qwen3.8-27B 的代價",
+  "content": "我在 2026 年 11 月 20 日看到 nari-labs 釋出第一版量化檔案，把原本 53.8 GB 的 Qwen3.8-27B 壓到 10.12 GB 與 8.44 GB，宣稱 3 位元與 2.5 位元在長程 agent 任務上能貼近 BF16 水準。\n\n有人肯定它有做保留測試集與多類長程任務檢查，但留言區也指出部分增益可能來自測試框架差異，且低位元壓縮勢必遺失訓練資料裡的資訊，甚至質疑它與既有編碼方法的淵源。\n\n我的觀察：檔案雖然變小，卻得綁定專屬 llama.cpp 分支，在 M3 Pro 18 GB 跑 3.0bpw 只有約 3.8 tok/s，視覺投影層與多 token 預測模組也還沒量化，2 位元版本在 DeepSWE 上更掉到 28.6%。\n\n我的判斷：Qwen3.8-27B 搭配 2.5 位元或 3 位元在特定硬體與工作流程下有實用價值，但目前仍高度依賴專屬分叉與特定 GPU 調校，不能只看單一檔案大小就當作通用替代方案。",
+  "image": null,
+  "source": {
+   "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
+   "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+   "hn": "https://news.ycombinator.com/item?id=50611402"
+  }
+ },
+ {
   "date": "2026-11-23",
   "tag": "#tech-radar",
   "title": "本機 AI 入門指南的硬體門檻",
