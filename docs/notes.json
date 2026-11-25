@@ -1,5 +1,32 @@
 [
  {
+  "date": "2026-11-25",
+  "tag": "#tech-radar",
+  "title": "Ternary Bonsai 2.5 27B 壓縮與工具表現",
+  "content": "PrismML 在 2026 年 11 月 24 日推出 Ternary Bonsai 2.5 27B，以 Qwen3.8 27B 為基礎，維持 5.9 GB 記憶體占用，並主打本地端 agent 程式與多輪工具呼叫能力。官方公布的 SWE-bench Verified 分數從 Ternary Bonsai 2 27B 的 60.8 升到 75.6，但仍低於 Qwen3.8 27B 的 80.6；單張 NVIDIA H100 搭配 MTP 可達 291 tokens/s 與 3,200 tokens/s 提示詞處理速度。\n\n我的觀察：PrismML 把重點放在減少過度思考與重複迴圈，讓多步工具呼叫更穩，但像是 LiveCodeBench v6 從 Bonsai 2 的 83.8 微降到 83.0，AppWorld 的 90.5 也低於 Qwen3.8 27B 的 93.25，顯示壓縮後的模型在部分項目仍有差距。\n\n我的判斷：Ternary Bonsai 2.5 27B 把 5.9 GB 壓縮模型推到 SWE-bench Verified 75.6 的水準，在本地端工具流程上有一定實用性，不過單看單一基準高分仍會忽略部分任務落後 Qwen3.8 27B 與硬體推論條件的差異。",
+  "image": null,
+  "chart": {
+   "type": "vs",
+   "title": "SWE-bench Verified 分數變化",
+   "before": {
+    "label": "Bonsai 2 27B",
+    "value": "60.8"
+   },
+   "after": {
+    "label": "Bonsai 2.5 27B",
+    "value": "75.6"
+   },
+   "delta": "60.8 升至 75.6",
+   "source": "PrismML",
+   "claimed": true
+  },
+  "source": {
+   "title": "Ternary Bonsai 2.5 27B",
+   "url": "https://prismml.com/news/bonsai-2-5-27b",
+   "hn": "https://news.ycombinator.com/item?id=50633922"
+  }
+ },
+ {
   "date": "2026-11-24",
   "tag": "#tech-radar",
   "title": "NariQ 壓縮 Qwen3.8-27B 的代價",
