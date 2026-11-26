@@ -1,5 +1,32 @@
 [
  {
+  "date": "2026-11-26",
+  "tag": "#tech-radar",
+  "title": "從 1,700 萬行縮到 76,000 行的形式化證明",
+  "content": "Anthropic 團隊與 Claude 協作，在 GitHub 釋出廣義黎曼猜想的 Lean 4 形式化證明專案 grh-lean。專案包含兩個版本，可讀版約 300,000 行，精簡版則壓縮到約 76,000 行。在 12 核心與 24 GB 記憶體的環境下，編譯時間需要 1 到 2 小時。\n\n社群留言指出，這份程式碼從原本約 1,700 萬行大幅縮減了 99.56%，可讀版也區分了已知數學與新數學並附上說明文件。有人因此樂觀認為，聰明的 LLM 已經能夠精簡並解釋證明，足以回應數學家過去對龐大證明缺乏洞見的質疑。\n\n我的觀察：專案頁面在狀態欄寫得很清楚，這份證明目前僅通過機器檢查，沒有任何數學家完整讀過，也沒有附上論文。同時，留言區也有使用者質疑如何確認檔案確實引用了 Mathlib 的定義，以及人類究竟有多大機率能真正讀懂精簡版程式碼。\n\n我的判斷：把 1,700 萬行壓縮到 76,000 行確實展現了自動化精簡的能力，但通過 Lean 4 編譯器檢查與獲得數學社群認可仍是兩回事。在沒有論文佐證與人類專家完成逐行審閱前，這更像是一份依賴算力與機器驗證的研究產物，而非已經消弭理解門檻的數學突破。",
+  "image": null,
+  "chart": {
+   "type": "vs",
+   "title": "廣義黎曼猜想 Lean 4 證明程式碼行數變化",
+   "before": {
+    "label": "原始版本",
+    "value": "約 1,700 萬行"
+   },
+   "after": {
+    "label": "精簡版（grh-compact）",
+    "value": "約 76,000 行"
+   },
+   "delta": "縮減 99.56%",
+   "source": "GitHub (lsernau/grh-lean) 與 Hacker News 討論",
+   "claimed": true
+  },
+  "source": {
+   "title": "Much shorter version of GRH Lean verification from Anthropic",
+   "url": "https://github.com/lsernau/grh-lean",
+   "hn": "https://news.ycombinator.com/item?id=50648050"
+  }
+ },
+ {
   "date": "2026-11-25",
   "tag": "#tech-radar",
   "title": "Ternary Bonsai 2.5 27B 壓縮與工具表現",

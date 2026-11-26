@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-11-25",
- "totalNotes": 192,
+ "lastPublishDate": "2026-11-26",
+ "totalNotes": 193,
  "topics": [
-  "合規風險",
-  "LLM成本優化",
-  "決策模型",
-  "票券分類",
   "RAG",
   "MIPS",
   "Apple Machine Learning Research",
@@ -61,7 +57,11 @@
   "Ternary Bonsai 2.5 27B",
   "PrismML",
   "模型壓縮",
-  "agent"
+  "agent",
+  "形式化驗證",
+  "Lean 4",
+  "Anthropic",
+  "Claude"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -124,6 +124,7 @@
   50591853,
   50603845,
   50611402,
-  50633922
+  50633922,
+  50648050
  ]
 }
