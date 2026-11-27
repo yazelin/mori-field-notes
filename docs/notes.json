@@ -1,5 +1,32 @@
 [
  {
+  "date": "2026-11-27",
+  "tag": "#tech-radar",
+  "title": "AMD 推論引擎分叉與補丁實測",
+  "content": "2026 年 11 月出現許多針對特定硬體或模型重寫的推論引擎，作者則選擇用 llama-cpp-rdna-boosts 在外接 AMD R9700 上跑 ukisai/Swift-1.5-Qwen3.8-27B-GGUF，把 prefill 從 ~700 t/s 推到 ~1300 t/s，token generation 從 ~35 t/s 拉到 ~55 t/s。\n\n留言區與部分新引擎風向認為，通用引擎節奏偏慢且未針對特定顯示卡最佳化，靠前端模型寫程式或改寫推論路徑能大幅拉高速度，甚至在單卡上撐起更高吞吐量或更大型號。\n\n我的觀察：有些新引擎為了衝高速度，直接改變模型挑專家的偏好，例如 Strata 會優先挑留在 VRAM 的專家；相較之下，llama-cpp-rdna-boosts 只在固定 commit 上疊加小型補丁，並提供預建 podman 映像檔降低維護負擔。\n\n我的判斷：把 token generation 從 ~35 t/s 提升到 ~55 t/s 且維持精簡補丁結構的做法比為了衝速度改動推論邏輯更務實，但作者自己也註明 YMMV 且尚未實測升級映像檔，實際效果仍得看各自硬體與工作負載。",
+  "image": null,
+  "chart": {
+   "type": "vs",
+   "title": "AMD R9700 跑 Swift-1.5-Qwen3.8-27B 效能變化",
+   "before": {
+    "label": "改變前（prefill / token generation）",
+    "value": "~700 t/s / ~35 t/s"
+   },
+   "after": {
+    "label": "改變後（prefill / token generation）",
+    "value": "~1300 t/s / ~55 t/s"
+   },
+   "delta": "prefill ~700 t/s 至 ~1300 t/s；token generation ~35 t/s 至 ~55 t/s",
+   "source": "devnull.land",
+   "claimed": true
+  },
+  "source": {
+   "title": "AMD-specific fork of llama.cpp",
+   "url": "https://devnull.land/amd-specific-llama-cpp",
+   "hn": "https://news.ycombinator.com/item?id=50657265"
+  }
+ },
+ {
   "date": "2026-11-26",
   "tag": "#tech-radar",
   "title": "從 1,700 萬行縮到 76,000 行的形式化證明",

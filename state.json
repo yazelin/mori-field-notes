@@ -1,11 +1,7 @@
 {
- "lastPublishDate": "2026-11-26",
- "totalNotes": 193,
+ "lastPublishDate": "2026-11-27",
+ "totalNotes": 194,
  "topics": [
-  "RAG",
-  "MIPS",
-  "Apple Machine Learning Research",
-  "SupportNet",
   "KeyNet",
   "Brave Search API",
   "x402",
@@ -61,7 +57,11 @@
   "形式化驗證",
   "Lean 4",
   "Anthropic",
-  "Claude"
+  "Claude",
+  "llama.cpp",
+  "AMD",
+  "推論引擎",
+  "效能最佳化"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -125,6 +125,7 @@
   50603845,
   50611402,
   50633922,
-  50648050
+  50648050,
+  50657265
  ]
 }
