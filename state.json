@@ -1,9 +1,7 @@
 {
- "lastPublishDate": "2026-11-27",
- "totalNotes": 194,
+ "lastPublishDate": "2026-11-28",
+ "totalNotes": 195,
  "topics": [
-  "KeyNet",
-  "Brave Search API",
   "x402",
   "USDC",
   "Base",
@@ -61,7 +59,9 @@
   "llama.cpp",
   "AMD",
   "推論引擎",
-  "效能最佳化"
+  "效能最佳化",
+  "DeepCrossAttention",
+  "殘差連線"
  ],
  "monthlyStats": {
   "2026-02": 36,
@@ -126,6 +126,7 @@
   50611402,
   50633922,
   50648050,
-  50657265
+  50657265,
+  50672565
  ]
 }

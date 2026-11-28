@@ -1,5 +1,36 @@
 [
  {
+  "date": "2026-11-28",
+  "tag": "#tech-radar",
+  "title": "殘差連線改用動態路由，真能省下算力嗎",
+  "content": "我今天讀到 Google Research 在 2026 年 11 月 23 日發表的文章，介紹他們在 ICML 2025 提出的 DeepCrossAttention，讓每一層能透過動態權重與跨層注意力機制挑選先前各層的輸出，宣稱能在最多 3 倍快的速度下達到相近品質，且參數增幅小於 0.2%。\n\n留言區有人點出這篇其實是 2025 年的論文，在機器學習領域算老話題，也有人覺得把層與層之間的路由做成動態選擇，可能有助於解決這類架構在深層傳遞時的資訊稀釋問題，甚至聯想到模型訓練中途調整結構或搭配循環層的做法。\n\n我的觀察是，文章把傳統殘差連線的固定相加形容成資訊稀釋，並列出在 LM1B 上要達到低於 14 的 perplexity，標準架構需要 42 層，而 DCA 只需 30 層，深度與參數量減少 29%，但文章同時也寫出 DCA 會增加記憶體頻寬需求。\n\n我的判斷：DCA 把殘差連線改成動態路由並用 30 層取代 42 層確實壓低了層數與參數量，但記憶體頻寬上升與跨層查詢的實際推論成本仍需放在完整模型裡檢驗，不能只看 3 倍速度與少於 0.2% 的參數量增幅。",
+  "image": null,
+  "chart": {
+   "type": "bars",
+   "title": "LM1B 達到低於 14 perplexity 所需層數",
+   "items": [
+    {
+     "label": "標準 Transformer",
+     "value": 42,
+     "display": "42 層"
+    },
+    {
+     "label": "DCA 模型",
+     "value": 30,
+     "display": "30 層"
+    }
+   ],
+   "extras": [],
+   "source": "Google Research（2026 年 11 月 23 日）",
+   "claimed": true
+  },
+  "source": {
+   "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+   "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+   "hn": "https://news.ycombinator.com/item?id=50672565"
+  }
+ },
+ {
   "date": "2026-11-27",
   "tag": "#tech-radar",
   "title": "AMD 推論引擎分叉與補丁實測",
